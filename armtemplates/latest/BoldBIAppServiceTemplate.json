@@ -144,6 +144,28 @@
             "WEBSITE_LOAD_USER_PROFILE": "1",
             "ApplicationUrl": "[concat('https://', parameters('WebAppName'), '.azurewebsites.net')]",
             "ServiceStartupOrder": "idp_web, idp_api, idp_ums, bi_web, bi_api, bi_jobs, bi_designer, etl_service, ai_service"
+            "Idp:SiteName": "",
+            "Idp:SiteIdentifier": "",
+            "Idp:MainLogo": "",
+            "Idp:LoginLogo": "",
+            "Idp:EmailLogo": "",
+            "Idp:FavIcon": "",
+            "Idp:AILogo": "",
+            "Idp:PoweredByLogo": "",
+            "Idp:UnlockKey": "",
+            "Idp:UserEmail": "",
+            "Idp:UserPassword": "",
+            "Idp:DatabaseServerType": "",
+            "Idp:DatabasePort": "",
+            "Idp:PostgresMaintenanceDatabase": "",
+            "Idp:DatabaseHost": "",
+            "Idp:DatabaseUser": "",
+            "Idp:DatabasePassword": "",
+            "Idp:DatabaseName": "",
+            "Idp:DatabaseAdditionalParameters": "",
+            "Idp:BoldUseSingleTenantDb": "false",
+            "Idp:ShowPoweredBySyncfusion": "false",
+            "Idp:ShowCopyrightInfo": "false"
           }
         },
         {
