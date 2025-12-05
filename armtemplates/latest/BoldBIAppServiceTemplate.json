@@ -236,7 +236,7 @@
             "[resourceId('Microsoft.Web/sites/config', parameters('WebAppName'), 'web')]"
           ],
           "properties": {
-            "RepoUrl": "https://github.com/boldbi/azure-arm-template.git",
+            "RepoUrl": "https://github.com/mohamedasme-sf4303/azure-arm-template.git",
             "branch": "latest",
             "IsManualIntegration": true
           }
