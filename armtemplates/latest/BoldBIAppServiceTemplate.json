@@ -225,8 +225,8 @@
       "sku": {
         "name": "[parameters('storageAccountType')]"
       },
-      "kind": "StorageV2",
-      "properties": {}
+      "properties": {},
+      "dependsOn": []
     },
     {
       "name": "[variables('WebAppSvcPlanName')]",
