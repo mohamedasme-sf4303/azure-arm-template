@@ -394,7 +394,7 @@
           ],
           "properties": {
             "RepoUrl": "https://github.com/mohamedasme-sf4303/azure-arm-template.git",
-            "branch": "latest",
+            "branch": "new-latest",
             "IsManualIntegration": true
           }
         }
