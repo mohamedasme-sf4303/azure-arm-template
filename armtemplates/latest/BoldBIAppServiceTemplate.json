@@ -106,14 +106,14 @@
         "description": "Bold BI unlock/license key (Idp:UnlockKey)"
       }
     },
-    "initialUserEmail": {
+    "UserEmail": {
       "type": "string",
       "defaultValue": "",
       "metadata": {
         "description": "Initial admin user email (Idp:UserEmail)"
       }
     },
-    "initialUserPassword": {
+    "UserPassword": {
       "type": "secureString",
       "defaultValue": "",
       "metadata": {
@@ -310,8 +310,8 @@
             "Idp:AILogo": "[parameters('aiLogo')]",
             "Idp:PoweredByLogo": "[parameters('poweredByLogo')]",
             "Idp:UnlockKey": "[parameters('unlockKey')]",
-            "Idp:UserEmail": "[parameters('initialUserEmail')]",
-            "Idp:UserPassword": "[parameters('initialUserPassword')]",
+            "Idp:UserEmail": "[parameters('UserEmail')]",
+            "Idp:UserPassword": "[parameters('UserPassword')]",
             "Idp:DatabaseServerType": "[parameters('databaseServerType')]",
             "Idp:DatabasePort": "[parameters('databasePort')]",
             "Idp:PostgresMaintenanceDatabase": "[parameters('postgresMaintenanceDatabase')]",
