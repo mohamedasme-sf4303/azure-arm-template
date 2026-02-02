@@ -42,6 +42,163 @@
         "description": "Type of the storage account created"
       },
       "defaultValue": "Standard_LRS"
+    },
+    "siteName": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Site name for Bold BI (Idp:SiteName)"
+      }
+    },
+    "siteIdentifier": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Site identifier for Bold BI (Idp:SiteIdentifier)"
+      }
+    },
+    "mainLogo": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "URL for main logo (Idp:MainLogo)"
+      }
+    },
+    "loginLogo": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "URL for login logo (Idp:LoginLogo)"
+      }
+    },
+    "emailLogo": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "URL for email logo (Idp:EmailLogo)"
+      }
+    },
+    "favIcon": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "URL for favicon (Idp:FavIcon)"
+      }
+    },
+    "aiLogo": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "URL for AI logo (Idp:AILogo)"
+      }
+    },
+    "poweredByLogo": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "URL for powered-by logo (Idp:PoweredByLogo)"
+      }
+    },
+    "unlockKey": {
+      "type": "secureString",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Bold BI unlock/license key (Idp:UnlockKey)"
+      }
+    },
+    "UserEmail": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Initial admin user email (Idp:UserEmail)"
+      }
+    },
+    "UserPassword": {
+      "type": "secureString",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Initial admin user password (Idp:UserPassword)"
+      }
+    },
+    "databaseServerType": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Database server type, e.g., PostgreSQL (Idp:DatabaseServerType)"
+      }
+    },
+    "databasePort": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Database port (Idp:DatabasePort)"
+      }
+    },
+    "postgresMaintenanceDatabase": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "PostgreSQL maintenance database (Idp:PostgresMaintenanceDatabase)"
+      }
+    },
+    "databaseHost": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Database host (Idp:DatabaseHost)"
+      }
+    },
+    "databaseUser": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Database user (Idp:DatabaseUser)"
+      }
+    },
+    "databasePassword": {
+      "type": "secureString",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Database password (Idp:DatabasePassword)"
+      }
+    },
+    "databaseName": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Database name (Idp:DatabaseName)"
+      }
+    },
+    "databaseAdditionalParameters": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Additional connection string parameters (Idp:DatabaseAdditionalParameters)"
+      }
+    },
+    "useSingleTenantDb": {
+      "type": "bool",
+      "defaultValue": false,
+      "allowedValues": [ true, false ],
+      "metadata": {
+        "description": "Use single tenant database (Idp:BoldUseSingleTenantDb)"
+      }
+    },
+    "showPoweredBySyncfusion": {
+      "type": "bool",
+      "defaultValue": false,
+      "allowedValues": [ true, false ],
+      "metadata": {
+        "description": "Show 'Powered by Syncfusion' branding (Idp:ShowPoweredBySyncfusion)"
+      }
+    },
+    "showCopyrightInfo": {
+      "type": "bool",
+      "defaultValue": false,
+      "allowedValues": [ true, false ],
+      "metadata": {
+        "description": "Show copyright information (Idp:ShowCopyrightInfo)"
+      }
     }
   },
   "variables": {
@@ -143,7 +300,29 @@
             "WEBSITE_DYNAMIC_CACHE": "0",
             "WEBSITE_LOAD_USER_PROFILE": "1",
             "ApplicationUrl": "[concat('https://', parameters('WebAppName'), '.azurewebsites.net')]",
-            "ServiceStartupOrder": "idp_web, idp_api, idp_ums, bi_web, bi_api, bi_jobs, bi_designer, etl_service, ai_service"
+            "ServiceStartupOrder": "idp_web, idp_api, idp_ums, bi_web, bi_api, bi_jobs, bi_designer, etl_service, ai_service",
+            "Idp:SiteName": "[parameters('siteName')]",
+            "Idp:SiteIdentifier": "[parameters('siteIdentifier')]",
+            "Idp:MainLogo": "[parameters('mainLogo')]",
+            "Idp:LoginLogo": "[parameters('loginLogo')]",
+            "Idp:EmailLogo": "[parameters('emailLogo')]",
+            "Idp:FavIcon": "[parameters('favIcon')]",
+            "Idp:AILogo": "[parameters('aiLogo')]",
+            "Idp:PoweredByLogo": "[parameters('poweredByLogo')]",
+            "Idp:UnlockKey": "[parameters('unlockKey')]",
+            "Idp:UserEmail": "[parameters('UserEmail')]",
+            "Idp:UserPassword": "[parameters('UserPassword')]",
+            "Idp:DatabaseServerType": "[parameters('databaseServerType')]",
+            "Idp:DatabasePort": "[parameters('databasePort')]",
+            "Idp:PostgresMaintenanceDatabase": "[parameters('postgresMaintenanceDatabase')]",
+            "Idp:DatabaseHost": "[parameters('databaseHost')]",
+            "Idp:DatabaseUser": "[parameters('databaseUser')]",
+            "Idp:DatabasePassword": "[parameters('databasePassword')]",
+            "Idp:DatabaseName": "[parameters('databaseName')]",
+            "Idp:DatabaseAdditionalParameters": "[parameters('databaseAdditionalParameters')]",
+            "Idp:BoldUseSingleTenantDb": "[parameters('useSingleTenantDb')]",
+            "Idp:ShowPoweredBySyncfusion": "[parameters('showPoweredBySyncfusion')]",
+            "Idp:ShowCopyrightInfo": "[parameters('showCopyrightInfo')]"
           }
         },
         {
@@ -215,7 +394,7 @@
           ],
           "properties": {
             "RepoUrl": "https://github.com/boldbi/azure-arm-template.git",
-            "branch": "latest",
+            "branch": "KC404874_v14.2.5",
             "IsManualIntegration": true
           }
         }
