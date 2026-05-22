@@ -81,9 +81,4 @@
     {
         @await Html.PartialAsync("_ActiveDirectorySettings")
     }
-
-    @if (!ViewBag.ThirdPartyLogins || !ViewBag.WhiteLabel || !ViewBag.CustomDomain)
-    {
-        @await Html.PartialAsync("~/Views/UnlockFeatures/UnlockFeatures.cshtml")
-    }
 }

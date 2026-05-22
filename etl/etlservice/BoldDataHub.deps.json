@@ -18,14 +18,13 @@
           "FluentValidation": "12.0.0",
           "FluentValidation.DependencyInjectionExtensions": "12.0.0",
           "Google.Cloud.BigQuery.V2": "3.10.0",
-          "MailKit": "3.4.3",
+          "MailKit": "4.16.0",
           "Microsoft.ApplicationInsights.AspNetCore": "2.22.0",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "7.0.0",
-          "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "6.1.0",
           "Microsoft.Graph": "4.54.0",
           "Microsoft.Identity.Client": "4.66.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.26.1",
-          "MimeKit": "4.7.1",
+          "MimeKit": "4.16.0",
           "Minio": "6.0.0",
           "MongoDB.Driver": "3.1.0",
           "MySqlConnector": "2.3.1",
@@ -36,6 +35,8 @@
           "Quartz": "3.7.0",
           "Renci.SshNet.Async": "1.4.0",
           "SSH.NET": "2025.0.0",
+          "SharpCompress": "0.48.0",
+          "Snappier": "1.3.1",
           "Snowflake.Data": "4.4.1",
           "Syncfusion.Blazor.Buttons": "27.2.2",
           "Syncfusion.Blazor.DropDowns": "27.2.2",
@@ -49,7 +50,8 @@
           "Syncfusion.Licensing": "27.2.2",
           "Syncfusion.XlsIO.Net.Core": "22.1.37",
           "System.Data.SqlClient": "4.9.0",
-          "YamlDotNet": "15.3.0"
+          "YamlDotNet": "15.3.0",
+          "log4net": "3.3.0"
         },
         "runtime": {
           "BoldDataHub.dll": {}
@@ -166,11 +168,11 @@
           }
         }
       },
-      "BouncyCastle.Cryptography/2.5.1": {
+      "BouncyCastle.Cryptography/2.6.2": {
         "runtime": {
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.5.1.28965"
+            "fileVersion": "2.6.2.46322"
           }
         }
       },
@@ -377,25 +379,25 @@
           }
         }
       },
-      "log4net/2.0.13": {
+      "log4net/3.3.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "8.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/log4net.dll": {
-            "assemblyVersion": "2.0.13.0",
-            "fileVersion": "2.0.13.0"
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.0.0"
           }
         }
       },
-      "MailKit/3.4.3": {
+      "MailKit/4.16.0": {
         "dependencies": {
-          "MimeKit": "4.7.1"
+          "MimeKit": "4.16.0"
         },
         "runtime": {
-          "lib/net6.0/MailKit.dll": {
-            "assemblyVersion": "3.4.0.0",
-            "fileVersion": "3.4.3.0"
+          "lib/net8.0/MailKit.dll": {
+            "assemblyVersion": "4.16.0.0",
+            "fileVersion": "4.16.0.0"
           }
         }
       },
@@ -652,18 +654,6 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Log4Net.AspNetCore/6.1.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Logging": "8.0.1",
-          "log4net": "2.0.13"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll": {
-            "assemblyVersion": "6.1.0.0",
-            "fileVersion": "6.1.0.0"
-          }
-        }
-      },
       "Microsoft.Extensions.Options/8.0.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -803,14 +793,15 @@
           }
         }
       },
-      "MimeKit/4.7.1": {
+      "MimeKit/4.16.0": {
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.5.1"
+          "BouncyCastle.Cryptography": "2.6.2",
+          "System.Security.Cryptography.Pkcs": "8.0.1"
         },
         "runtime": {
           "lib/net8.0/MimeKit.dll": {
-            "assemblyVersion": "4.7.0.0",
-            "fileVersion": "4.7.1.0"
+            "assemblyVersion": "4.16.0.0",
+            "fileVersion": "4.16.0.0"
           }
         }
       },
@@ -842,8 +833,8 @@
           "DnsClient": "1.6.1",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "MongoDB.Bson": "3.1.0",
-          "SharpCompress": "0.30.1",
-          "Snappier": "1.0.0",
+          "SharpCompress": "0.48.0",
+          "Snappier": "1.3.1",
           "ZstdSharp.Port": "0.7.3"
         },
         "runtime": {
@@ -994,7 +985,8 @@
       "Oracle.ManagedDataAccess.Core/23.4.0": {
         "dependencies": {
           "System.Diagnostics.PerformanceCounter": "8.0.0",
-          "System.DirectoryServices.Protocols": "8.0.0"
+          "System.DirectoryServices.Protocols": "8.0.0",
+          "System.Security.Cryptography.Pkcs": "8.0.1"
         },
         "runtime": {
           "lib/netstandard2.1/Oracle.ManagedDataAccess.dll": {
@@ -1079,19 +1071,19 @@
           }
         }
       },
-      "SharpCompress/0.30.1": {
+      "SharpCompress/0.48.0": {
         "runtime": {
-          "lib/net5.0/SharpCompress.dll": {
-            "assemblyVersion": "0.30.1.0",
-            "fileVersion": "0.30.1.0"
+          "lib/net8.0/SharpCompress.dll": {
+            "assemblyVersion": "0.48.0.0",
+            "fileVersion": "0.48.0.0"
           }
         }
       },
-      "Snappier/1.0.0": {
+      "Snappier/1.3.1": {
         "runtime": {
-          "lib/net5.0/Snappier.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+          "lib/net8.0/Snappier.dll": {
+            "assemblyVersion": "1.3.1.0",
+            "fileVersion": "1.3.1.0"
           }
         }
       },
@@ -1101,13 +1093,13 @@
           "Apache.Arrow": "14.0.2",
           "Azure.Storage.Blobs": "12.13.1",
           "Azure.Storage.Common": "12.12.0",
-          "BouncyCastle.Cryptography": "2.5.1",
+          "BouncyCastle.Cryptography": "2.6.2",
           "Google.Cloud.Storage.V1": "4.10.0",
           "Mono.Unix": "7.1.0-final.1.21458.1",
           "Newtonsoft.Json": "13.0.3",
           "System.IdentityModel.Tokens.Jwt": "6.34.0",
           "Tomlyn.Signed": "0.17.0",
-          "log4net": "2.0.13"
+          "log4net": "3.3.0"
         },
         "runtime": {
           "lib/netstandard2.0/Snowflake.Data.dll": {
@@ -1118,7 +1110,7 @@
       },
       "SSH.NET/2025.0.0": {
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.5.1",
+          "BouncyCastle.Cryptography": "2.6.2",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.3"
         },
         "runtime": {
@@ -1545,6 +1537,22 @@
           }
         }
       },
+      "System.Security.Cryptography.Pkcs/8.0.1": {
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
       "System.Security.Cryptography.ProtectedData/8.0.0": {
         "runtime": {
           "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -1655,12 +1663,12 @@
       "path": "azure.storage.common/12.12.0",
       "hashPath": "azure.storage.common.12.12.0.nupkg.sha512"
     },
-    "BouncyCastle.Cryptography/2.5.1": {
+    "BouncyCastle.Cryptography/2.6.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zy8TMeTP+1FH2NrLaNZtdRbBdq7u5MI+NFZQOBSM69u5RFkciinwzV2eveY6Kjf5MzgsYvvl6kTStsj3JrXqkg==",
-      "path": "bouncycastle.cryptography/2.5.1",
-      "hashPath": "bouncycastle.cryptography.2.5.1.nupkg.sha512"
+      "sha512": "sha512-7oWOcvnntmMKNzDLsdxAYqApt+AjpRpP2CShjMfIa3umZ42UQMvH0tl1qAliYPNYO6vTdcGMqnRrCPmsfzTI1w==",
+      "path": "bouncycastle.cryptography/2.6.2",
+      "hashPath": "bouncycastle.cryptography.2.6.2.nupkg.sha512"
     },
     "ClickHouse.Client/7.8.2": {
       "type": "package",
@@ -1774,19 +1782,19 @@
       "path": "google.cloud.storage.v1/4.10.0",
       "hashPath": "google.cloud.storage.v1.4.10.0.nupkg.sha512"
     },
-    "log4net/2.0.13": {
+    "log4net/3.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VUx7nr+IovTkL8ZFeKqGtAGCYmzOk1rCvE8NqH2NucZudVb47i99FhwcpTI4UroOBGuUstXCh5F6Zx3/x1nd2w==",
-      "path": "log4net/2.0.13",
-      "hashPath": "log4net.2.0.13.nupkg.sha512"
+      "sha512": "sha512-wtZ7K4XGWDxeQqHbUybwIug/3AAzhKcmroLf4ENfE5GsaDIMqT3GLX24f18XPFY8Qg9vaxfMSAODwWAXqkjI/Q==",
+      "path": "log4net/3.3.0",
+      "hashPath": "log4net.3.3.0.nupkg.sha512"
     },
-    "MailKit/3.4.3": {
+    "MailKit/4.16.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Iewef8mcE1B1LrVudxQjQ0LcriPPeTbxmWMoHQzFS+P6TpEY2eVDbdKdB0Qnbmqr/5w7WfK2mNWuoSX9pI470g==",
-      "path": "mailkit/3.4.3",
-      "hashPath": "mailkit.3.4.3.nupkg.sha512"
+      "sha512": "sha512-trJ82DOpAmo8i1jO1vNE+dGn4mPRyeYfy4swRcAGgMJhPoI1Kohf4OFJJf0+YIj4iUxgxPn8W+ht7e7KiYzSjg==",
+      "path": "mailkit/4.16.0",
+      "hashPath": "mailkit.4.16.0.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights/2.22.0": {
       "type": "package",
@@ -1942,13 +1950,6 @@
       "path": "microsoft.extensions.logging.applicationinsights/2.22.0",
       "hashPath": "microsoft.extensions.logging.applicationinsights.2.22.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Log4Net.AspNetCore/6.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-qHb3GudscgrgEVByh86kAq3FMmjOdPIVoqvff3eokEP+QkZHzr42l4PlgxBsqhhlIX02SazC7ZdbfiFGDPRv9A==",
-      "path": "microsoft.extensions.logging.log4net.aspnetcore/6.1.0",
-      "hashPath": "microsoft.extensions.logging.log4net.aspnetcore.6.1.0.nupkg.sha512"
-    },
     "Microsoft.Extensions.Options/8.0.2": {
       "type": "package",
       "serviceable": true,
@@ -2040,12 +2041,12 @@
       "path": "microsoft.jsinterop/8.0.10",
       "hashPath": "microsoft.jsinterop.8.0.10.nupkg.sha512"
     },
-    "MimeKit/4.7.1": {
+    "MimeKit/4.16.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Qoj4aVvhX14A1FNvaJ33hzOP4VZI2j+Mr38I9wSGcjMq4BYDtWLJG89aJ9nRW2cNfH6Czjwyp7+Mh++xv3AZvg==",
-      "path": "mimekit/4.7.1",
-      "hashPath": "mimekit.4.7.1.nupkg.sha512"
+      "sha512": "sha512-X0LFxeM4gPRIhODyY/HYS9b+zRZ7y//v59rFzgS6wLxcPuZThnMtNZHtrr0fjLyRRkg3gqJBtvW36XfUzZ7Djw==",
+      "path": "mimekit/4.16.0",
+      "hashPath": "mimekit.4.16.0.nupkg.sha512"
     },
     "Minio/6.0.0": {
       "type": "package",
@@ -2166,19 +2167,19 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
-    "SharpCompress/0.30.1": {
+    "SharpCompress/0.48.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XqD4TpfyYGa7QTPzaGlMVbcecKnXy4YmYLDWrU+JIj7IuRNl7DH2END+Ll7ekWIY8o3dAMWLFDE1xdhfIWD1nw==",
-      "path": "sharpcompress/0.30.1",
-      "hashPath": "sharpcompress.0.30.1.nupkg.sha512"
+      "sha512": "sha512-6k0Sa9gf85Sz9Npy7jnn5UPerejrAa3FxU9Gq5T6PwFWHUhUIdF903TjPiJtrYjXFJsXbnccaWSNMHzEg27DwQ==",
+      "path": "sharpcompress/0.48.0",
+      "hashPath": "sharpcompress.0.48.0.nupkg.sha512"
     },
-    "Snappier/1.0.0": {
+    "Snappier/1.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rFtK2KEI9hIe8gtx3a0YDXdHOpedIf9wYCEYtBEmtlyiWVX3XlCNV03JrmmAi/Cdfn7dxK+k0sjjcLv4fpHnqA==",
-      "path": "snappier/1.0.0",
-      "hashPath": "snappier.1.0.0.nupkg.sha512"
+      "sha512": "sha512-DOdDQiO8YZ5rBtVLY+6CmR1yp9WYoJRgEEktPBrR0tEj9QO2djA/zv0O3DX0OZpEAfosbY8pytQ9tQUogwQsEA==",
+      "path": "snappier/1.3.1",
+      "hashPath": "snappier.1.3.1.nupkg.sha512"
     },
     "Snowflake.Data/4.4.1": {
       "type": "package",
@@ -2417,6 +2418,13 @@
       "sha512": "sha512-31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
       "path": "system.reactive/6.0.0",
       "hashPath": "system.reactive.6.0.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Pkcs/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CoCRHFym33aUSf/NtWSVSZa99dkd0Hm7OCZUxORBjRB16LNhIEOf8THPqzIYlvKM0nNDAPTRBa1FxEECrgaxxA==",
+      "path": "system.security.cryptography.pkcs/8.0.1",
+      "hashPath": "system.security.cryptography.pkcs.8.0.1.nupkg.sha512"
     },
     "System.Security.Cryptography.ProtectedData/8.0.0": {
       "type": "package",

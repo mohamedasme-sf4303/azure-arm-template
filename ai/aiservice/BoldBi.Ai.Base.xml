@@ -1906,7 +1906,7 @@
             Defines the contract for processing usage data for AI operations, including tracking the usage of models and handling license details.
             </summary>
         </member>
-        <member name="M:BoldBi.Ai.Base.Contracts.IUsageProcessor.ProcessUsage(BoldBi.Ai.Core.Models.AIResponseBuilder.AIUsage,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest)">
+        <member name="M:BoldBi.Ai.Base.Contracts.IUsageProcessor.ProcessUsage(BoldBi.Ai.Core.Models.AIResponseBuilder.AIUsage,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest,System.Boolean)">
             <summary>
             Processes the usage data for a specific AI operation.
             </summary>
@@ -1914,8 +1914,9 @@
             <param name="licenseKey">The license key used to validate the usage of AI services.</param>
             <param name="modelId">The ID of the AI model being used in the operation.</param>
             <param name="request">The request object that contains additional information related to the AI operation, such as the context and the operation type.</param>
+            <param name="hasError">Indicates whether the AI response contained an error.</param>
         </member>
-        <member name="M:BoldBi.Ai.Base.Contracts.IUsageProcessor.ProcessUsage(System.Int32,System.Int32,System.Int32,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest)">
+        <member name="M:BoldBi.Ai.Base.Contracts.IUsageProcessor.ProcessUsage(System.Int32,System.Int32,System.Int32,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest,System.Boolean)">
             <summary>
             Processes and updates the usage information for a specified AI operation.
             </summary>
@@ -1925,6 +1926,7 @@
             <param name="licenseKey">The license key used to validate the usage of AI services.</param>
             <param name="modelId">The ID of the AI model being used in the operation.</param>
             <param name="request">The request object that contains additional information related to the AI operation, such as the context and the operation type.</param>
+            <param name="hasError">Indicates whether the AI response contained an error.</param>
         </member>
         <member name="M:BoldBi.Ai.Base.Contracts.IUsageProcessor.ProcessUsage(System.Int32,System.String)">
             <summary>
@@ -3916,7 +3918,7 @@
             Helper class for managing and updating the cost of each request to OpenAI based on token usage.
             </summary>
         </member>
-        <member name="M:BoldBi.Ai.Base.Helpers.AmountUpdateHelper.ProcessUsage(BoldBi.Ai.Core.Models.AIResponseBuilder.AIUsage,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest)">
+        <member name="M:BoldBi.Ai.Base.Helpers.AmountUpdateHelper.ProcessUsage(BoldBi.Ai.Core.Models.AIResponseBuilder.AIUsage,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest,System.Boolean)">
             <summary>
             Processes the token usage details and updates the cost for each request based on the AI model.
             </summary>
@@ -3924,8 +3926,9 @@
             <param name="licenseKey">The license key associated with the request.</param>
             <param name="aiModel">The AI model used (e.g., GPT-3, GPT-4).</param>
             <param name="aiAssistanceRequest">The assistance request containing session and query details.</param>
+            <param name="hasError">Indicates whether the request has error.</param>
         </member>
-        <member name="M:BoldBi.Ai.Base.Helpers.AmountUpdateHelper.ProcessUsage(System.Int32,System.Int32,System.Int32,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest)">
+        <member name="M:BoldBi.Ai.Base.Helpers.AmountUpdateHelper.ProcessUsage(System.Int32,System.Int32,System.Int32,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest,System.Boolean)">
             <summary>
             Processes the token usage details and updates the cost for each request based on the AI model.
             </summary>
@@ -3935,6 +3938,7 @@
             <param name="licenseKey">The license key associated with the request.</param>
             <param name="aiModel">The AI model used (e.g., GPT-3, GPT-4).</param>
             <param name="aiAssistanceRequest">The assistance request containing session and query details.</param>
+            <param name="hasError">Indicates whether the request has error.</param>
         </member>
         <member name="M:BoldBi.Ai.Base.Helpers.AmountUpdateHelper.ProcessUsage(System.Int32,System.String)">
             <summary>
@@ -3943,7 +3947,7 @@
             <param name="totalToken">The total number of tokens used (input + output).</param>
             <param name="licenseKey">The license key associated with the request.</param>
         </member>
-        <member name="M:BoldBi.Ai.Base.Helpers.AmountUpdateHelper.UpdateTokenPerRequest(System.Int32,System.Int32,System.Int32,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest)">
+        <member name="M:BoldBi.Ai.Base.Helpers.AmountUpdateHelper.UpdateTokenPerRequest(System.Int32,System.Int32,System.Int32,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest,System.Boolean)">
             <summary>
             Calculates the cost of a single request based on token usage and the AI model.
             </summary>
@@ -3952,6 +3956,7 @@
             <param name="totalToken">The total number of tokens used (input + output).</param>
             <param name="aiModel">The AI model used to determine the token cost rates.</param>
             <param name="aiAssistanceRequest">The assistance request containing session and query details.</param>
+            <param name="hasError">Indicates whether the request has error.</param>
         </member>
         <member name="M:BoldBi.Ai.Base.Helpers.AmountUpdateHelper.FetchAndUpdateRequestLimit(System.String,System.Int32,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest)">
             <summary>
@@ -4109,6 +4114,56 @@
         <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.bold_ai_datasummarize_requests">
             <summary>
             Gets or sets the DbSet representing search activities for Bold AI Data Summary requests.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.LlmTokenUsages">
+            <summary>
+            Gets or sets the DbSet representing token usage for users.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.Organizations">
+            <summary>
+            Gets or sets the Organizations in the database.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.Teams">
+            <summary>
+            Gets or sets the Teams in the database.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.AspNetUsers">
+            <summary>
+            Gets or sets the AppUsers in the database.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.BudgetTemplates">
+            <summary>
+            Gets or sets the BudgetTemplates in the database.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.CreditWallets">
+            <summary>
+            Gets or sets the CreditWallets in the database.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.CreditLedgerEntries">
+            <summary>
+            Gets or sets the CreditLedgerEntries in the database.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.RequestLogs">
+            <summary>
+            Gets or sets the RequestLogs in the database.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.OrganizationSubscription">
+            <summary>
+            Gets or sets the OrganizationSubscription in the database.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.SubscriptionPlans">
+            <summary>
+            Gets or sets the SubscriptionPlans in the database.
             </summary>
         </member>
         <member name="M:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
@@ -4321,7 +4376,7 @@
             <summary>
             Retrieves the amount for a given license key.
             </summary>
-            <param name="aiKey">The license key to look up.</param>
+            <param name="licenseKey">The license key to look up.</param>
             <returns>An object containing the amount associated with the license key.</returns>
         </member>
         <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.Cloud.CloudFetchFromDb.GetPricingByMessage(System.String)">
@@ -4352,11 +4407,13 @@
             <param name="tenantId">The tenantId to look up.</param>
             <returns>JSON string containing the AI tokens and pricing details.</returns>
         </member>
-        <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.Cloud.CloudFetchFromDb.GetAiUsage(System.String)">
+        <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.Cloud.CloudFetchFromDb.GetAiUsage(System.String,System.String,System.String)">
             <summary>
             Fetches AI usage cost based AI key.
             </summary>
             <param name="inputJson">Json for getting balance amount for license.</param>
+            <param name="licenseKey">The licenseKey for which remaining must be fetched.</param>
+            <param name="apiVersion">The API version (1.0 for tokens, 2.0 for credits).</param>
             <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
         </member>
         <member name="T:BoldBi.Ai.Base.Helpers.DatabaseHelpers.Cloud.CloudLogHelper">
@@ -4469,11 +4526,12 @@
             Initializes a new instance of the <see cref="T:BoldBi.Ai.Base.Helpers.DatabaseHelpers.Cloud.CloudPricingLogHelper"/> class.
             </summary>
         </member>
-        <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.Cloud.CloudPricingLogHelper.#ctor(BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext)">
+        <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.Cloud.CloudPricingLogHelper.#ctor(BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext,BoldBi.Ai.Base.Helpers.DatabaseContext.UsageLogDbContext)">
             <summary>
             Initializes a new instance of the <see cref="T:BoldBi.Ai.Base.Helpers.DatabaseHelpers.Cloud.CloudPricingLogHelper"/> class with a specified <see cref="T:BoldBi.Ai.Base.Helpers.DatabaseContext.AppDbContext"/> instance.
             </summary>
             <param name="dbContext">Database context instance.</param>
+            <param name="usagedbContext">usage Database context instance.</param>
         </member>
         <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.Cloud.CloudPricingLogHelper.LogSearchUsageToDB(System.String)">
             <summary>
@@ -4609,7 +4667,7 @@
             <param name="jsonInput">The JSON input containing the tenant ID.</param>
             <returns>An object indicating whether the tenant is allowed access.</returns>
         </member>
-        <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.FetchFromDb.GetAmountByLicenseKey(System.String)">
+        <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.FetchFromDb.GetAmountByLicenseKeyAsync(System.String)">
             <summary>
             Retrieves the amount for a given license key.
             </summary>
@@ -4644,11 +4702,13 @@
             <param name="tenantId">The tenantId to look up.</param>
             <returns>JSON string containing the AI tokens and pricing details.</returns>
         </member>
-        <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.FetchFromDb.GetAiUsageAsync(System.String)">
+        <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.FetchFromDb.GetAiUsageAsync(System.String,System.String,System.String)">
             <summary>
             Fetches AI usage cost based AI key.
             </summary>
             <param name="inputJson">Json for getting balance amount for license.</param>
+            <param name="licenseKey">The licenseKey for which remaining must be fetched.</param>
+            <param name="apiVersion">The API version (1.0 for tokens, 2.0 for credits).</param>
             <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
         </member>
         <member name="T:BoldBi.Ai.Base.Helpers.DatabaseHelpers.OnPremise.OnPremiseFetchFromDb">
@@ -4704,11 +4764,13 @@
             <param name="tenantId">The tenantId to look up.</param>
             <returns>JSON string containing the AI tokens and pricing details.</returns>
         </member>
-        <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.OnPremise.OnPremiseFetchFromDb.GetAiUsage(System.String)">
+        <member name="M:BoldBi.Ai.Base.Helpers.DatabaseHelpers.OnPremise.OnPremiseFetchFromDb.GetAiUsage(System.String,System.String,System.String)">
             <summary>
             Fetches AI usage cost based AI key.
             </summary>
             <param name="inputJson">Json for getting balance amount for license.</param>
+            <param name="licenseKey">The licenseKey for which remaining must be fetched.</param>
+            <param name="apiVersion">The API version (1.0 for tokens, 2.0 for credits). On-premise only supports tokens.</param>
             <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
         </member>
         <member name="T:BoldBi.Ai.Base.Helpers.DatabaseHelpers.OnPremise.OnPremiseLogHelper">
@@ -6421,7 +6483,7 @@
             <param name="isActive">The active state of the session.</param>
             <param name="historyContent">The history content of the session.</param>
         </member>
-        <member name="M:BoldBi.Ai.Base.Helpers.SessionManager.LogSearchUsage(BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest,System.DateTimeOffset,System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Double)">
+        <member name="M:BoldBi.Ai.Base.Helpers.SessionManager.LogSearchUsage(BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest,System.DateTimeOffset,System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Double,System.String,System.Boolean)">
             <summary>
             Logs the search usage data including token counts and associated costs.
             </summary>
@@ -6433,6 +6495,8 @@
             <param name="inputTokenCost">The cost associated with input tokens.</param>
             <param name="outputTokenCost">The cost associated with output tokens.</param>
             <param name="totalTokensCost">The total cost of tokens used in the search.</param>
+            <param name="aiModel">The AI model used for the request.</param>
+            <param name="hasError">Indicates whether the request has error.</param>
         </member>
         <member name="M:BoldBi.Ai.Base.Helpers.SessionManager.LogUserDetails(BoldBi.Ai.Core.Models.AIInputBuilder.LoggingAssistance)">
             <summary>
@@ -6515,7 +6579,7 @@
             Processes and updates AI usage information for a given request.
             </summary>
         </member>
-        <member name="M:BoldBi.Ai.Base.Implementations.UsageProcessor.ProcessUsage(BoldBi.Ai.Core.Models.AIResponseBuilder.AIUsage,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest)">
+        <member name="M:BoldBi.Ai.Base.Implementations.UsageProcessor.ProcessUsage(BoldBi.Ai.Core.Models.AIResponseBuilder.AIUsage,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest,System.Boolean)">
             <summary>
             Processes and updates the usage information for a specified AI operation.
             </summary>
@@ -6523,8 +6587,9 @@
             <param name="licenseKey">The encrypted license key for the AI service.</param>
             <param name="modelId">The identifier of the AI model used.</param>
             <param name="request">The AI assistance request containing operation details.</param>
+            <param name="hasError">Indicates whether the request has error.</param>
         </member>
-        <member name="M:BoldBi.Ai.Base.Implementations.UsageProcessor.ProcessUsage(System.Int32,System.Int32,System.Int32,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest)">
+        <member name="M:BoldBi.Ai.Base.Implementations.UsageProcessor.ProcessUsage(System.Int32,System.Int32,System.Int32,System.String,System.String,BoldBi.Ai.Core.Models.AIInputBuilder.AiAssistanceRequest,System.Boolean)">
             <summary>
             Processes the token usage and updates the relevant information using the provided details.
             </summary>
@@ -6534,6 +6599,7 @@
             <param name="licenseKey">The encrypted license key for the tenant.</param>
             <param name="modelId">The ID of the AI model used for processing.</param>
             <param name="request">The AI assistance request object containing additional metadata.</param>
+            <param name="hasError">Indicates whether the request has error.</param>
         </member>
         <member name="M:BoldBi.Ai.Base.Implementations.UsageProcessor.ProcessUsage(System.Int32,System.String)">
             <summary>
@@ -6548,11 +6614,15 @@
             formatting insight lines into a basic HTML unordered list.
             </summary>
         </member>
-        <member name="M:BoldBi.Ai.Base.NlgProcesses.Builder.concrete.DashboardHtmlFormatter.FormatAsHtml(System.Collections.Generic.List{System.String})">
+        <member name="M:BoldBi.Ai.Base.NlgProcesses.Builder.concrete.DashboardHtmlFormatter.FormatAsHtml(System.Collections.Generic.List{System.String},System.Boolean)">
             <summary>
             Formats a list of insight lines into an HTML unordered list.
             </summary>
             <param name="insightLines">Insights generated from the AI model.</param>
+            <param name="isRtl">
+            <c>true</c> when the target language is right-to-left; <c>false</c> for LTR.
+            Resolved and validated by the caller — the raw culture string is never passed here.
+            </param>
             <returns>The HTML content containing the formatted insights.</returns>
         </member>
         <member name="T:BoldBi.Ai.Base.NlgProcesses.Builder.concrete.DefaultHtmlFormatter">
@@ -6561,11 +6631,17 @@
             formatting insight lines into a basic HTML unordered list.
             </summary>
         </member>
-        <member name="M:BoldBi.Ai.Base.NlgProcesses.Builder.concrete.DefaultHtmlFormatter.FormatAsHtml(System.Collections.Generic.List{System.String})">
+        <member name="M:BoldBi.Ai.Base.NlgProcesses.Builder.concrete.DefaultHtmlFormatter.FormatAsHtml(System.Collections.Generic.List{System.String},System.Boolean)">
             <summary>
             Formats a list of insight lines into an HTML unordered list.
+            Bullet alignment is determined automatically from the actual text content
+            by detecting RTL Unicode characters (Hebrew / Arabic ranges).
             </summary>
             <param name="insightLines">Insights generated from the AI model.</param>
+            <param name="isRtl">
+            <c>true</c> when the target language is right-to-left; <c>false</c> for LTR.
+            Resolved and validated by the caller — the raw culture string is never passed here.
+            </param>
             <returns>The HTML content containing the formatted insights.</returns>
         </member>
         <member name="T:BoldBi.Ai.Base.NlgProcesses.Builder.concrete.DefaultSystemPromptProvider">
@@ -6586,11 +6662,15 @@
             formatting insight lines into a basic HTML unordered list.
             </summary>
         </member>
-        <member name="M:BoldBi.Ai.Base.NlgProcesses.Builder.concrete.UnifiedAiHtmlFormatter.FormatAsHtml(System.Collections.Generic.List{System.String})">
+        <member name="M:BoldBi.Ai.Base.NlgProcesses.Builder.concrete.UnifiedAiHtmlFormatter.FormatAsHtml(System.Collections.Generic.List{System.String},System.Boolean)">
             <summary>
             Formats a list of insight lines into an HTML unordered list.
             </summary>
             <param name="insightLines">Insights generated from the AI model.</param>
+            <param name="isRtl">
+            <c>true</c> when the target language is right-to-left; <c>false</c> for LTR.
+            Resolved and validated by the caller — the raw culture string is never passed here.
+            </param>
             <returns>The HTML content containing the formatted insights.</returns>
         </member>
         <member name="T:BoldBi.Ai.Base.NlgProcesses.Builder.concrete.UnifiedAiSystemPromptProvider">
@@ -6610,11 +6690,17 @@
             Defines a contract for formatting a list of insight lines into an HTML string.
             </summary>
         </member>
-        <member name="M:BoldBi.Ai.Base.NlgProcesses.Builder.Interfaces.IHtmlFormatter.FormatAsHtml(System.Collections.Generic.List{System.String})">
+        <member name="M:BoldBi.Ai.Base.NlgProcesses.Builder.Interfaces.IHtmlFormatter.FormatAsHtml(System.Collections.Generic.List{System.String},System.Boolean)">
             <summary>
             Formats a list of insight lines into an HTML string.
             </summary>
             <param name="insightLines">The list of insight lines to format.</param>
+            <param name="isRtl">
+            <c>true</c> when the target language is right-to-left (e.g. Hebrew, Arabic);
+            <c>false</c> for left-to-right layouts. The caller must resolve and validate
+            the raw culture code via <c>RtlUtility.IsRtlCulture()</c> before invoking this
+            method, so the raw culture string never enters the formatter.
+            </param>
             <returns>A string containing the formatted HTML.</returns>
         </member>
         <member name="T:BoldBi.Ai.Base.NlgProcesses.Builder.Interfaces.ISystemPromptProvider">
@@ -6754,6 +6840,58 @@
             An instance of <see cref="T:BoldBi.Ai.Base.NlgProcesses.Builder.Interfaces.ISystemPromptProvider"/> corresponding to the provided request type.
             Returns <see cref="T:BoldBi.Ai.Base.NlgProcesses.Builder.concrete.DefaultSystemPromptProvider"/> if no matching provider is found.
             </returns>
+        </member>
+        <member name="T:BoldBi.Ai.Base.NlgProcesses.Utilities.HtmlSanitizerFactory">
+            <summary>
+            Factory that creates pre-configured <see cref="T:Ganss.Xss.HtmlSanitizer"/> instances
+            for sanitizing AI-generated insight HTML content.
+            </summary>
+        </member>
+        <member name="M:BoldBi.Ai.Base.NlgProcesses.Utilities.HtmlSanitizerFactory.CreateInsightSanitizer">
+            <summary>
+            Creates an <see cref="T:Ganss.Xss.HtmlSanitizer"/> configured with an allowlist of safe tags
+            and attributes suitable for rendering AI-generated insight content.
+            Blocks all dangerous vectors including script/iframe/svg/math/event handlers/
+            javascript: URIs/CSS expressions that a denylist approach would miss.
+            </summary>
+            <returns>A configured <see cref="T:Ganss.Xss.HtmlSanitizer"/> instance.</returns>
+        </member>
+        <member name="T:BoldBi.Ai.Base.NlgProcesses.Utilities.RtlUtility">
+            <summary>
+            Provides utility methods for Right-to-Left (RTL) language support,
+            including culture detection and HTML styling transformations.
+            </summary>
+        </member>
+        <member name="F:BoldBi.Ai.Base.NlgProcesses.Utilities.RtlUtility.RtlCultures">
+            <summary>
+            Supported RTL culture codes.
+            </summary>
+        </member>
+        <member name="F:BoldBi.Ai.Base.NlgProcesses.Utilities.RtlUtility.RegexTimeout">
+            <summary>
+            Maximum time allowed for a single regex replacement to guard against ReDoS.
+            </summary>
+        </member>
+        <member name="F:BoldBi.Ai.Base.NlgProcesses.Utilities.RtlUtility.ValidCultureCodePattern">
+            <summary>
+            Strict allowlist pattern for a valid culture code (e.g. "en", "he-IL", "zh-Hans-CN").
+            Prevents injection of arbitrary strings into HTML attributes via the culture parameter.
+            </summary>
+        </member>
+        <member name="M:BoldBi.Ai.Base.NlgProcesses.Utilities.RtlUtility.IsRtlCulture(System.String)">
+            <summary>
+            Determines whether the given culture code represents an RTL language.
+            </summary>
+            <param name="cultureCode">The culture code (e.g., "he", "he-IL", "ar-SA").</param>
+            <returns>True if the culture is RTL; otherwise, false.</returns>
+        </member>
+        <member name="M:BoldBi.Ai.Base.NlgProcesses.Utilities.RtlUtility.ApplyRtlTransformations(System.String)">
+            <summary>
+            Applies RTL-specific HTML transformations to ensure proper alignment of text,
+            bullets, emojis, and other elements in RTL layouts.
+            </summary>
+            <param name="htmlContent">The HTML content to transform.</param>
+            <returns>The HTML content with RTL transformations applied.</returns>
         </member>
         <member name="T:BoldBi.Ai.Base.NlgProcesses.WidgetInsightsProcess.WidgetInsightsProcessFlow">
             <summary>
