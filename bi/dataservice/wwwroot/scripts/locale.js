@@ -390,6 +390,8 @@
 					enableEncryptParameter: "Encrypt Parameters",
 					includeMasterWidgetFilters: "Include Master Widget Filters",
 					includeLinkingInExport: "Include Hyperlinks In Export",
+					enableSummaryCellLinking: "Enable Summary Link",
+                    enableSummaryCellLinkingInfo: "Controls whether hyperlinks are shown for summary value cells such as parent totals while child value cells remain linked",
                     mapQueryParameter: "Use Query Parameter Mapping",
                     escapeSpecialCharTooltipInfo: "Know More",
 					enableEncryptCharTooltipInfo: "The parameter with encryption can be configured in the dashboard URL. It does not support the external URL.",
@@ -418,7 +420,9 @@
 					interWidgetLinkingText: "Inter Widget Linking",
 					chooseMasterWidgets: "Choose Master Widgets",
 					dashboard: "Dashboard",
-					selectButtonText: "Select Dashboard"
+					selectButtonText: "Select Dashboard",
+                    ignoreFilters: "Ignore Filters",
+                    ignoreFiltersInfo: "When enabled, URL parameters from the current dashboard are not passed during button navigation."
                 },
 				lineWidgetProperties: {
 					verticalOrientation: "Vertical Orientation",
@@ -6842,6 +6846,8 @@
                 rightArrowText: "RightArrow",
                 circleCloseText: "CircleClose",
                 flagText: "Flag",
+				alertWindowTitle: "Window Expression",
+				alertWindowMessage: "Windows Expressions Are not supported for Advanced Color Customization",
             },
             advancedColorCustomizationLocale: {
                 advanceSettingsTitle: "Advanced Settings",
@@ -9057,7 +9063,7 @@
 				AzureServerError : "AI service is temporarily unavailable due to an upstream issue. Please try again later.",
 				sessionUsage: "Session Usage",
 				todayUsage: "Today Usage",
-				remainingBalance: "Remaining Balance",
+				remainingBalance: "Balance",
 				yesButton: "Yes",
 				noButton: "No",
 				widgetRoleMessage: "Quick visual questions to create individual charts or KPIs.",
@@ -9102,7 +9108,15 @@
 				addContextPlaceholderText: "e.g., This column describes actions shown in an activity feed within our app",
 				addContextPlaceholderTextForValue: "e.g., This value represents an internal category used in sports analytics reports",
 				footerDisclaimerText: "Changes apply at the datasource level and affect new AI interactions.",
-				contextForAIOptional:"Context for AI (optional)"
+				contextForAIOptional:"Context for AI (optional)",
+				dataTypeMismatchError: "The query could not be executed due to a data type mismatch. Please check the required column types on the Datasource page to ensure they are valid.",
+				DashboardParameterNotSupported: "Dashboard parameters linked across data sources are not supported. Please ask queries without dashboard parameter filters.",
+				DashboardParameterFirstValueNotSet: "List-type dashboard parameters are supported. Only the first value will be used. Please select the first value.",
+				creditExhausted:"Your AI usage credits have been exhausted.",
+				buyCredits:"You can manage or purchase credits ",
+				buyPermission:"If you do not have permission, please contact your administrator.",
+				helpDocLink: "For more details, refer to the ",
+				contactSupport: "Please contact support to add more credits",
             },
 			unifiedAiChat: {
 				selection1: "Dashboards",

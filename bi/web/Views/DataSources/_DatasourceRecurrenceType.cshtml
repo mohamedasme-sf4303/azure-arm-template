@@ -406,7 +406,7 @@
                         </span>
                     }
                 }
-                else
+                else if (minimumTime != null && minimumTime.Length == 2 && minimumTime[1] != "day" && minimumTime[1] != "month" && minimumTime[1] != "week")
                 {
                     if (isSelfHosted && isAdmin)
                     {
@@ -427,6 +427,28 @@
                         </span>
                     }
                 }
+                else
+                {
+                    if (isSelfHosted && isAdmin)
+                    {
+                        <span class="admin-refresh-interval-warning-message" id="refresh-interval-warning-message" style="display:none">
+                            @Html.Raw(string.Format(T["Your minimum data refresh interval is {0} {1}. Please {2}upgrade your plan{3} or {4}contact us{5} to reduce the data refresh interval."].Value, minimumTime[0], minimumTime[1], "<a href='" + manageLicenseSettingsUrl + "' target='_blank'>", "</a>", "<a target='_blank' href='https://www." + (GlobalAppSettings.BrandingDomain) + "/contact'>", "</a>"))
+                        </span>
+                    }
+                    else if (!isSelfHosted && isAdmin)
+                    {
+                        <span class="admin-refresh-interval-warning-message" id="refresh-interval-warning-message" style="display:none">
+                            @Html.Raw(string.Format(T["Your minimum data refresh interval is {0} {1}. Please {2}contact us{3} to reduce the data refresh interval."].Value, minimumTime[0], minimumTime[1], "<a class='request-concierge-support' target='_blank' href='https://www." + (GlobalAppSettings.BrandingDomain) + "/contact'>", "</a>"))
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="refresh-interval-warning-message" id="refresh-interval-warning-message" style="display:none">
+                            @string.Format(T["Your minimum data refresh interval is {0} {1}. Please check with your administrator to reduce the data refresh interval."].Value, minimumTime[0], minimumTime[1])
+                        </span>
+                    }
+                }
+
             </div>
             @if (!isDataCache)
             {

@@ -218,7 +218,7 @@
             Handles site based requests for paid plan users, checking for rate limit and balance.
             </summary>
             <param name="context">The authorization filter context for the current request.</param>
-            <param name="siteId">The siteId for which the remaining balance amount is being fetched.</param>
+            <param name="licenseKey">The licenseKey from auth header.</param>
         </member>
         <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.IsRequestAllowed(System.String,System.String)">
             <summary>
@@ -236,15 +236,14 @@
             <param name="siteId">The siteId for which the remaining balance amount is being fetched.</param>
             <returns>The maximum number of allowed requests per minute.</returns>
         </member>
-        <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.FetchRemainingAmount(System.String,System.String)">
+        <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.FetchRemainingAmount(System.String)">
             <summary>
             Fetches the remaining balance amount for a given license key from the database.
             </summary>
-            <param name="licenseKey">The license key for which the remaining balance amount is being fetched.</param>
-            <param name="siteId">The siteId for which the remaining balance amount is being fetched.</param>
+            <param name="licenseId">The licenseId for which the remaining balance amount is being fetched.</param>
             <returns>The remaining balance amount for the license key.</returns>
         </member>
-        <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.SetRateLimitExceeded(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext,System.Int32,System.Nullable{System.Double},System.Nullable{System.Int32})">
+        <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.SetRateLimitExceeded(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext,System.Int32,System.Nullable{System.Decimal},System.Nullable{System.Int32})">
             <summary>
             Sets the rate limit exceeded result and returns an appropriate response.
             </summary>
@@ -252,6 +251,55 @@
             <param name="statusCode">The status code for the response, typically 429 (Too Many Requests).</param>
             <param name="remainingAmount">The remaining balance amount, if applicable.</param>
             <param name="rateLimit">The maximum allowed rate limit, if applicable.</param>
+        </member>
+        <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.CalculateUserRemainingBudget(System.String)">
+            <summary>
+            Calculates the remaining budget for a user using the following fallback chain:
+            1. User's own budget template.
+            2. First team's budget template (if user has no budget).
+            3. Organization credit wallet (if neither user nor team has a budget).
+            </summary>
+            <param name="userId">The user ID to calculate remaining budget for.</param>
+            <returns>The remaining budget amount in USD, or available org credits as a fallback.</returns>
+        </member>
+        <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.CalculateBudgetPeriod(System.String)">
+            <summary>
+            Calculates the budget period (start and end date) based on the duration type.
+            Uses Template Method pattern for different duration strategies.
+            </summary>
+            <param name="duration">The budget duration (monthly, quarterly, half-yearly, yearly).</param>
+            <returns>A tuple containing the start and end date of the budget period.</returns>
+        </member>
+        <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.CalculateTotalSpent(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            Calculates the total amount spent by a user within a specific date range.
+            </summary>
+            <param name="userId">The user ID.</param>
+            <param name="startDate">The start date of the period.</param>
+            <param name="endDate">The end date of the period.</param>
+            <returns>The total cost spent in the period.</returns>
+        </member>
+        <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.GetLicenseCreditBalance(System.String)">
+            <summary>
+            Gets the organization's credit wallet balance as a fallback.
+            Checks if license has available credits (subscription + recharge balance).
+            Returns a positive value if credits exist, 0 if no credits.
+            </summary>
+            <param name="licenseId">The license ID</param>
+            <returns>1 if credits available, 0 if no credits (used as a gate check, not actual amount).</returns>
+        </member>
+        <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.HandleExpiredSubscriptionAsync(System.String)">
+            <summary>
+            Checks for expired subscriptions and resets their balance if applicable.
+            </summary>
+            <param name="licenseId">The license Id (organization ID) to check.</param>
+        </member>
+        <member name="M:BoldBi.Ai.Service.Authentication.RateLimitHelper.ResetSubscriptionBalanceAsync(System.Guid)">
+            <summary>
+            Resets the subscription balance for an organization when subscription expires.
+            Creates a ledger entry and resets wallet balances.
+            </summary>
+            <param name="organizationId">The organization ID.</param>
         </member>
         <member name="T:BoldBi.Ai.Service.Authentication.StaticTokenAuthentication">
             <summary>
@@ -810,6 +858,24 @@
         <member name="M:BoldBi.Ai.Service.Controllers.AiPricingLoggerController.GetAiUsageAsync(System.Object)">
             <summary>
             Retrieves usage details for session, today and remaining
+            </summary>
+            <param name="inputData">Contains the sessionId and tenantId</param>
+            <returns>A json string containing the usage details for specified session, date and tenant</returns>
+        </member>
+        <member name="T:BoldBi.Ai.Service.Controllers.AiPricingLoggerV2Controller">
+            <summary>
+            Controller for handling AI pricing log requests - V2.
+            </summary>
+        </member>
+        <member name="M:BoldBi.Ai.Service.Controllers.AiPricingLoggerV2Controller.#ctor(BoldBi.Ai.Base.Helpers.DatabaseHelpers.FetchFromDb)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BoldBi.Ai.Service.Controllers.AiPricingLoggerV2Controller"/> class.
+            </summary>
+            <param name="fetchFromDb"></param>
+        </member>
+        <member name="M:BoldBi.Ai.Service.Controllers.AiPricingLoggerV2Controller.GetAiUsageAsync(System.Object)">
+            <summary>
+            Retrieves usage details for session, today and remaining (V2).
             </summary>
             <param name="inputData">Contains the sessionId and tenantId</param>
             <returns>A json string containing the usage details for specified session, date and tenant</returns>

@@ -3,7 +3,8 @@
     var isMaster = globalAppSettings.SystemSettings.IsMaster;
     bool isSelfHosted = ServerAppConfig.IsSelfHosted;
     ViewBag.Title = T["AI Service"].Value + " - " + globalAppSettings.SystemSettings.OrganizationName;
-    var isSettingsTab = (string.IsNullOrWhiteSpace(Context.Request.Query["view"]) || Context.Request.Query["view"] == "ai-settings") ? "active" : string.Empty;
+    var isSettingsTab = (string.IsNullOrWhiteSpace(Context.Request.Query["view"]) || Context.Request.Query["view"] == "ai-settings" || Context.Request.Query["view"] == "general") ? "active" : string.Empty;
+    var isCreditsTab = (Context.Request.Query["view"] == "credits") ? "active" : string.Empty;
     var selectedAIModel = ViewBag.aiCredentials?.AIModel ?? (int)AIModel.BoldAIService;
     var aiProviders = new List<SelectListItem>
     {
@@ -34,6 +35,7 @@
     var pageDescription = T["Configuration for AI settings."];
     var requestUrl = new Uri(Context.Request.GetDisplayUrl());
     var aimodelContent =  GlobalAppSettings.GetHelpSiteUrl(HelpSiteUrlNames.AiModel);
+    var buyAiCredits = GlobalAppSettings.GetHelpSiteUrl(HelpSiteUrlNames.BuyAICredits);
     var enableAiSupport = ServerAppConfig.EnableAiFeature && globalAppSettings.SystemSettings.IsAiServiceEnabled;
     var boldaiservice = GlobalAppSettings.GetDescription(AIModel.BoldAIService);
     var openai = GlobalAppSettings.GetDescription(AIModel.OpenAI);
@@ -72,11 +74,21 @@
         @await Html.PartialAsync("../Shared/_TopHeaderSection", new ViewDataDictionary(ViewData) { { "PageHeader", @T["AI Settings"] }, { "PageDescription", @pageDescription } })
         <div class="col-12 bi-page-header @((!isSelfHosted || isMaster) ? "tabs-header-padding" : string.Empty) top-nav-btn-secton">
             <div class="col-12 no-padding">
-                <div class="col-xs-6 no-padding button-section">
+                <div class="col-xs-6 no-padding button-section ai-settings-option">
                     <a href="@Url.Action("AiServiceSettings", "Administration")" class="secondary-button app-btn-secondary float-end" id="cancel-dashboard-settings" title="">@T["Cancel"]</a>
                     <input type="button" title="" id="update-ai-settings" class="primary-button app-btn-primary pull-right" value="@T["Save"]"/>
                 </div>
             </div>
+        </div>
+        <div class="col-12 float-start no-padding bi-page-nav-bar">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="@isSettingsTab">
+                    <a href="#ai-settings" id="ai-settings-tab" aria-controls="ai-settings-tab" role="tab" class="text-decoration-none" data-bs-toggle="tab">@T["General"]</a>
+                </li>
+                <li role="presentation" class="@isCreditsTab">
+                    <a href="#ai-credits" id="ai-credits-tab" aria-controls="ai-credits-tab" role="tab" class="text-decoration-none" data-bs-toggle="tab">@T["Credits"]</a>
+                </li>
+            </ul>
         </div>
     </div>
    
@@ -213,6 +225,20 @@
                             }
 
                         </form>
+                </div>
+                <div role="tabpanel" class="tab-pane ai-page-body @isCreditsTab" id="ai-credits">
+                    <div id="ai-credits-body" class="admin-page-body col-12 float-start bi-page-body">
+                        <div class="ai-credits-section col-12 float-start">
+                                <a id="buy-ai-credits" class="primary-button app-btn-primary ms-0" href="@(ServerAppConfig.AppSettings.Documentation.BaseUri + buyAiCredits)" target="_blank">
+                                    @T["Buy AI Credits"]
+                                </a>
+                            <div class="credits-content col-12 float-start no-padding input-field-margin">
+                                <div class="credits-info-card col-12 mt-3 float-start">
+                                    <p class="credits-info-text">@T["Purchase additional AI credits to extend your AI service usage and capabilities."]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
