@@ -11434,3 +11434,12 @@ msgstr ""
 
 msgid "AI Assistant"
 msgstr ""
+
+msgid "Credits"
+msgstr ""
+
+msgid "Buy AI Credits"
+msgstr ""
+
+msgid "Purchase additional AI credits to extend your AI service usage and capabilities."
+msgstr ""

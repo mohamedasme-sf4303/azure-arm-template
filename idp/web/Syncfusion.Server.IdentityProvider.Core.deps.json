@@ -34,7 +34,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Syncfusion.Server.IdentityProvider.Core/15.3.8": {
+      "Syncfusion.Server.IdentityProvider.Core/15.3.53": {
         "dependencies": {
           "AWS.Logger.Log4net": "3.3.1",
           "AspNet.Security.OpenId.Steam": "3.1.0",
@@ -64,22 +64,22 @@
           "SecurityCodeScan.VS2019": "5.6.7",
           "StyleCop.Analyzers": "1.2.0-beta.435",
           "Syncfusion.Bold.Core": "3.5.1",
-          "Syncfusion.Server.API.Base.Core": "15.3.8",
-          "Syncfusion.Server.Base.Core": "15.3.8",
-          "Syncfusion.Server.Base.Data.Core": "15.3.8",
-          "Syncfusion.Server.Base.DataClasses.Core": "15.3.8",
-          "Syncfusion.Server.Base.Encryption": "15.3.8",
-          "Syncfusion.Server.Base.LicenseManagement.Core": "15.3.8",
-          "Syncfusion.Server.Base.Logger": "15.3.8",
-          "Syncfusion.Server.Base.Middlewares": "15.3.8",
-          "Syncfusion.Server.Base.Resources.Storage.Core": "15.3.8",
-          "Syncfusion.Server.Base.TemplateGenerator": "15.3.8",
-          "Syncfusion.Server.Base.TenantManagement.Client.Core": "15.3.8",
+          "Syncfusion.Server.API.Base.Core": "15.3.53",
+          "Syncfusion.Server.Base.Core": "15.3.53",
+          "Syncfusion.Server.Base.Data.Core": "15.3.53",
+          "Syncfusion.Server.Base.DataClasses.Core": "15.3.53",
+          "Syncfusion.Server.Base.Encryption": "15.3.53",
+          "Syncfusion.Server.Base.LicenseManagement.Core": "15.3.53",
+          "Syncfusion.Server.Base.Logger": "15.3.53",
+          "Syncfusion.Server.Base.Middlewares": "15.3.53",
+          "Syncfusion.Server.Base.Resources.Storage.Core": "15.3.53",
+          "Syncfusion.Server.Base.TemplateGenerator": "15.3.53",
+          "Syncfusion.Server.Base.TenantManagement.Client.Core": "15.3.53",
           "System.Text.Json": "9.0.0",
           "System.Text.RegularExpressions": "4.3.1",
           "System.Windows.Extensions": "9.0.5",
           "jose-jwt": "5.1.1",
-          "log4net": "2.0.17",
+          "log4net": "3.3.1",
           "Microsoft.AspNetCore.Antiforgery.Reference": "8.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "8.0.0.0",
           "Microsoft.AspNetCore.Authentication.BearerToken": "8.0.0.0",
@@ -479,7 +479,7 @@
       "AWS.Logger.Log4net/3.3.1": {
         "dependencies": {
           "AWS.Logger.Core": "3.1.0",
-          "log4net": "2.0.17"
+          "log4net": "3.3.1"
         },
         "runtime": {
           "lib/netstandard2.0/AWS.Logger.Log4net.dll": {
@@ -661,11 +661,11 @@
           "lib/net6.0/Bold.Licensing.dll": {}
         }
       },
-      "BouncyCastle.Cryptography/2.4.0": {
+      "BouncyCastle.Cryptography/2.6.2": {
         "runtime": {
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.4.0.33771"
+            "fileVersion": "2.6.2.46322"
           }
         },
         "compile": {
@@ -767,20 +767,19 @@
           "lib/netstandard2.0/ExcelNumberFormat.dll": {}
         }
       },
-      "HtmlSanitizer/8.0.843": {
+      "HtmlSanitizer/9.0.892": {
         "dependencies": {
           "AngleSharp": "0.17.1",
-          "AngleSharp.Css": "0.17.0",
-          "System.Collections.Immutable": "8.0.0"
+          "AngleSharp.Css": "0.17.0"
         },
         "runtime": {
-          "lib/netstandard2.0/HtmlSanitizer.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.843.0"
+          "lib/net8.0/HtmlSanitizer.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.892.0"
           }
         },
         "compile": {
-          "lib/netstandard2.0/HtmlSanitizer.dll": {}
+          "lib/net8.0/HtmlSanitizer.dll": {}
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -806,32 +805,33 @@
           "lib/netstandard2.1/jose-jwt.dll": {}
         }
       },
-      "log4net/2.0.17": {
+      "log4net/3.3.1": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "8.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/log4net.dll": {
-            "assemblyVersion": "2.0.17.0",
-            "fileVersion": "2.0.17.0"
+            "assemblyVersion": "3.3.1.0",
+            "fileVersion": "3.3.1.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/log4net.dll": {}
         }
       },
-      "MailKit/3.4.3": {
+      "MailKit/4.16.0": {
         "dependencies": {
-          "MimeKit": "4.7.1"
+          "MimeKit": "4.16.0",
+          "System.Formats.Asn1": "8.0.1"
         },
         "runtime": {
-          "lib/net6.0/MailKit.dll": {
-            "assemblyVersion": "3.4.0.0",
-            "fileVersion": "3.4.3.0"
+          "lib/net8.0/MailKit.dll": {
+            "assemblyVersion": "4.16.0.0",
+            "fileVersion": "4.16.0.0"
           }
         },
         "compile": {
-          "lib/net6.0/MailKit.dll": {}
+          "lib/net8.0/MailKit.dll": {}
         }
       },
       "Microsoft.ApplicationInsights/2.21.0": {
@@ -904,7 +904,7 @@
       "Microsoft.ApplicationInsights.Log4NetAppender/2.21.0": {
         "dependencies": {
           "Microsoft.ApplicationInsights": "2.21.0",
-          "log4net": "2.0.17"
+          "log4net": "3.3.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.ApplicationInsights.Log4NetAppender.dll": {
@@ -1302,7 +1302,7 @@
       "Microsoft.CodeAnalysis.Common/4.4.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "3.3.3",
-          "System.Collections.Immutable": "8.0.0",
+          "System.Collections.Immutable": "6.0.0",
           "System.Memory": "4.5.5",
           "System.Reflection.Metadata": "5.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
@@ -2146,16 +2146,15 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
         }
       },
-      "MimeKit/4.7.1": {
+      "MimeKit/4.16.0": {
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.4.0",
-          "System.Formats.Asn1": "8.0.1",
-          "System.Security.Cryptography.Pkcs": "8.0.0"
+          "BouncyCastle.Cryptography": "2.6.2",
+          "System.Security.Cryptography.Pkcs": "8.0.1"
         },
         "runtime": {
           "lib/net8.0/MimeKit.dll": {
-            "assemblyVersion": "4.7.0.0",
-            "fileVersion": "4.7.1.0"
+            "assemblyVersion": "4.16.0.0",
+            "fileVersion": "4.16.0.0"
           }
         },
         "compile": {
@@ -2276,7 +2275,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0",
-          "System.Collections.Immutable": "8.0.0",
+          "System.Collections.Immutable": "6.0.0",
           "System.ComponentModel.Annotations": "4.7.0",
           "System.Text.Encodings.Web": "9.0.0",
           "System.Text.Json": "9.0.0"
@@ -2934,6 +2933,25 @@
           }
         }
       },
+      "System.Security.Cryptography.Pkcs/8.0.1": {
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        },
+        "compile": {
+          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {}
+        }
+      },
       "System.Security.Cryptography.ProtectedData/8.0.0": {
         "runtime": {
           "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -2947,7 +2965,7 @@
       },
       "System.Security.Cryptography.Xml/4.7.1": {
         "dependencies": {
-          "System.Security.Cryptography.Pkcs": "8.0.0",
+          "System.Security.Cryptography.Pkcs": "8.0.1",
           "System.Security.Permissions": "4.7.0"
         }
       },
@@ -3041,29 +3059,29 @@
           "lib/net6.0/TimeZoneConverter.dll": {}
         }
       },
-      "Syncfusion.Server.API.Base.Core/15.3.8": {
+      "Syncfusion.Server.API.Base.Core/15.3.53": {
         "dependencies": {
           "AWS.Logger.Log4net": "3.3.1",
           "ClosedXML": "0.105.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.2.0",
           "Syncfusion.Bold.Core": "3.5.1",
-          "Syncfusion.Server.Base.Core": "15.3.8",
-          "Syncfusion.Server.Base.Data.Core": "15.3.8",
-          "Syncfusion.Server.Base.DataClasses.Core": "15.3.8",
-          "Syncfusion.Server.Base.Resources.Storage.Core": "15.3.8",
-          "log4net": "2.0.17"
+          "Syncfusion.Server.Base.Core": "15.3.53",
+          "Syncfusion.Server.Base.Data.Core": "15.3.53",
+          "Syncfusion.Server.Base.DataClasses.Core": "15.3.53",
+          "Syncfusion.Server.Base.Resources.Storage.Core": "15.3.53",
+          "log4net": "3.3.1"
         },
         "runtime": {
           "Syncfusion.Server.API.Base.Core.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.API.Base.Core.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Core/15.3.8": {
+      "Syncfusion.Server.Base.Core/15.3.53": {
         "dependencies": {
           "AWS.Logger.Log4net": "3.3.1",
           "Amazon.AspNetCore.DataProtection.SSM": "3.1.0",
@@ -3072,8 +3090,8 @@
           "Azure.Storage.Blobs": "12.14.1",
           "Bold.Licensing": "4.2.52",
           "ClosedXML": "0.105.0",
-          "HtmlSanitizer": "8.0.843",
-          "MailKit": "3.4.3",
+          "HtmlSanitizer": "9.0.892",
+          "MailKit": "4.16.0",
           "Microsoft.AspNetCore.Authentication": "2.2.0",
           "Microsoft.AspNetCore.Hosting": "2.2.7",
           "Microsoft.AspNetCore.Http": "2.3.0",
@@ -3086,7 +3104,7 @@
           "Microsoft.Extensions.Hosting": "6.0.1",
           "Microsoft.Graph": "5.28.0",
           "Microsoft.IdentityModel.Tokens": "6.36.0",
-          "MimeKit": "4.7.1",
+          "MimeKit": "4.16.0",
           "MySqlConnector": "2.2.7",
           "Newtonsoft.Json": "13.0.3",
           "Npgsql": "7.0.7",
@@ -3097,14 +3115,14 @@
           "SkiaSharp.NativeAssets.Win32": "3.116.1",
           "SkiaSharp.NativeAssets.macOS": "3.116.1",
           "Syncfusion.Bold.Core": "3.5.1",
-          "Syncfusion.Server.Base.Data.Core": "15.3.8",
-          "Syncfusion.Server.Base.DataClasses.Core": "15.3.8",
-          "Syncfusion.Server.Base.Encryption": "15.3.8",
-          "Syncfusion.Server.Base.Localization": "15.3.8",
-          "Syncfusion.Server.Base.Logger": "15.3.8",
-          "Syncfusion.Server.Base.MarkdownSharp.Core": "15.3.8",
-          "Syncfusion.Server.Base.Resources.Storage.Core": "15.3.8",
-          "Syncfusion.Server.Base.TemplateGenerator": "15.3.8",
+          "Syncfusion.Server.Base.Data.Core": "15.3.53",
+          "Syncfusion.Server.Base.DataClasses.Core": "15.3.53",
+          "Syncfusion.Server.Base.Encryption": "15.3.53",
+          "Syncfusion.Server.Base.Localization": "15.3.53",
+          "Syncfusion.Server.Base.Logger": "15.3.53",
+          "Syncfusion.Server.Base.MarkdownSharp.Core": "15.3.53",
+          "Syncfusion.Server.Base.Resources.Storage.Core": "15.3.53",
+          "Syncfusion.Server.Base.TemplateGenerator": "15.3.53",
           "System.CodeDom": "8.0.0",
           "System.DirectoryServices.AccountManagement": "8.0.0",
           "System.DirectoryServices.Protocols": "8.0.0",
@@ -3114,19 +3132,19 @@
           "System.Text.Json": "9.0.0",
           "System.Text.RegularExpressions": "4.3.1",
           "TimeZoneConverter": "6.0.1",
-          "log4net": "2.0.17"
+          "log4net": "3.3.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.Core.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Core.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Data.Core/15.3.8": {
+      "Syncfusion.Server.Base.Data.Core/15.3.53": {
         "dependencies": {
           "AWS.Logger.Log4net": "3.3.1",
           "ClosedXML": "0.105.0",
@@ -3135,24 +3153,24 @@
           "MySqlConnector": "2.2.7",
           "Npgsql": "7.0.7",
           "Oracle.ManagedDataAccess.Core": "3.21.130",
-          "Syncfusion.Server.Base.DataClasses.Core": "15.3.8",
+          "Syncfusion.Server.Base.DataClasses.Core": "15.3.53",
           "System.Data.Odbc": "8.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.36.0",
           "System.Text.Json": "9.0.0",
           "System.Windows.Extensions": "9.0.5",
-          "log4net": "2.0.17"
+          "log4net": "3.3.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.Data.Core.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Data.Core.dll": {}
         }
       },
-      "Syncfusion.Server.Base.DataClasses.Core/15.3.8": {
+      "Syncfusion.Server.Base.DataClasses.Core/15.3.53": {
         "dependencies": {
           "AWS.Logger.Log4net": "3.3.1",
           "AWSSDK.S3": "3.7.415.18",
@@ -3162,162 +3180,162 @@
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.Localization.Abstractions": "6.0.9",
           "Newtonsoft.Json": "13.0.3",
-          "Syncfusion.Server.Base.Encryption": "15.3.8",
-          "Syncfusion.Server.Base.Localization": "15.3.8",
-          "Syncfusion.Server.Base.Logger": "15.3.8",
+          "Syncfusion.Server.Base.Encryption": "15.3.53",
+          "Syncfusion.Server.Base.Localization": "15.3.53",
+          "Syncfusion.Server.Base.Logger": "15.3.53",
           "System.Configuration.ConfigurationManager": "8.0.0",
           "System.Text.Encodings.Web": "9.0.0",
-          "log4net": "2.0.17"
+          "log4net": "3.3.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.DataClasses.Core.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.DataClasses.Core.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Encryption/15.3.8": {
+      "Syncfusion.Server.Base.Encryption/15.3.53": {
         "dependencies": {
-          "Syncfusion.Server.Base.Logger": "15.3.8"
+          "Syncfusion.Server.Base.Logger": "15.3.53"
         },
         "runtime": {
           "Syncfusion.Server.Base.Encryption.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Encryption.dll": {}
         }
       },
-      "Syncfusion.Server.Base.LicenseManagement.Core/15.3.8": {
+      "Syncfusion.Server.Base.LicenseManagement.Core/15.3.53": {
         "dependencies": {
           "ClosedXML": "0.105.0",
           "Microsoft.Win32.Registry": "5.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Syncfusion.Bold.Core": "3.5.1",
-          "Syncfusion.Server.Base.Core": "15.3.8",
-          "Syncfusion.Server.Base.DataClasses.Core": "15.3.8",
-          "Syncfusion.Server.Base.Encryption": "15.3.8",
-          "Syncfusion.Server.Base.Resources.Storage.Core": "15.3.8"
+          "Syncfusion.Server.Base.Core": "15.3.53",
+          "Syncfusion.Server.Base.DataClasses.Core": "15.3.53",
+          "Syncfusion.Server.Base.Encryption": "15.3.53",
+          "Syncfusion.Server.Base.Resources.Storage.Core": "15.3.53"
         },
         "runtime": {
           "Syncfusion.Server.Base.LicenseManagement.Core.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.LicenseManagement.Core.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Localization/15.3.8": {
+      "Syncfusion.Server.Base.Localization/15.3.53": {
         "dependencies": {
           "Microsoft.Extensions.Localization.Abstractions": "6.0.9"
         },
         "runtime": {
           "Syncfusion.Server.Base.Localization.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Localization.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Logger/15.3.8": {
+      "Syncfusion.Server.Base.Logger/15.3.53": {
         "dependencies": {
           "AWS.Logger.Log4net": "3.3.1",
           "AWSSDK.S3": "3.7.415.18",
           "Microsoft.ApplicationInsights.Log4NetAppender": "2.21.0",
           "System.Configuration.ConfigurationManager": "8.0.0",
-          "log4net": "2.0.17"
+          "log4net": "3.3.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.Logger.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Logger.dll": {}
         }
       },
-      "Syncfusion.Server.Base.MarkdownSharp.Core/15.3.8": {
+      "Syncfusion.Server.Base.MarkdownSharp.Core/15.3.53": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "8.0.0"
         },
         "runtime": {
           "Syncfusion.Server.Base.MarkdownSharp.Core.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.MarkdownSharp.Core.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Middlewares/15.3.8": {
+      "Syncfusion.Server.Base.Middlewares/15.3.53": {
         "dependencies": {
           "ClosedXML": "0.105.0",
           "Microsoft.ApplicationInsights.AspNetCore": "2.21.0",
           "Syncfusion.Bold.Core": "3.5.1",
-          "Syncfusion.Server.Base.Core": "15.3.8"
+          "Syncfusion.Server.Base.Core": "15.3.53"
         },
         "runtime": {
           "Syncfusion.Server.Base.Middlewares.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Middlewares.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Resources.Storage.Core/15.3.8": {
+      "Syncfusion.Server.Base.Resources.Storage.Core/15.3.53": {
         "dependencies": {
           "AWS.Logger.Log4net": "3.3.1",
           "AWSSDK.S3": "3.7.415.18",
           "Azure.Storage.Blobs": "12.14.1",
           "ClosedXML": "0.105.0",
           "Microsoft.Azure.Storage.Blob": "11.2.3",
-          "Syncfusion.Server.Base.DataClasses.Core": "15.3.8",
-          "Syncfusion.Server.Base.Logger": "15.3.8",
-          "Syncfusion.Server.Base.TemplateGenerator": "15.3.8",
+          "Syncfusion.Server.Base.DataClasses.Core": "15.3.53",
+          "Syncfusion.Server.Base.Logger": "15.3.53",
+          "Syncfusion.Server.Base.TemplateGenerator": "15.3.53",
           "System.Text.Encodings.Web": "9.0.0",
           "System.Text.Json": "9.0.0",
           "System.Text.RegularExpressions": "4.3.1",
-          "log4net": "2.0.17"
+          "log4net": "3.3.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.Resources.Storage.Core.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Resources.Storage.Core.dll": {}
         }
       },
-      "Syncfusion.Server.Base.TemplateGenerator/15.3.8": {
+      "Syncfusion.Server.Base.TemplateGenerator/15.3.53": {
         "dependencies": {
           "ClosedXML": "0.105.0",
-          "Syncfusion.Server.Base.DataClasses.Core": "15.3.8"
+          "Syncfusion.Server.Base.DataClasses.Core": "15.3.53"
         },
         "runtime": {
           "Syncfusion.Server.Base.TemplateGenerator.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.TemplateGenerator.dll": {}
         }
       },
-      "Syncfusion.Server.Base.TenantManagement.Client.Core/15.3.8": {
+      "Syncfusion.Server.Base.TenantManagement.Client.Core/15.3.53": {
         "dependencies": {
           "AWS.Logger.Log4net": "3.3.1",
           "AWSSDK.S3": "3.7.415.18",
@@ -3325,14 +3343,14 @@
           "OCI.DotNetSDK.Common": "106.0.0",
           "OCI.DotNetSDK.Objectstorage": "106.0.0",
           "Syncfusion.Bold.Core": "3.5.1",
-          "Syncfusion.Server.Base.Core": "15.3.8",
-          "Syncfusion.Server.Base.DataClasses.Core": "15.3.8",
-          "log4net": "2.0.17"
+          "Syncfusion.Server.Base.Core": "15.3.53",
+          "Syncfusion.Server.Base.DataClasses.Core": "15.3.53",
+          "log4net": "3.3.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.TenantManagement.Client.Core.dll": {
-            "assemblyVersion": "15.3.8.0",
-            "fileVersion": "15.3.8.0"
+            "assemblyVersion": "15.3.53.0",
+            "fileVersion": "15.3.53.0"
           }
         },
         "compile": {
@@ -5795,7 +5813,10 @@
         },
         "compileOnly": true
       },
-      "System.Collections.Immutable/8.0.0": {
+      "System.Collections.Immutable/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
         "compileOnly": true
       },
       "System.ComponentModel.Annotations/4.7.0": {
@@ -6258,15 +6279,6 @@
         },
         "compileOnly": true
       },
-      "System.Security.Cryptography.Pkcs/8.0.0": {
-        "dependencies": {
-          "System.Formats.Asn1": "8.0.1"
-        },
-        "compile": {
-          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {}
-        },
-        "compileOnly": true
-      },
       "System.Security.Cryptography.Primitives/4.3.0": {
         "dependencies": {
           "System.Diagnostics.Debug": "4.3.0",
@@ -6474,7 +6486,7 @@
     }
   },
   "libraries": {
-    "Syncfusion.Server.IdentityProvider.Core/15.3.8": {
+    "Syncfusion.Server.IdentityProvider.Core/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -6605,12 +6617,12 @@
       "path": "bold.licensing/4.2.52",
       "hashPath": "bold.licensing.4.2.52.nupkg.sha512"
     },
-    "BouncyCastle.Cryptography/2.4.0": {
+    "BouncyCastle.Cryptography/2.6.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==",
-      "path": "bouncycastle.cryptography/2.4.0",
-      "hashPath": "bouncycastle.cryptography.2.4.0.nupkg.sha512"
+      "sha512": "sha512-7oWOcvnntmMKNzDLsdxAYqApt+AjpRpP2CShjMfIa3umZ42UQMvH0tl1qAliYPNYO6vTdcGMqnRrCPmsfzTI1w==",
+      "path": "bouncycastle.cryptography/2.6.2",
+      "hashPath": "bouncycastle.cryptography.2.6.2.nupkg.sha512"
     },
     "ClosedXML/0.105.0": {
       "type": "package",
@@ -6661,12 +6673,12 @@
       "path": "excelnumberformat/1.1.0",
       "hashPath": "excelnumberformat.1.1.0.nupkg.sha512"
     },
-    "HtmlSanitizer/8.0.843": {
+    "HtmlSanitizer/9.0.892": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XfmHK4rFz9PPN0gcv7J7pc+MRpcni1mrnO04mwA+9/1zIHLgdOvLJeDwWnX5a+up4tioPvGreB+p+KljLJ32wg==",
-      "path": "htmlsanitizer/8.0.843",
-      "hashPath": "htmlsanitizer.8.0.843.nupkg.sha512"
+      "sha512": "sha512-zdkMmpNCjTkxna8Y+jmPIFm2st+HjHrf32yNElFYwe7L4GmDm+mdKR6TzDyf6ewJ0RUUz84D4IkHNgrwGi4VbQ==",
+      "path": "htmlsanitizer/9.0.892",
+      "hashPath": "htmlsanitizer.9.0.892.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -6682,19 +6694,19 @@
       "path": "jose-jwt/5.1.1",
       "hashPath": "jose-jwt.5.1.1.nupkg.sha512"
     },
-    "log4net/2.0.17": {
+    "log4net/3.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qnnDf/ubJzwm2i1xH7nRMjEDoD+ctse7nZDqb+p7L1PvZc6ykpMoEesWr1/9hFqlsbII2v9e8yyQHJhoDQh7ZA==",
-      "path": "log4net/2.0.17",
-      "hashPath": "log4net.2.0.17.nupkg.sha512"
+      "sha512": "sha512-fgQ8XkqF0r4/CRfAq8xZqlPrG0/9n4rJAa1HlFGQMXtCAxbbLzXyuXCbu65NUbcKzQ9KDYr4239NNqipVRCv6A==",
+      "path": "log4net/3.3.1",
+      "hashPath": "log4net.3.3.1.nupkg.sha512"
     },
-    "MailKit/3.4.3": {
+    "MailKit/4.16.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Iewef8mcE1B1LrVudxQjQ0LcriPPeTbxmWMoHQzFS+P6TpEY2eVDbdKdB0Qnbmqr/5w7WfK2mNWuoSX9pI470g==",
-      "path": "mailkit/3.4.3",
-      "hashPath": "mailkit.3.4.3.nupkg.sha512"
+      "sha512": "sha512-trJ82DOpAmo8i1jO1vNE+dGn4mPRyeYfy4swRcAGgMJhPoI1Kohf4OFJJf0+YIj4iUxgxPn8W+ht7e7KiYzSjg==",
+      "path": "mailkit/4.16.0",
+      "hashPath": "mailkit.4.16.0.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights/2.21.0": {
       "type": "package",
@@ -7186,12 +7198,12 @@
       "path": "microsoft.visualstudio.web.codegenerators.mvc/3.1.4",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.3.1.4.nupkg.sha512"
     },
-    "MimeKit/4.7.1": {
+    "MimeKit/4.16.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Qoj4aVvhX14A1FNvaJ33hzOP4VZI2j+Mr38I9wSGcjMq4BYDtWLJG89aJ9nRW2cNfH6Czjwyp7+Mh++xv3AZvg==",
-      "path": "mimekit/4.7.1",
-      "hashPath": "mimekit.4.7.1.nupkg.sha512"
+      "sha512": "sha512-X0LFxeM4gPRIhODyY/HYS9b+zRZ7y//v59rFzgS6wLxcPuZThnMtNZHtrr0fjLyRRkg3gqJBtvW36XfUzZ7Djw==",
+      "path": "mimekit/4.16.0",
+      "hashPath": "mimekit.4.16.0.nupkg.sha512"
     },
     "MySqlConnector/2.2.7": {
       "type": "package",
@@ -7529,6 +7541,13 @@
       "path": "system.runtime.caching/8.0.0",
       "hashPath": "system.runtime.caching.8.0.0.nupkg.sha512"
     },
+    "System.Security.Cryptography.Pkcs/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CoCRHFym33aUSf/NtWSVSZa99dkd0Hm7OCZUxORBjRB16LNhIEOf8THPqzIYlvKM0nNDAPTRBa1FxEECrgaxxA==",
+      "path": "system.security.cryptography.pkcs/8.0.1",
+      "hashPath": "system.security.cryptography.pkcs.8.0.1.nupkg.sha512"
+    },
     "System.Security.Cryptography.ProtectedData/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -7585,67 +7604,67 @@
       "path": "timezoneconverter/6.0.1",
       "hashPath": "timezoneconverter.6.0.1.nupkg.sha512"
     },
-    "Syncfusion.Server.API.Base.Core/15.3.8": {
+    "Syncfusion.Server.API.Base.Core/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Core/15.3.8": {
+    "Syncfusion.Server.Base.Core/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Data.Core/15.3.8": {
+    "Syncfusion.Server.Base.Data.Core/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.DataClasses.Core/15.3.8": {
+    "Syncfusion.Server.Base.DataClasses.Core/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Encryption/15.3.8": {
+    "Syncfusion.Server.Base.Encryption/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.LicenseManagement.Core/15.3.8": {
+    "Syncfusion.Server.Base.LicenseManagement.Core/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Localization/15.3.8": {
+    "Syncfusion.Server.Base.Localization/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Logger/15.3.8": {
+    "Syncfusion.Server.Base.Logger/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.MarkdownSharp.Core/15.3.8": {
+    "Syncfusion.Server.Base.MarkdownSharp.Core/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Middlewares/15.3.8": {
+    "Syncfusion.Server.Base.Middlewares/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Resources.Storage.Core/15.3.8": {
+    "Syncfusion.Server.Base.Resources.Storage.Core/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.TemplateGenerator/15.3.8": {
+    "Syncfusion.Server.Base.TemplateGenerator/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.TenantManagement.Client.Core/15.3.8": {
+    "Syncfusion.Server.Base.TenantManagement.Client.Core/15.3.53": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -9798,12 +9817,12 @@
       "path": "system.collections.concurrent/4.3.0",
       "hashPath": "system.collections.concurrent.4.3.0.nupkg.sha512"
     },
-    "System.Collections.Immutable/8.0.0": {
+    "System.Collections.Immutable/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AurL6Y5BA1WotzlEvVaIDpqzpIPvYnnldxru8oXJU2yFxFUy3+pNXjXd1ymO+RA0rq0+590Q8gaz2l3Sr7fmqg==",
-      "path": "system.collections.immutable/8.0.0",
-      "hashPath": "system.collections.immutable.8.0.0.nupkg.sha512"
+      "sha512": "sha512-l4zZJ1WU2hqpQQHXz1rvC3etVZN+2DLmQMO79FhOTZHMn8tDRr+WU287sbomD0BETlmKDn0ygUgVy9k5xkkJdA==",
+      "path": "system.collections.immutable/6.0.0",
+      "hashPath": "system.collections.immutable.6.0.0.nupkg.sha512"
     },
     "System.ComponentModel.Annotations/4.7.0": {
       "type": "package",
@@ -10126,13 +10145,6 @@
       "sha512": "sha512-h4CEgOgv5PKVF/HwaHzJRiVboL2THYCou97zpmhjghx5frc7fIvlkY1jL+lnIQyChrJDMNEXS6r7byGif8Cy4w==",
       "path": "system.security.cryptography.openssl/4.3.0",
       "hashPath": "system.security.cryptography.openssl.4.3.0.nupkg.sha512"
-    },
-    "System.Security.Cryptography.Pkcs/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ULmp3xoOwNYjOYp4JZ2NK/6NdTgiN1GQXzVVN1njQ7LOZ0d0B9vyMnhyqbIi9Qw4JXj1JgCsitkTShboHRx7Eg==",
-      "path": "system.security.cryptography.pkcs/8.0.0",
-      "hashPath": "system.security.cryptography.pkcs.8.0.0.nupkg.sha512"
     },
     "System.Security.Cryptography.Primitives/4.3.0": {
       "type": "package",

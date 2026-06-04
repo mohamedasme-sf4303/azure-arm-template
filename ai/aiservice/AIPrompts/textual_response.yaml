@@ -56,7 +56,8 @@ TextualResponsePrompts:
       GOAL: Produce a short, human-friendly sentence that states the result and its meaning.
       RULES:
         - Base the answer strictly on the provided Question and Answer values; do not invent data.
-        - Mention any available numbers from Answer, formatted (K/M/B; currency with $ if monetary).
+        - Use simplified numeric formats (K/M/B).
+        - Use a currency symbol (e.g., ₹, $, €, £) only when the field name or question explicitly contains a currency term (e.g., revenue, price, cost, salary, budget, amount paid).
         - For boolean-like outcomes (yes/no, true/false), explicitly state the outcome and its implication.
         - Include one or more relevant Unicode icons to aid readability (e.g., 📊, ✅, ⚠️, 💵).
         - Keep it simple and direct (ideally 1 sentence; 2 sentences if essential for clarity).
@@ -78,3 +79,22 @@ TextualResponsePrompts:
         Validate the syntax after transform the OriginalSql to FinalSql
       FinalSql = Transformed OriginalSql.
 
+  - Type: DashboardQuestionsResponse
+    Message: |
+      ROLE: Answering questions from dashboard data/context.
+      INPUTS:
+        - Dashboard context and data: {Data}
+      GOAL: Provide a answer based solely on the dashboard data/context.
+      RULES:
+        - Base answers ONLY on the provided dashboard context and data.
+        - If the user intent is to create charts or visualize data, do NOT generate charts.
+          Instead, instruct the user to change to 'Data source mode' to proceed with visualization.
+        - If the question can be answered briefly, respond in 1–2 concise lines.
+        - Be simple, direct, and clear. Mention specific values if present in the context.
+        - Use simplified numeric formats (K/M/B) and emphasize what the numbers imply (comparisons, trends, significance).
+        - Include one or more icons like in unicode if necessary for better readability.
+        - If the answer involves **monetary or currency‑based values**, use the **appropriate currency symbol** (e.g., ₹, $, €, £) for better readability
+        - Insert real newline characters only when a single point requires an extra line.
+        - Apply **double asterisks** to bold key terms and metrics.
+        - If insufficient data or context exists, clearly state that and suggest refining the question
+          or switching to Data source mode.

@@ -5,7 +5,7 @@ SummarizationPrompts:
   - Type: WidgetInsights
     Message: |
       ROLE: Generate up to four validated insights from a single chart.
-      GOAL: Provide concise, insightful takeaways grounded in the chart’s bindings and data.
+      GOAL: Provide concise, insightful takeaways grounded in the chartâ€™s bindings and data.
       INSTRUCTIONS:
         - Examine the chart title, column bindings, and all relevant data points.
         - Derive four distinct insights maximum (= 4 total).
@@ -23,7 +23,7 @@ SummarizationPrompts:
   - Type: UnifiedAIWidgetInsights
     Message: |
       ROLE: Generate up to four validated insights from a single chart with dynamic emoji.
-      GOAL: Provide concise, insightful takeaways grounded in the chart’s bindings and data, each prefixed by a relevant emoji.
+      GOAL: Provide concise, insightful takeaways grounded in the chartâ€™s bindings and data, each prefixed by a relevant emoji.
       INSTRUCTIONS:
         - Examine the chart title, column bindings, and all relevant data points.
         - Derive four distinct insights maximum (= 4 total).
@@ -41,11 +41,11 @@ SummarizationPrompts:
 
   - Type: DashboardPurpose
     Message: |
-      ROLE: Infer the dashboard’s primary purpose from the user query and widget titles/types.
-      GOAL: Produce a concise statement summarizing the dashboard’s goal.
+      ROLE: Infer the dashboardâ€™s primary purpose from the user query and widget titles/types.
+      GOAL: Produce a concise statement summarizing the dashboardâ€™s goal.
       INSTRUCTIONS:
-        - Analyze how the widget titles and types align with the user’s query.
-        - Return a concise, clear summary of the dashboard’s purpose.
+        - Analyze how the widget titles and types align with the userâ€™s query.
+        - Return a concise, clear summary of the dashboardâ€™s purpose.
         - If the widget titles are generic (e.g., Card1, Chart1, Grid1, Map1) and lack descriptive details:
           * Return only the widget titles, comma-separated (no extra commentary).
 
