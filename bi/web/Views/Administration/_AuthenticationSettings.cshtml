@@ -503,7 +503,7 @@
                                         </feature>
                                         <div class="col-12 form-fields-top-margin no-padding">
                                             <div class="col-12 no-padding ">
-                                                @Html.CheckBox("oauthCreateAccount", new { @class = "material-checkbox" })
+                                                    @Html.CheckBox("oauthCreateAccount", (ViewBag.OAuthSettings?.OAuthAuthSettings != null && ViewBag.OAuthSettings.OAuthAuthSettings.CanCreateAccount), new { @class = "material-checkbox" })
                                                 @Html.Hidden("oauthCreateAccount")
                                                 <label for="oauthCreateAccount">
                                                     <span>
@@ -544,7 +544,7 @@
 
                                             <div class="col-12 form-fields-top-margin no-padding">
                                                 <div class="col-12 no-padding ">
-                                                    @Html.CheckBox("oauthEnableGroupClaim", new { @class = "material-checkbox" })
+                                                    @Html.CheckBox("oauthEnableGroupClaim", (ViewBag.OAuthSettings?.OAuthAuthSettings?.GroupClaimsSettings != null && ViewBag.OAuthSettings.OAuthAuthSettings.GroupClaimsSettings.EnableGroupClaims), new { @class = "material-checkbox" })
                                                     @Html.Hidden("oauthEnableGroupClaim")
                                                     <label for="oauthEnableGroupClaim">
                                                         <span>
@@ -559,7 +559,7 @@
 
                                             <div class="col-12 form-fields-top-margin no-padding">
                                                 <div class="col-12 no-padding ">
-                                                    @Html.CheckBox("oauthEnableRemoveExistGroupMapping", new { @class = "material-checkbox" })
+                                                    @Html.CheckBox("oauthEnableRemoveExistGroupMapping", (ViewBag.OAuthSettings?.OAuthAuthSettings?.GroupClaimsSettings != null && ViewBag.OAuthSettings.OAuthAuthSettings.GroupClaimsSettings.RemoveExistGroupMapping), new { @class = "material-checkbox" })
                                                     @Html.Hidden("oauthEnableRemoveExistGroupMapping")
                                                     <label for="oauthEnableRemoveExistGroupMapping">
                                                         <span>
@@ -813,7 +813,7 @@
                                             </feature>
                                             <div class="col-12 form-fields-top-margin no-padding">
                                                 <div class="col-12 no-padding ">
-                                                    @Html.CheckBox("openidCreateAccount", new { @class = "material-checkbox" })
+                                                        @Html.CheckBox("openidCreateAccount", (ViewBag.OpenIDSettings?.OIDCAuthSettings != null && ViewBag.OpenIDSettings.OIDCAuthSettings.CanCreateAccount), new { @class = "material-checkbox" })
                                                     @Html.Hidden("openidCreateAccount")
                                                     <label for="openidCreateAccount">
                                                         <span>
@@ -827,7 +827,7 @@
 
                                                 <div class="col-12 form-fields-top-margin no-padding">
                                                     <div class="col-12 no-padding">
-                                                        @Html.CheckBox("openIdEnableTokenStorage", (ViewBag.OpenIDSettings?.OIDCAuthSettings != null && ViewBag.OpenIDSettings.OIDCAuthSettings.EnableTokenStorage), new { @class = "material-checkbox", ng_model = "openIdEnableTokenStorage", ng_disabled = "!openidIsEnabled" })
+                                                        @Html.CheckBox("openIdEnableTokenStorage", (ViewBag.OpenIDSettings?.OIDCAuthSettings != null && ViewBag.OpenIDSettings.OIDCAuthSettings.EnableTokenStorage), new { @class = "material-checkbox" })
                                                         @Html.Hidden("openIdEnableTokenStorage")
                                                         <label for="openIdEnableTokenStorage">
                                                             <span>
@@ -840,7 +840,7 @@
 
                                                 <div class="col-12 form-fields-top-margin no-padding">
                                                     <div class="col-12 no-padding">
-                                                        @Html.CheckBox("openIdUsePkce", (ViewBag.OpenIDSettings?.OIDCAuthSettings != null && ViewBag.OpenIDSettings.OIDCAuthSettings.UsePkce), new { @class = "material-checkbox", ng_model = "openIdUsePkce", ng_disabled = "!openidIsEnabled || !openIdEnableTokenStorage" })
+                                                        @Html.CheckBox("openIdUsePkce", (ViewBag.OpenIDSettings?.OIDCAuthSettings != null && ViewBag.OpenIDSettings.OIDCAuthSettings.UsePkce), new { @class = "material-checkbox" })
                                                         @Html.Hidden("openIdUsePkce")
                                                         <label for="openIdUsePkce">
                                                             <span>
@@ -879,7 +879,7 @@
 
                                             <div class="col-12 form-fields-top-margin no-padding">
                                                 <div class="col-12 no-padding ">
-                                                    @Html.CheckBox("openIdEnableGroupClaim", new { @class = "material-checkbox" })
+                                                    @Html.CheckBox("openIdEnableGroupClaim", (ViewBag.OpenIDSettings?.OIDCAuthSettings?.GroupClaimsSettings != null && ViewBag.OpenIDSettings.OIDCAuthSettings.GroupClaimsSettings.EnableGroupClaims), new { @class = "material-checkbox" })
                                                     @Html.Hidden("openIdEnableGroupClaim")
                                                     <label for="openIdEnableGroupClaim">
                                                         <span>
@@ -895,7 +895,7 @@
 
                                             <div class="col-12 form-fields-top-margin no-padding">
                                                 <div class="col-12 no-padding ">
-                                                    @Html.CheckBox("openIdEnableRemoveExistGroupMapping", new { @class = "material-checkbox" })
+                                                    @Html.CheckBox("openIdEnableRemoveExistGroupMapping", (ViewBag.OpenIDSettings?.OIDCAuthSettings?.GroupClaimsSettings != null && ViewBag.OpenIDSettings.OIDCAuthSettings.GroupClaimsSettings.RemoveExistGroupMapping), new { @class = "material-checkbox" })
                                                     @Html.Hidden("openIdEnableRemoveExistGroupMapping")
                                                     <label for="openIdEnableRemoveExistGroupMapping">
                                                         <span>
@@ -913,7 +913,7 @@
                                                     <label class="app-textbox-label">@T["Group Claim Name"]</label>
                                                 </div>
                                                 <div class="col-md-12 no-padding">
-                                                    <input type="text" class="form-control txt-holder validation-padding" name="openidgroupclaimname" placeholder="@T["Group claim name (Optional)"]" ng-init="openidgroupclaimname='@((ViewBag.OpenIDSettings?.OIDCAuthSettings?.GroupClaimsSettings?.GroupClaimName ?? "").ToString())'" id="openid-group-claim-name" ng-disabled="!openidIsEnabled || !openIdEnableGroupClaim" ng-model="openidgroupclaimname" />
+                                                    <input type="text" class="form-control txt-holder validation-padding" name="openidgroupclaimname" placeholder="@T["Group claim name (Optional)"]" value="@((ViewBag.OpenIDSettings?.OIDCAuthSettings?.GroupClaimsSettings?.GroupClaimName ?? "").ToString())" id="openid-group-claim-name" />
                                                 </div>
                                                 <div class="info-message no-padding">
                                                     @T["Specify the claim name that contains group identifiers."]

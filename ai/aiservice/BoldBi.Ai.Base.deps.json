@@ -29,10 +29,10 @@
           "Newtonsoft.Json": "13.0.4",
           "System.Configuration.ConfigurationManager": "10.0.9",
           "log4net": "3.3.0",
-          "Syncfusion.Dashboard.Core": "16.1.69.0",
-          "Syncfusion.Dashboard.DataManager": "16.1.69.0",
-          "Syncfusion.Dashboard.Designer.Logger": "16.1.69.0",
-          "Syncfusion.Dashboard.Web.Serialization.DOM": "16.1.69.0",
+          "Syncfusion.Dashboard.Core": "16.1.70.0",
+          "Syncfusion.Dashboard.DataManager": "16.1.70.0",
+          "Syncfusion.Dashboard.Designer.Logger": "16.1.70.0",
+          "Syncfusion.Dashboard.Web.Serialization.DOM": "16.1.70.0",
           "Syncfusion.Server.Base.Encryption": "1.0.3.0",
           "Syncfusion.Server.Base.Logger": "1.0.3.0"
         },
@@ -1426,8 +1426,8 @@
         },
         "runtime": {
           "BoldBi.Ai.Configuration.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
@@ -1441,8 +1441,8 @@
         },
         "runtime": {
           "BoldBi.Ai.ConnectionManager.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
@@ -1459,40 +1459,40 @@
         },
         "runtime": {
           "BoldBi.Ai.Core.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
-      "Syncfusion.Dashboard.Core/16.1.69.0": {
+      "Syncfusion.Dashboard.Core/16.1.70.0": {
         "runtime": {
           "Syncfusion.Dashboard.Core.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
-      "Syncfusion.Dashboard.DataManager/16.1.69.0": {
+      "Syncfusion.Dashboard.DataManager/16.1.70.0": {
         "runtime": {
           "Syncfusion.Dashboard.DataManager.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
-      "Syncfusion.Dashboard.Designer.Logger/16.1.69.0": {
+      "Syncfusion.Dashboard.Designer.Logger/16.1.70.0": {
         "runtime": {
           "Syncfusion.Dashboard.Designer.Logger.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
-      "Syncfusion.Dashboard.Web.Serialization.DOM/16.1.69.0": {
+      "Syncfusion.Dashboard.Web.Serialization.DOM/16.1.70.0": {
         "runtime": {
           "Syncfusion.Dashboard.Web.Serialization.DOM.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
@@ -1512,19 +1512,19 @@
           }
         }
       },
-      "Syncfusion.Dashboard.Json.Base/16.1.69.0": {
+      "Syncfusion.Dashboard.Json.Base/16.1.70.0": {
         "runtime": {
           "Syncfusion.Dashboard.Json.Base.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
-      "Syncfusion.Dashboard.Xml.Base/16.1.69.0": {
+      "Syncfusion.Dashboard.Xml.Base/16.1.70.0": {
         "runtime": {
           "Syncfusion.Dashboard.Xml.Base.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
@@ -1544,11 +1544,11 @@
           }
         }
       },
-      "Syncfusion.Dashboard.Core.XmlRepository/16.1.69.0": {
+      "Syncfusion.Dashboard.Core.XmlRepository/16.1.70.0": {
         "runtime": {
           "Syncfusion.Dashboard.Core.XmlRepository.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
@@ -2355,22 +2355,22 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Core/16.1.69.0": {
+    "Syncfusion.Dashboard.Core/16.1.70.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.DataManager/16.1.69.0": {
+    "Syncfusion.Dashboard.DataManager/16.1.70.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Designer.Logger/16.1.69.0": {
+    "Syncfusion.Dashboard.Designer.Logger/16.1.70.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Web.Serialization.DOM/16.1.69.0": {
+    "Syncfusion.Dashboard.Web.Serialization.DOM/16.1.70.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -2385,12 +2385,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Json.Base/16.1.69.0": {
+    "Syncfusion.Dashboard.Json.Base/16.1.70.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Xml.Base/16.1.69.0": {
+    "Syncfusion.Dashboard.Xml.Base/16.1.70.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -2405,7 +2405,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Core.XmlRepository/16.1.69.0": {
+    "Syncfusion.Dashboard.Core.XmlRepository/16.1.70.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

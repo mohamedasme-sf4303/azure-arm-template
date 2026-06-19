@@ -44,6 +44,7 @@
     var widgetId = ViewBag.WidgetId;
     var pinWidget = ViewBag.IsPinWidgetMode;
     var bodyClass = pinWidget ? "pin-widget" : "";
+    var dashboardServiceUrl = isSelfHosted ? globalAppSettings.SystemSettings.BaseUrl : GlobalAppSettings.GetBaseUrlUpToBi(globalAppSettings.SystemSettings.BaseUrl);
     var rootUrl = Context.Request.RouteValues["tenantName"] != null ? (GlobalAppSettings.HttpPathBase + "/" + ServerAppConfig.TenantIdentifierPrefix + "/" + Context.Request.RouteValues["tenantName"]).TrimEnd('/') : GlobalAppSettings.HttpPathBase.ToString();
     var multiTabUrl = ViewBag.MultiTabDashboardDetails != null ? Url.Action("Dashboards", "Dashboards") + "/" + ViewBag.MultiTabDashboardDetails.Id + "/" + ViewBag.MultiTabDashboardDetails.CategoryName + "/" + ViewBag.MultiTabDashboardDetails.Name : string.Empty;
     var granularPermissions = ViewBag.GranularPermissions as Dictionary<object, bool>;
@@ -337,6 +338,7 @@
         var modelLanguage = "@ViewBag.ModelLanguage";
         var firstDayOfWeek = "@ViewBag.FirstDayOfWeek";
         var rootUrlAction = "@rootUrl";
+        var dashboardServiceUrl = "@dashboardServiceUrl";
         var isHideHelpLink = @Json.Serialize(ServerAppConfig.IsHideHelpLink);
         var customHelpLinkDomain = "@(ServerAppConfig.AllowCustomHelpLink? ServerAppConfig.AppSettings.Documentation.BaseUri : string.Empty)";
         var custombrandName = "@ServerAppConfig.CustomBrandName";

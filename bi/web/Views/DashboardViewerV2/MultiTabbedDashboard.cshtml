@@ -2,12 +2,13 @@
     Layout = null;
     var globalAppSettings = ViewBag.GlobalSettings as GlobalAppSettings;
     var requestUrl = new Uri(Context.Request.GetDisplayUrl());
+    bool isSelfHosted = ServerAppConfig.IsSelfHosted;
     var rootUrl = Context.Request.RouteValues["tenantName"] != null ? (GlobalAppSettings.HttpPathBase + "/" + ServerAppConfig.TenantIdentifierPrefix + "/" + Context.Request.RouteValues["tenantName"]).TrimEnd('/') : GlobalAppSettings.HttpPathBase.ToString();
+    var dashboardServiceUrl = isSelfHosted ? globalAppSettings.SystemSettings.BaseUrl : GlobalAppSettings.GetBaseUrlUpToBi(globalAppSettings.SystemSettings.BaseUrl);
     var dashboardUrls = ViewBag.UrlList as List<string>;
     var isMobile = new DeviceDetection(Context).IsMobile;
     var selectedId = ViewBag.SelectedId == Guid.Empty ? string.Empty : ViewBag.SelectedId;
     var childCount = ViewBag.childIdList == null ? 0 : ViewBag.childIdList.Count;
-    bool isSelfHosted = ServerAppConfig.IsSelfHosted;
     var dashboardServerApiUrl = new DashboardServerApiEndPoints(globalAppSettings).DashboardServerApiUrl();
     var dashboardServerApiUrlForServerEmbed = new DashboardServerApiEndPoints(globalAppSettings, true).DashboardServerApiUrl();
     var dashboardBIUrl = new DashboardServerEndPoints(globalAppSettings).DashboardServerBIUrl();
@@ -189,6 +190,7 @@
             var dashboardTheme = "@(!ServerAppConfig.IsSelfHosted ? "" : ViewBag.Theme)";
             var baseUrl = "@baseUrl";
             var rootUrlAction = "@rootUrl";
+            var dashboardServiceUrl = "@dashboardServiceUrl";
             var embedConfig = @Html.Raw(Json.Serialize(embedConfig));
             var exportFormat = @Html.Raw(Json.Serialize(ViewBag.ExportFormat));
             var multiTabId = "@ViewBag.MultiTabId";

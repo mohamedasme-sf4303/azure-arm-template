@@ -11,7 +11,7 @@
           "Microsoft.SemanticKernel.Core": "1.74.0",
           "System.Configuration.ConfigurationManager": "10.0.5",
           "System.Drawing.Common": "10.0.5",
-          "Syncfusion.Dashboard.Core": "16.1.69.0"
+          "Syncfusion.Dashboard.Core": "16.1.70.0"
         },
         "runtime": {
           "BoldBi.Ai.Configuration.dll": {}
@@ -219,11 +219,11 @@
           }
         }
       },
-      "Syncfusion.Dashboard.Core/16.1.69.0": {
+      "Syncfusion.Dashboard.Core/16.1.70.0": {
         "runtime": {
           "Syncfusion.Dashboard.Core.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
@@ -243,19 +243,19 @@
           }
         }
       },
-      "Syncfusion.Dashboard.Json.Base/16.1.69.0": {
+      "Syncfusion.Dashboard.Json.Base/16.1.70.0": {
         "runtime": {
           "Syncfusion.Dashboard.Json.Base.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
-      "Syncfusion.Dashboard.Xml.Base/16.1.69.0": {
+      "Syncfusion.Dashboard.Xml.Base/16.1.70.0": {
         "runtime": {
           "Syncfusion.Dashboard.Xml.Base.dll": {
-            "assemblyVersion": "16.1.69.0",
-            "fileVersion": "16.1.69.0"
+            "assemblyVersion": "16.1.70.0",
+            "fileVersion": "16.1.70.0"
           }
         }
       },
@@ -418,7 +418,7 @@
       "path": "system.security.cryptography.protecteddata/10.0.5",
       "hashPath": "system.security.cryptography.protecteddata.10.0.5.nupkg.sha512"
     },
-    "Syncfusion.Dashboard.Core/16.1.69.0": {
+    "Syncfusion.Dashboard.Core/16.1.70.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -433,12 +433,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Json.Base/16.1.69.0": {
+    "Syncfusion.Dashboard.Json.Base/16.1.70.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Xml.Base/16.1.69.0": {
+    "Syncfusion.Dashboard.Xml.Base/16.1.70.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

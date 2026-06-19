@@ -7,6 +7,8 @@
     var identifier = openIdSettings != null && openIdSettings.Identifier != null ? openIdSettings.Identifier : string.Empty;
     var responseType = openIdSettings != null && openIdSettings.ResponseType != null ? openIdSettings.ResponseType : "id_token";
     var logoutUrl = openIdSettings != null && openIdSettings.LogoutUrl != null ? openIdSettings.LogoutUrl : string.Empty;
+    var enableTokenStorage = openIdSettings != null && openIdSettings.EnableTokenStorage;
+    var usePkce = openIdSettings != null && openIdSettings.UsePkce;
     var logoUrl = ViewBag.OpenIDSettings != null && ViewBag.OpenIDSettings.LogoUrl != null ? ViewBag.OpenIDSettings.LogoUrl : string.Empty;
     var logoStyle = string.Empty;
     if (!string.IsNullOrWhiteSpace(logoUrl))
@@ -121,7 +123,7 @@
 
                 <div class="col-md-12 float-start no-padding switch-margin">
                     <div class="material-switch inline-align">
-                        <input type="checkbox" id="enable-openid-token-storage" data-ng-disabled="!openidIsEnabled" ng-model="enableOpenidTokenStorage" ng-init="enableOpenidTokenStorage=@Json.Serialize(ViewBag.OpenIDSettings.OIDCAuthSettings.EnableTokenStorage)" />
+                        <input type="checkbox" id="enable-openid-token-storage" @(enableTokenStorage ? "checked" : string.Empty) @(isOpenIdEnabled ? string.Empty : "disabled") />
                         <label for="enable-openid-token-storage" class="label-primary"></label>
                     </div>
                     <div class="app-textbox-label inline-align">
@@ -132,7 +134,7 @@
 
                 <div class="col-md-12 float-start no-padding switch-margin">
                     <div class="material-switch inline-align">
-                        <input type="checkbox" id="enable-openid-pkce" data-ng-disabled="!openidIsEnabled || !enableOpenidTokenStorage" ng-model="enableOpenidPkce" ng-init="enableOpenidPkce=@Json.Serialize(ViewBag.OpenIDSettings.OIDCAuthSettings.UsePkce)" />
+                        <input type="checkbox" id="enable-openid-pkce" @(usePkce ? "checked" : string.Empty) @((isOpenIdEnabled && enableTokenStorage) ? string.Empty : "disabled") />
                         <label for="enable-openid-pkce" class="label-primary"></label>
                     </div>
                     <div class="app-textbox-label inline-align">
