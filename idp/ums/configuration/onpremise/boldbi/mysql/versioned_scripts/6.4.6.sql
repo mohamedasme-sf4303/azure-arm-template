@@ -1,5 +1,4 @@
-﻿-- BOLD_UPGRADE_CHECKPOINT_COVERED: true
--- BOLD_UPGRADE_STATEMENT_CHECKPOINT_VALIDATED: true
+﻿
 CREATE TABLE {database_name}.BOLDBI_UploadDataSourceMapping(
 	Id int NOT NULL AUTO_INCREMENT,
 	DownloadedTenantId char(38) NOT NULL,

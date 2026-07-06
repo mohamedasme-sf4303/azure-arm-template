@@ -17,7 +17,7 @@
 	<FailureOccurrence>5</FailureOccurrence>
 	<DataRefreshTimeout>720</DataRefreshTimeout>
 	<DataServiceTimeout>240</DataServiceTimeout>
-	<DesignerTokenExpiryHours>1</DesignerTokenExpiryHours>
+	<DesignerTokenExpiryHours>24</DesignerTokenExpiryHours>
 	<SilentAuthDomain></SilentAuthDomain>
 	<PreviewFeatures>
 		<Localization>false</Localization>

@@ -1,5 +1,4 @@
-﻿-- BOLD_UPGRADE_CHECKPOINT_COVERED: true
--- BOLD_UPGRADE_STATEMENT_CHECKPOINT_VALIDATED: true
+﻿
 ALTER TABLE  {database_name}.BOLDBI_ScheduleDetail ADD ScheduleExportInfo text NULL
 ;
 INSERT into {database_name}.BOLDBI_LogField (ModuleId,Field,Description,ModifiedDate,IsActive) SELECT 10,'DashboardSettings.UsageAnalytics','DashboardSettings.UsageAnalytics',NOW(),1 FROM DUAL 

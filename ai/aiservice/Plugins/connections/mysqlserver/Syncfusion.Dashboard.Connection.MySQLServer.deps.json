@@ -11,7 +11,7 @@
           "Syncfusion.Dashboard.Connection.MySQLServer.Json": "1.0.0",
           "Syncfusion.Dashboard.Connection.MySQLServer.Model": "1.0.0",
           "Syncfusion.Dashboard.Connection.MySQLServer.Json.Reference": "16.1.24.0",
-          "Syncfusion.Dashboard.Connection.MySQLServer.Model.Reference": "16.1.70.0"
+          "Syncfusion.Dashboard.Connection.MySQLServer.Model.Reference": "16.1.80.0"
         },
         "runtime": {
           "Syncfusion.Dashboard.Connection.MySQLServer.dll": {}
@@ -106,11 +106,11 @@
           }
         }
       },
-      "Syncfusion.Dashboard.Connection.MySQLServer.Model.Reference/16.1.70.0": {
+      "Syncfusion.Dashboard.Connection.MySQLServer.Model.Reference/16.1.80.0": {
         "runtime": {
           "Syncfusion.Dashboard.Connection.MySQLServer.Model.dll": {
-            "assemblyVersion": "16.1.70.0",
-            "fileVersion": "16.1.70.0"
+            "assemblyVersion": "16.1.80.0",
+            "fileVersion": "16.1.80.0"
           }
         }
       }
@@ -179,7 +179,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Connection.MySQLServer.Model.Reference/16.1.70.0": {
+    "Syncfusion.Dashboard.Connection.MySQLServer.Model.Reference/16.1.80.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -43,7 +43,7 @@
     var isUrlInDnsList = GlobalAppSettings.IsUrlInDnsList(globalAppSettings.DisplayUri);
     var currentUrlLocalPath = requestUrl.LocalPath.ToLower();
     var baseUrl = ServerAppConfig.GetClientServiceUrl(globalAppSettings.SystemSettings.BaseUrl, Context);
-    var dashboardServiceUrl = isSelfHosted ? globalAppSettings.SystemSettings.BaseUrl : GlobalAppSettings.GetBaseUrlUpToBi(globalAppSettings.SystemSettings.BaseUrl);
+    var cloudDashboardServiceUrl = isSelfHosted ? globalAppSettings.SystemSettings.BaseUrl : GlobalAppSettings.GetBaseUrlUpToBi(globalAppSettings.SystemSettings.BaseUrl);
     var isImageRequest = currentUrl.IndexOf(".png", StringComparison.CurrentCultureIgnoreCase) > 0 ||
                          currentUrl.IndexOf(".jpg", StringComparison.CurrentCultureIgnoreCase) > 0 ||
                          currentUrl.IndexOf(".gif", StringComparison.CurrentCultureIgnoreCase) > 0 ||
@@ -283,7 +283,7 @@
         var helpSiteBaseUrl = "@helpSiteBaseUrl";
         var appBranding = "@GlobalAppSettings.Branding";
         var rootUrlAction = "@rootUrl";
-        var dashboardServiceUrl = "@dashboardServiceUrl";
+        var cloudDashboardServiceUrl = "@cloudDashboardServiceUrl";
         var isSelfHosted = @Json.Serialize(isSelfHosted);
         var tenantIdentifierPrefix = "@ServerAppConfig.TenantIdentifierPrefix";
         var exportFormat = @Html.Raw(Json.Serialize(ViewBag.ExportFormat));

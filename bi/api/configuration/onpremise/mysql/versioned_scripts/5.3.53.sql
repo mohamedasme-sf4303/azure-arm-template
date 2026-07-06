@@ -1,5 +1,4 @@
-﻿-- BOLD_UPGRADE_CHECKPOINT_COVERED: true
--- BOLD_UPGRADE_STATEMENT_CHECKPOINT_VALIDATED: true
+﻿
 INSERT INTO {database_name}.BOLDBI_SettingsType (Name, IsActive) SELECT 'CORS Settings', 1 FROM DUAL
 WHERE NOT EXISTS(SELECT * FROM {database_name}.BOLDBI_SettingsType WHERE Name='CORS Settings' LIMIT 1)
 ;

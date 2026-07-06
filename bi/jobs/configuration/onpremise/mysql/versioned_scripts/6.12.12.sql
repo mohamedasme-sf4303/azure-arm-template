@@ -1,5 +1,4 @@
-﻿-- BOLD_UPGRADE_CHECKPOINT_COVERED: true
--- BOLD_UPGRADE_STATEMENT_CHECKPOINT_VALIDATED: true
+﻿
 ALTER TABLE {database_name}.BOLDBI_ScheduleDetail ADD DashboardWidgetId Char(38) NULL
 ;
 

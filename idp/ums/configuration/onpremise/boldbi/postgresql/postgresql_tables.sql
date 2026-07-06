@@ -2996,24 +2996,8 @@ ON boldbi_uploaddatasourcemapping (uploadeditemid);
 -- ========================
 -- AI / Metrics & Requests
 -- ========================
-CREATE INDEX IF NOT EXISTS "IX_BoldBI_DSMetrics_DS_Time"
-ON boldbi_dsmetrics (datasourceid, refreshstarttime)
-INCLUDE (refreshstatus, rowsupdated, totalrows);
-
-CREATE INDEX IF NOT EXISTS "IX_BOLDBI_AI_SESSIONS_Time"
-ON boldbi_ai_sessions (sessionstarttime DESC)
-INCLUDE (sessionendtime, totaltokenscost, userinfo);
-
-CREATE INDEX IF NOT EXISTS "IX_BOLDBI_AI_CHAT_Session"
-ON boldbi_ai_chat (sessionid, searchdatetime DESC)
-INCLUDE (totaltokenscost, userinfo);
-
 CREATE INDEX IF NOT EXISTS "IX_BOLDBI_AICredentials_IsActive"
 ON boldbi_aicredentials (isactive);
-
-CREATE INDEX IF NOT EXISTS "IX_BOLDBI_AI_REQUESTS_Session"
-ON boldbi_ai_requests (sessionid, searchdate)
-INCLUDE (datasourceid, aimodel);
 
 
 -- ========================
@@ -3026,13 +3010,6 @@ INCLUDE (isactive, lastuseddate);
 CREATE INDEX IF NOT EXISTS "IX_BOLDBI_CustomEmailTemplate_IsActive"
 ON boldbi_customemailtemplate (isactive)
 INCLUDE (language, templateid);
-
-CREATE INDEX IF NOT EXISTS "IX_BoldBI_ai_qnawidgethistory_Widget"
-ON boldbi_ai_qnawidgethistory (widgetid)
-INCLUDE (search_date);
-
-CREATE INDEX IF NOT EXISTS "IX_BoldBI_ai_qnawidgethistory_SearchDate"
-ON boldbi_ai_qnawidgethistory (search_date);
 
 
 -- ========================

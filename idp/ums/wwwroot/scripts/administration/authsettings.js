@@ -582,7 +582,14 @@ $(document).ready(function () {
 
     function syncOpenIdFieldState() {
         var isEnabled = $("#openidIsEnabled").is(":checked");
+        var tokenStorage = $("#enable-openid-token-storage");
+        var usePkce = $("#enable-openid-pkce");
         $("#openid-provider-name, #openid-image-upload-box .image-upload, #openid-authority, #openid-client-id, #openid-client-secret, #openid-identifier, #openid-logout-endpoint, #enable-openid-account-creation").prop("disabled", !isEnabled);
+        tokenStorage.prop("disabled", !isEnabled);
+        usePkce.prop("disabled", !(isEnabled && tokenStorage.is(":checked")));
+        if (!(isEnabled && tokenStorage.is(":checked"))) {
+            usePkce.prop("checked", false);
+        }
         document.getElementById("group-import-provider-openid").ej2_instances[0].enabled = isEnabled;
         document.getElementById("response-type-dropdown").ej2_instances[0].enabled = isEnabled;
         setGroupImportFieldState("openid", isEnabled);
@@ -659,6 +666,15 @@ $(document).ready(function () {
     $(document).on("change", "#openidIsEnabled", function () {
         syncOpenIdFieldState();
         validateOpenIdSettingsForm({ showErrors: false });
+    });
+
+    $(document).on("change", "#enable-openid-token-storage", function () {
+        var isEnabled = $("#openidIsEnabled").is(":checked");
+        var tokenStorageEnabled = $(this).is(":checked");
+        $("#enable-openid-pkce").prop("disabled", !(isEnabled && tokenStorageEnabled));
+        if (!(isEnabled && tokenStorageEnabled)) {
+            $("#enable-openid-pkce").prop("checked", false);
+        }
     });
 
     $(document).on("input blur", "#openid-provider-name, #openid-authority, #openid-client-id, #openid-client-secret, #openid-identifier, #openid-logout-endpoint", function () {

@@ -63,8 +63,8 @@
         },
         "runtime": {
           "Syncfusion.Dashboard.Connection.Odbc.Model.dll": {
-            "assemblyVersion": "16.1.70.0",
-            "fileVersion": "16.1.70.0"
+            "assemblyVersion": "16.1.80.0",
+            "fileVersion": "16.1.80.0"
           }
         }
       }

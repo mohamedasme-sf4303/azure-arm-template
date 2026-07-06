@@ -1,5 +1,4 @@
-﻿-- BOLD_UPGRADE_CHECKPOINT_COVERED: true
--- BOLD_UPGRADE_STATEMENT_CHECKPOINT_VALIDATED: true
+﻿
 INSERT INTO {database_name}.BOLDBI_PermissionEntity (Name,EntityType,ItemTypeId, IsActive) SELECT 'All Users',1,12,1 FROM DUAL
 WHERE NOT EXISTS(SELECT * FROM {database_name}.BOLDBI_PermissionEntity WHERE Name='All Users' LIMIT 1)
 ;

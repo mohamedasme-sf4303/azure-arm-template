@@ -1,5 +1,4 @@
-﻿-- BOLD_UPGRADE_CHECKPOINT_COVERED: true
--- BOLD_UPGRADE_STATEMENT_CHECKPOINT_VALIDATED: true
+﻿
 UPDATE {database_name}.BOLDBI_SettingsType SET Name='Site Credentials' WHERE Id = 20
 ;
 

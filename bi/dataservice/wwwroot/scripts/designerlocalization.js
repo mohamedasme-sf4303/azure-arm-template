@@ -2657,6 +2657,7 @@ var Designer = {
                 searchDataSource: "Search Data Source",
                 noDataSourceMessage: "No data sources found",
                 webDsTemplatesDescriptionText: "Choose from the predefined templates or create a new template.",
+                preparingLiveWebData: "Preparing live web connection data...",
                 category: {
                     all: "All Categories",
                     socialMedia: "Social Media",
