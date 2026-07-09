@@ -1,0 +1,6 @@
+# LFS-tracked binary files
+*.so   filter=lfs diff=lfs merge=lfs binary
+*.dylib filter=lfs diff=lfs merge=lfs binary
+# Force LF line endings for these web assets
+/reporting/web/**/*.js  text eol=lf
+/reporting/web/**/*.css text eol=lf

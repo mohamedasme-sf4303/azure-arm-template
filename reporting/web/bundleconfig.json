@@ -1,0 +1,3927 @@
+[
+  {
+    "outputFileName": "wwwroot/cdn/css/layout.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/EssentialJS2/fusion-theme-compatability/ej.theme.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/global.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/general/navigation.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Accounts/Footer.css",
+      "wwwroot/Styles/scss/pages/notification/user-notification.css",
+      "wwwroot/Styles/EssentialJS2/ej2.dropdowntree.min.css"
+    ],
+    "integrity": "sha384-A9Vg0dcEPXd4gsR/8fhnRVxZrIUQiejvnhBcLjDJM2Zc9vgdWyLuir9fdZdjm4mq"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/layout.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/respond.min.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.core.min.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.draggable.min.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.scroller.min.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.globalize.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.dialog.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.button.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Notification/user-notification.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-/Eibg8fmkLOt8caf36OmBq8knCTHeMIWOw7Za+/AXPzKE0lFo9Hef0z9BItNH8iB"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/create-slideshow.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Slideshow/CreateSlideshow.css"
+    ],
+    "integrity": "sha384-5gVBu5UCYY7Du2ouJctw0JX2yx91kRkBFoFNsG/kmJUUFl/kEDXwAawOpK2Uj4+/"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/create-slideshow.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-ui.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Slideshow/CreateSlideshow.js",
+      "wwwroot/Scripts/Slideshow/EditSlideshow.js"
+    ],
+    "integrity": "sha384-4VtOgG2l7+6bnXp/p6UseBx5dUDddHYl1t0dMQwGIFdq7H8fHzSp9Lb9Jlbmx/Sm"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/connector-page-layout.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/respond.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Notification/user-notification.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Pc/Y1XzcZwcDvazS2M7lrNsEepvetW09BWBrBZlO3ec8LWD7q1C/VMFF/zp7BmNw"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/multi-tabbed-report-viewer-v2.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Report/reportviewercommon.js",
+      "wwwroot/Scripts/Report/save-views-v2.js",
+      "wwwroot/Scripts/Comments/ReportComment.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Items/ItemViewShare.js",
+      "wwwroot/Scripts/Report/MultiTabbedReportViewerV2.js"
+    ],
+    "integrity": "sha384-wxjfaC9baXPhuhjfT/N4S32a0E+JV7sJ6AnkHS7XzyrLN/LH+01rmSmoEVNhq4gG"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/layout-mobile.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Bootstrap/respond.min.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Core/MobileMenu.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-RHjfR4EpwMtDBgtUCkdyTwnOcQPPXQpgX2i1AFgkPyD51Cew0D5/C4LviyrvtVAa"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/account-page.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Accounts/login.css"
+    ],
+    "integrity": "sha384-s9a+lrl+qD3ZmEJ4RRl2OGc1ZY8kS4q0xpLq2z0ludw6yaRI8hZd/hFK+7CVKwIt"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/iframe.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-ni0EP09mt1eCCBO6Gc+kjumnQpK//jXja6fc5MH8AFxy61J6YTsfR7YjXaq76d1d"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/scheduleiframe.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/CategoryDialog.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-Aw5bLb4WIVqX/NrNR1oNyXhNJhSgPyeSJLj+aBPsNGQNaE4y/sqk++mTu09j+oas"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/iframe.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/respond.min.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-lYYmIb8Fic/XzSaX0SEt6aMqfni7peuxINsqwNwm/U7ZQtbWSxNmsLeO0QgUt27Z"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/add-report.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Reports.css",
+      "wwwroot/Styles/scss/pages/CategoryDialog.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/EssentialJS2/ej2.dropdowntree.min.css"
+    ],
+    "integrity": "sha384-tgz5ClaalN+RQVW7Ciol12tumjzQzwvNf3pvkAWGe+fMIwm77BwOrxgjCL6dwriw"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/add-report.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Report/AddRdlReport.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-6eIVLidjRXzL8zCS7WqN7wUbZCJuqUJ6Uz5b14hDBiBfPhU2hq0iow+Sq1I4L7Kr"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/upload-report.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-pzjNMs/jpO1m1SC6Ohne41Mk9pKEenEJD90wkP1XTjw7SsU/RyP9XNzfqLN0M9mj"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/upload-report.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Reports.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-iGf1SvAYSCr1GiQPReHhs61aTyBJ85umMBvgFgJrcfk19thj+aPiIk7rfpcBG7Yt"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/select-datasource.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/scss/pages/AddDataSource.css",
+      "wwwroot/Styles/scss/pages/SelectDataSource.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-ep/COH3QhskTotEazgbLv3iBz4y8a9g4QfF18Rh7CUvARDYwq2j9zFd2dZpKXVJY"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/select-datasource.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Report/SelectDataSource.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-1ubEPUemhPuyOM6ZALqzLFoE+VcLiOmExHpfns2WCeqQ+GPUQL8um342fvMj34hH"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/dataset-datasource.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/AddDataSource.css",
+      "wwwroot/Styles/scss/pages/SelectDataSource.css"
+    ],
+    "integrity": "sha384-YcsFaeobF7CcJLsOl9tGc7untkqJMrAOSRgP2zuMJxMv3WN2X5p/pFLKzMK4pQ/V"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/dataset-datasource.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/DataSet/SelectDataSource.js",
+      "wwwroot/scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/scripts/essentialjs/ej.button.min.js",
+      "wwwroot/scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-bGjJYoDjC1i0G/JJoiN7roIVzX0DE/YUvHiznBMLrEToblGlw50hOjfcejk9tS3k"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/select-dataset.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Dataset.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-hNQ7ox1uy/maDAr03hL1WMtbz1T975JIngTcJrjIXCjFP7i0jRGjI8NIyO9Yra6o"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/select-dataset.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Report/SelectDataset.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-wnFjfts/ZmmElC+Qae3tERSgo806/zjFKSBx408FReM1ducvzG7rd3AzpxV7TQxI"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/edit-datasets.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/DataSets/EditDataset.css",
+      "wwwroot/Styles/scss/pages/Dataset.css"
+    ],
+    "integrity": "sha384-Zm2B08dTXC1r3Gey5uxoHh+ANWMriw5FIxx1U/aZR6yupNYNhx8eM9Q06oZmcumM"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/edit-datasets.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/DataSet/EditDataset.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-QnPvJUsypSMbwQPxuAbmljCRq8670R1azRXU50rCB1knSw7ulXQZ6zONBJwm2OTm"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/datasources.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/DataSources/DataSource.css",
+      "wwwroot/Styles/scss/pages/Items.css"
+    ],
+    "integrity": "sha384-mdOxvv60zKtfdAOve+9LD6k78YJel/XHjHFiQgY1XgbN7dEXCbSTwX3njPdDb6GR"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/datasets.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/DataSets/DataSet.css",
+      "wwwroot/Styles/scss/pages/Items.css"
+    ],
+    "integrity": "sha384-6U72wE66uOvFSC08fd0lCOmcXverqhpHUnj2WookEaPtv5d4CWDyi4qjRl06741j"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/add-datasets.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Dataset.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-o82sGC/yI8uqJHJ8yIg1EnD4IGqX+kveMW+vhWUOLlZF9o7U9vtRR5tI1S1U+lXW"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/add-datasets.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Dataset/AddDataset.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-i5wCVl+Ox8rI7mF2TIoAWz5CXH4rSD33KklnQ7f7P3aKn4Z07eJQSCWOOKlMzazy"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/upload-dataset.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js"
+    ],
+    "integrity": "sha384-M2EKt/KH0x8BXRL5PSzmgpXg5+xft+xtRv2Lv4cZjrop11oknszYjzdXqjGh0l6l"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/upload-dataset.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Dataset.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-A2JIT1mk9aaDOJvshFwEROSZnWtIxoAD8rh/K88Kvkk+W3n56/YWqfKT3OWhL0pn"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/datasource-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/DataSource/DataSource.js",
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/Items/items.add.js",
+      "wwwroot/Scripts/launcher/launcher.js",
+      "wwwroot/Scripts/Items/items.share-permission.js",
+      "wwwroot/Scripts/Core/ServerCommon.js",
+      "wwwroot/Scripts/Items/items.info.js",
+      "wwwroot/Scripts/Items/items.get-link.js"
+    ],
+    "integrity": "sha384-MiXn0ly6Tqdu4vqiDdlm5q/PoW4HcQoaIkaKBO4inDn2aNkGsNjlXDl7JdaJ2VZn"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/datasource-page-mobile.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/DataSource/DataSource.js",
+      "wwwroot/Scripts/Items/ItemsMobile.js",
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/Items/items.add.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-QhWaHu3xmuGCOU3/KqtbL75dQMBBeZ87L9C5AhZArXGXu+a6TdIe9vd1jgEvSC34"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/dataset-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/DataSet/DataSet.js",
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/Items/items.add.js",
+      "wwwroot/Scripts/launcher/launcher.js",
+      "wwwroot/Scripts/Items/items.share-permission.js",
+      "wwwroot/Scripts/Core/ServerCommon.js",
+      "wwwroot/Scripts/Items/items.info.js",
+      "wwwroot/Scripts/Items/items.get-link.js"
+    ],
+    "integrity": "sha384-/IDwZp/u9AX611p/iTQi5ZLv42kzJAgBNQ9EMoDAJfyXTpcrdSP610q+7rY95q+H"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/dataset-page-mobile.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/DataSet/DataSet.js",
+      "wwwroot/Scripts/Items/ItemsMobile.js",
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/Items/items.add.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-atNnJ+7xicvqprP5a235bImwYifB6mIgSbxDtZNw7XLF5fwXbTSEMiDk+amVZWP+"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/add-widget.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Items.css"
+    ],
+    "integrity": "sha384-I79AVPY66aOJkQC4z6BlXgMg8Uu3XYAYeuzCY9EOduPothi4Eeb8qfz/b99Ma1jW"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/widget-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Widget/Widget.js",
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/Items/items.add.js",
+      "wwwroot/Scripts/launcher/launcher.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-nNiinbpxs4TV8eUD73vyb2VsBtjqriYN2FgUXgecocSHH3wPNesxPInpAF/7zv45"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/add-widget.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Widget/AddWidget.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-daLQftL48yAnDGkaiK3Axwfq4OpqIHUY8zGyR/y2spW7orptgKDBtG9OrN1L4GdK"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/edit-widget.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Widget/EditWidget.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-daLQftL48yAnDGkaiK3Axwfq4OpqIHUY8zGyR/y2spW7orptgKDBtG9OrN1L4GdK"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/files-page.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/DataSources/DataSource.css"
+    ],
+    "integrity": "sha384-DmmBdSpa6b7OjlfLWV41QgtDmpPYGzGTv3dEYN0mYEzJuhY9LVBWVqmoAQu8APKg"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/files-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/File/File.js",
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/Items/items.add.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Av64k0oElZjTaEPdCHHjer4ITvvaSWc6Ll3+RnSYkMRgx3mmThqMzgmI75ultYsd"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/files-page-mobile.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/File/File.js",
+      "wwwroot/Scripts/Items/ItemsMobile.js",
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-fmuFD/tFLBR6XupT/gwNVOmUCtu5vXMLvwMzsaKu9H1LsUzC5tzWJEe95zKXeeih"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/add-files.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/AddFiles.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-gMLX7kzQnoI6730bwK+MqMlkWzQRcpKwiRGDKZ7PgYfCR7NP53bHrtSBruZS4rg8"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/add-files.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/File/AddFile.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-5ommTfxSEPwkEHbsWr+UTQFVbL05FduLc+zboP8TTqCfTooai2yREZbuwaNIZ5FQ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/edit-files.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/Items.css"
+    ],
+    "integrity": "sha384-FlPVGIXXND1CoC4JLVXr6ck0oGdHvj+a977iPoJH5z8GRYc15h7dsCB6hEm66CJ5"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/edit-files.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/File/EditFile.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Dst6LoYxMfFNii6O6pwRtKym+3zJVWZw75A4minNUkJkyZzJxUFA1dyMzemmaVw2"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/category-page.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Items.css"
+    ],
+    "integrity": "sha384-W8e6ed39vtCMHlpUXitJTsw9cfHDD18hcOwDE7BlJ8fGKxxnmK7TrCRTNmOeKAcR"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/category-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/Items/items.add.js",
+      "wwwroot/Scripts/Category/Category.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-U4emFDnS/bn0uwqZqecsrCjLaQd6GKWmRp+oOec9ZczdfYJH5Xc134DS1osmGPlL"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/add-category.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/CategoryDialog.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-6CQ5SLCzUqhxKLIjuTW47LyGN6slUp4yXh9+1r0p+QB0/iSq0f/QXnl0Lt/7TUah"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/add-category.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Category/AddCategory.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-5AaFRGK6nO3fTdbHMKJkLRHDdQGDc1jy17G0hizauRJiWgeEw/UrCNJLiVv5M6/l"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/edit-category.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/CategoryDialog.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css"
+    ],
+    "integrity": "sha384-DTqWZmPwrALER6ItQJyMwPa9GJnqSCcvb3kQbWJE9tT2/gv8xCAYMJofAAj8hiuY"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/edit-category.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Category/EditCategory.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-wpw9D7IhPQ9UNKV3SG0HCEDj3SuTraqtKOdEI7lfcniISPTgVjl0kW63i6a8SZRB"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/processoptionschedulerdialog.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Report/ProcessOptionScheduler.js",
+      "wwwroot/Scripts/Report/Reports.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-+eg6/0tykepvvolZVduuka6E6JOJpojVTIqnyr9KoF2D5WA3vdrhbk5ypcII2B+c"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/processoptionschedulerdialog.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/scss/pages/Components/TimePicker.css",
+      "wwwroot/Styles/scss/pages/Components/NumericTextBox.css",
+      "wwwroot/Styles/scss/pages/Components/DateTimePicker.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/Reports.css",
+      "wwwroot/Styles/scss/pages/Scheduler.css",
+      "wwwroot/Styles/scss/pages/ProcessOptionScheduler.css",
+      "wwwroot/Styles/EssentialJS2/ej2.dropdowntree.min.css"
+    ],
+    "integrity": "sha384-OY7yg9mYgF8g2rrF0CtUJY1yCm9fBnMacQ6IpdiuUulp6yKIMkglMtXzLVN7bPDx"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-process-options.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/Reports.css",
+      "wwwroot/Styles/scss/pages/Scheduler.css",
+      "wwwroot/Styles/scss/pages/ProcessOptionScheduler.css",
+      "wwwroot/Styles/EssentialJS2/ej2.dropdowntree.min.css"
+    ],
+    "integrity": "sha384-/pIFzJZqiejDXnwZyabH87TJiCa5yJIcyv9azpwQU1orINf/mDCE/k3TN5IBvFKU"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-process-options.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Report/ReportProcessOption.js",
+      "wwwroot/Scripts/Report/Reports.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Zea31tNMm9z8MHsDx6AaIU8LyhfO8ub/J8cgGJt8E24XrbgpIQaX5ltqK77QR5vV"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/reports-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/scheduler/scheduler.js",
+      "wwwroot/Scripts/Report/Report.js",
+      "wwwroot/Scripts/Category/Category.js",
+      "wwwroot/Scripts/launcher/launcher.js",
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Qo6fxWuIO1BD9gMeH3utoMhrGdQv2l5w+h05RlU9Abb6ZzefpsIw5yKKldyClO5M"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/reports-page.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css"
+    ],
+    "integrity": "sha384-N9qDXgtRUiQtOAChS3z/jvi5KnZSlUpGLAeTuRgzkOK2fJc68ZaOzjTDfeuz+MrC"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/tile-dashboards-page.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/Items.css",
+      "wwwroot/Styles/scss/pages/TileDashboards.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/Components/RadioButton.css"
+    ],
+    "integrity": "sha384-TcyTYs1xJUhZJzctQVSXNOPeYGUKaso27Hg/qqAsE3sJZRdzdWM1PqbNydi27sww"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/tile-dashboards-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Items/items.delete.js",
+      "wwwroot/Scripts/Items/items.get-link.js",
+      "wwwroot/Scripts/Items/items.share-permission.js",
+      "wwwroot/Scripts/Items/items.transform.js",
+      "wwwroot/Scripts/Items/items.public.js",
+      "wwwroot/Scripts/Items/items.update-dashboard.js",
+      "wwwroot/Scripts/Items/items.update-datasource.js",
+      "wwwroot/Scripts/Items/items.version.js",
+      "wwwroot/Scripts/Items/items.views.js",
+      "wwwroot/Scripts/Items/items.add.js",
+      "wwwroot/Scripts/Items/items.schedule.js",
+      "wwwroot/Scripts/Items/items.info.js",
+      "wwwroot/Scripts/Items/items.export.js",
+      "wwwroot/Scripts/scheduler/scheduler.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Dashboards/TileDashboards.js",
+      "wwwroot/Scripts/Report/Report.js",
+      "wwwroot/Scripts/Category/Category.js",
+      "wwwroot/Scripts/launcher/launcher.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-kehdSWiTMYBbhBgib8dZtZmTBECEIy3/Mu+JIZ5XVRyn2BOnat4QrZZlyYX/2ZON"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/itemaction.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Items/ItemActions.js",
+      "wwwroot/Scripts/Items/external.sites.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-61I1lla8xnuikYJHPIg012gOjOpv1T+ammilfUws0SBaHKzV4xC3dEIhokkUWLoM"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/itemversion.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/ItemVersion.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-hTC7jKwChaaghKDC7eSvIJu8idL0dYltEz5x+z+bmC0Ks6STuW3d4JSkFzxtc8bA"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/itemversion.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Items/ItemVersion.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.excelfilter.min.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-QfZmKsoomwc4WFBNlnY96Uew4mnoMT4lM3snrhQE+0HqBzzAVheC8Jk33lZbzSQi"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/itempermission.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/DataSources/DataSource.css",
+      "wwwroot/Styles/scss/pages/ItemPermission.css",
+      "wwwroot/Styles/scss/pages/LimitUserCreation.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/UserList.css",
+      "wwwroot/Styles/scss/pages/PasswordPolicyRules.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-XE/PqSptZlVkZl+k19SHdq8XJXa3pMlhZuI+swPaSXzhwSzN7EKBsXZh0BPi6Ud9"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/itempermission.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/Bootstrap/respond.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Items/ItemPermission.js",
+      "wwwroot/Scripts/Password/PasswordPolicy.js",
+      "wwwroot/Scripts/Password/ShowHidePassword.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialJS/ej.excelfilter.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Z6pe+DYdc1rZABA41vanOMYGQ+kfg9Ld+4YJpXWgl5YmVkAl7Ej4rAsEZDDVlYQ1"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/item-user-group-suggestion.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/AutoComplete/AccessibleUserGroup.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-ZQVScburX/7mj4tZtzId5Y25crPxju+zXvk7BtxvWyjUy+6WWBTiPgViNuPIt6iO"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/permissionpage.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Permission.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css"
+    ],
+    "integrity": "sha384-b1JyoWCGWEvtFLHjF9UFhdJJi98fNNcTaidcYDKLzXFcVaReVRJNmWW+hbZTy+HV"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/permissionpage.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Permission/Permission.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-nR84MusEzKSyWYW5ElR5mLeGVH5dC3sooaaAe8QPrUPfCseDxyQyt6DQUjV6LIKE"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/localizationcontent.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Core/LocalizationContent.js"
+    ],
+    "integrity": "sha384-Lofj3BzBtpVhrhiI7M5S32y7AZOSV0ngw5RfVpFHGudGqjJNvmtADQUJ2Mrw3cN4"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/adduserpermission.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/scss/pages/Permission.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-Mgg6hbpMjFbdNu+RuH5GYYdT6miuR748smRDUQX3ESwyi7zaVJla5+D/qB+S0bar"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/adduserpermission.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Permission/Permission.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-KXQc0vjJEw2eEoMLUel8IxNTqtlwnI6FtvYZL73ZZy27bKCiykadPMzRMRfpOErQ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/addgrouppermission.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Permission.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-KfuRZruj106VmmlD5MXV/TXTHAllp7mTg27tRt5yYK8fBZYmpiCXrTnkElJHve5i"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/addgrouppermission.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Permission/Permission.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-KXQc0vjJEw2eEoMLUel8IxNTqtlwnI6FtvYZL73ZZy27bKCiykadPMzRMRfpOErQ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/grouppermission.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Permission.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css"
+    ],
+    "integrity": "sha384-b1JyoWCGWEvtFLHjF9UFhdJJi98fNNcTaidcYDKLzXFcVaReVRJNmWW+hbZTy+HV"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/grouppermission.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Permission/GroupPermission.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-6CrYMWP+2DPZ2J/Mf5gbpQtBMatcf3WU4AP6wVvQrs9cEKfCZloV6+VSR6PFavMc"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/schedules.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/ItemsList.css",
+      "wwwroot/Styles/scss/pages/scheduler.css",
+      "wwwroot/Styles/scss/pages/schedulehistory.css",
+      "wwwroot/Styles/EssentialJS2/ej2.dropdowntree.min.css"
+    ],
+    "integrity": "sha384-3wsaNTl4ZLv0FeopnT3f8UIY35q2tyyLYJaXTFbWUxnnn1lbXuYo1Fd2bAW7qLhX"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/scheduleslisting.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/scheduler/schedulelisting.js",
+      "wwwroot/Scripts/scheduler/scheduler.js",
+      "wwwroot/Scripts/Scheduler/ScheduleHistory.js",
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/Items/items.schedule.js",
+      "wwwroot/Scripts/Items/items.add.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-J1GXjQqq1x63S8152tp3j00Eybjah2k41h14PVK2iwnairkXyq6altcw0TCuG9LC"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/scheduleslisting-mobile.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/scheduler/schedulelisting.js",
+      "wwwroot/Scripts/scheduler/scheduler.js",
+      "wwwroot/Scripts/Items/ItemsMobile.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Neg/vE6UKP5jVtZdSQ30x7j3GBBJNJoudtQaem3OVVfuXSwe20gZVvZDs84po2R+"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/profile.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Jcrop/Jcrop.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/User/EditProfile.js",
+      "wwwroot/Scripts/User/UserNotificationSettings.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-WvSa9+wJCglQSCw5KySB2g5jrqBmFf/cqbdsVg8PHp+An18y2tEPP+DIkhBqkvZY"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/profile.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Jcrop/Jcrop.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Profile.css"
+    ],
+    "integrity": "sha384-JKN4Rx0n+ZnQiARYDPtIZs1KD3WrfS0Ob+QJxa4l1ptnj2N3xM63oqew/rSeZrRL"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/change-password.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/PasswordPolicyRules.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/ChangePassword.css"
+    ],
+    "integrity": "sha384-v9CvGJ+coYVZxWnubIV4ySSS4wosoDaVpRRaBVgC/G8v+JlmSW7DwOxpksn8BnRb"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/change-password.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Password/PasswordPolicy.js",
+      "wwwroot/Scripts/Password/ChangePassword.js",
+      "wwwroot/Scripts/Password/ShowHidePassword.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-VCZ4/MlybK8j0CpIuJjeLL6rtwkTpnBRSqX1X1nSZ8g4wKhRw9RMJX94OfaBzQCN"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/user-active-directory.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/UserList.css",
+      "wwwroot/Styles/scss/pages/LimitUserCreation.css",
+      "wwwroot/Styles/scss/pages/ActiveDirectoryUserImport.css"
+    ],
+    "integrity": "sha384-qVUHrnV4uIBRsDxQTz5G73FgIdESoh5X5LeQ8pFGAgV9wSs9Eor0ec5T56Q7fYer"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/user-active-directory.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/User/ActiveDirectoryUserImport.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-x4EL5f5meusd2hS3FmhKQy+/wTiRNYyGapAAXs0W/fCwOaLVSdWRBqtcSlHao75b"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/group-active-directory.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/LimitUserCreation.css",
+      "wwwroot/Styles/scss/pages/ActiveDirectory.css"
+    ],
+    "integrity": "sha384-3hS0d47oWd3g31rXhhKn5MDMCvtD6EWoJo44G/SZX6XpOauFdIWEu5638DDxx7r4"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/group-active-directory.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Group/ActiveDirectoryGroupImport.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-RHjHXphBp8TnOB/NeWjNTBwVrQiWsoENq7xFYNRkz/XB2Mm95YSMRiK48do73Nc3"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/user-management-module.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/UserList.css",
+      "wwwroot/Styles/scss/pages/LimitUserCreation.css",
+      "wwwroot/Styles/scss/pages/ImportUsersCSV.css",
+      "wwwroot/Styles/scss/pages/PasswordPolicyRules.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-zQOfsE3z+XastTHkYyDLk+lDw9K/O9FxYamxxxMhy3Ja3vlvaRmQeh3ZfPgpNxOu"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/user-management.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/User/UserManagement.js",
+      "wwwroot/Scripts/System/CheckMailSettings.js",
+      "wwwroot/Scripts/Password/PasswordPolicy.js",
+      "wwwroot/Scripts/Password/ShowHidePassword.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-9UVsa3Xda9AwFI1wEJJDwpxiU2PJU7CEGtVAehLDHARKXL5n+mVihGmzxIlufPNR"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/user-database-import.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/LimitUserCreation.css",
+      "wwwroot/Styles/scss/pages/UserImportDatabase.css"
+    ],
+    "integrity": "sha384-W+31qMAEyoQDq9tR+JHntZk4m5Ui6+Q7FQFCOFPs/lI/YB90vTlmREElYGyLhrGp"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/user-database-import.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.treeview.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/User/UserImportDatabase.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-eWiOVGr/P+JpoD9pUXRdzvYV0thCVCn7DAldqHYuK12/blTyMJpAirorvwu2NC1+"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/users-groups-sync.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/UsersGroupsSync.css",
+      "wwwroot/Styles/scss/pages/LimitUserCreation.css",
+      "wwwroot/Styles/scss/pages/Grid.css"
+    ],
+    "integrity": "sha384-ujZowFx3x3AUtS2JbhqsJr5MKF0QwJbk+KV6RWJErqY9LGXDFTYh1B3bpZ5v3zQj"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/import-database-users-sync.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/ImportDatabaseUserSync.css",
+      "wwwroot/Styles/scss/pages/LimitUserCreation.css",
+      "wwwroot/Styles/scss/pages/Grid.css"
+    ],
+    "integrity": "sha384-7ZDZgYPFXXLLpG9gFnNOaXCX2HkwBjnmPcti4FlMhn3AEgv7OcaUAbdpKu3oj6+l"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/synchronize-users.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/User/SynchronizeUsers.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Lr5mvaEhLlnnBEIK+eoVz5fbqofiZGfieCS+/i8tYgXegJc32Xjq+ntDdj84vglJ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/synchronize-groups.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Group/SynchronizeGroups.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-SH9xeJtnzvd1gu8JkOuVeK5tc7IQBuJWvOzAG55fZd6JrDRsbZGiE0mZdJNaUYqU"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/user-permissions.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.excelfilter.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-0awcT3nacGz21mLL/8Spqr1g55L7O8djTPQWutPpzR++FgLDp5hX8lz+MpoMz4l+"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/user-permissions.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/userpermission.css"
+    ],
+    "integrity": "sha384-D2bvLX3De9l//x8UebfXrwV5InBRwpLcFpZXak8RN6MEZ8Ft4trj0F3hebz67NDg"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/user-management-profile.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Jcrop/Jcrop.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/PasswordPolicy.css",
+      "wwwroot/Styles/scss/pages/PasswordPolicyRules.css",
+      "wwwroot/Styles/scss/pages/LimitUserCreation.css",
+      "wwwroot/Styles/scss/pages/UserManagementProfile.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/customattribute/custom-attribute.css"
+    ],
+    "integrity": "sha384-JmvRX7X4qi3TLZ4ZpmBpcJzyAsBiiaC1utEDd537uInYQOktoWq0u1i6pqdBS1yn"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/user-management-profile.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/Jcrop/Jcrop.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Password/PasswordPolicy.js",
+      "wwwroot/Scripts/User/UserManagementProfile.js",
+      "wwwroot/Scripts/CustomAttribute/custom-attribute.js",
+      "wwwroot/Scripts/User/UserDelete.js",
+      "wwwroot/Scripts/System/CheckMailSettings.js",
+      "wwwroot/Scripts/Password/ShowHidePassword.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-oOXJm1ezyejhdFG3ThUqHRdfUzrLkGSfJO8ztI81Jx7nKpDHN9dvph42A5m4fU4v"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/groups.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/GroupManagement.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/UserList.css",
+      "wwwroot/Styles/scss/pages/PasswordPolicyRules.css"
+    ],
+    "integrity": "sha384-txupVc4Z2oGIwbMckxb+nrjH+5IFxCuo0wOWkcazSDVYi5TlnlLpK7rfqWs+JEH6"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/groups.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Group/Group.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-ETJ/m1V1qKryqF1DHVgYq9HOe4Lr8bFv4xMJyht90Y1zgDt8MiuUGuA0xQLB+wqT"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/storage-page.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Admin/SystemSettings.css"
+    ],
+    "integrity": "sha384-28okJKJUO7UJePUX2gEQV+m+g0oseTNjsw7XQbM5IfOlgkgFXrh2AHRLSY86j56u"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/storage-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Administration/Storage.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-cdDGzNK7/H1Q/u48Fpsyf1XEqpKnkrVG2sO+B/Ms+Pju8I3ft6o53FCE9FLNfmyK"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/site-settings.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS2/ej2.richtexteditor.all.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Admin/SystemSettings.css",
+      "wwwroot/Styles/scss/pages/Admin/EmailConfigure.css",
+      "wwwroot/Styles/scss/pages/Admin/send-test-mail.css",
+      "wwwroot/Styles/scss/pages/Components/RadioButton.css",
+      "wwwroot/Styles/Editor/easymde.min.css",
+      "wwwroot/styles/scss/pages/administration/emailactivitylog.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-Ot4aHLjzN4svqV8KxQeI4TUm6GbvF8uHPeoQ0GGbXjMhVjK/1fFg1ZVq5RlyF6oc"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/site-settings.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.treeview.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Editor/easymde.min.js",
+      "wwwroot/Scripts/Administration/SystemSettings.js",
+      "wwwroot/Scripts/Password/ShowHidePassword.js",
+      "wwwroot/Scripts/User/UserImportDatabase.js",
+      "wwwroot/Scripts/Core/ServerCommon.js",
+      "wwwroot/Scripts/administration/send-test-mail.js",
+      "wwwroot/Scripts/Administration/addrules.js",
+      "wwwroot/Scripts/essentialjs/ej.daterangepicker.min.js"
+    ],
+    "integrity": "sha384-2JqLvCTg98cInMN9UfXR1SPXHtFwF2zEqyk3qnXvHBwZsbO/V5rXSsim1HN3rpTd"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/custom-domain.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Admin/CustomDomain.css",
+      "wwwroot/Styles/scss/pages/Payment/UpdateCard.css",
+      "wwwroot/Styles/scss/pages/Payment/UpdateCard.css"
+    ],
+    "integrity": "sha384-agoSygu0fWn75xoeSUhbnb4tuBFcb5m51Ws4SR4lpz7I+WoNvKDOyhYoNARq+tWy"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/custom-domain.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Administration/CustomDomain.js",
+      "wwwroot/Scripts/Payment/UpdateCard.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-vyrLLNkxOjpRJBFCghRuL8nABAlWsdIql/HeBeSj3VJuHc2R4WnSYGEkTenrAuHt"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/email-configuration.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Administration/EmailConfiguration.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-+872neufjDw4iFTeXxFzpQRkfP5O67oN5PschjxsZTYw8uFucstr/4Qu0bwc5SzQ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/intermediatedb-configuration.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Administration/InterMediateDBConfiguration.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-pN0/bcGlyjtYrg3GuD0zv2mAleuHwiGVvhCuzV7PleK4dzFZrG1SDPYKc1H/eYgt"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/user-settings.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Administration/AccountSettings.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-f2s4UxDK43zf9G4xas/fpR2Pz/G+exDJSXiJj2uoio/qmCrVZAYrQSgU3evXY3Ql"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/schedule-synchronization.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/scss/pages/ScheduleSynchronization.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Components/TimePicker.css",
+      "wwwroot/Styles/scss/pages/Components/NumericTextBox.css"
+    ],
+    "integrity": "sha384-IR5TYtyhGThK8eXZyOh3LNQrdZwaMzJUJVV7DT0lpjR9qmgNgtKiEwSURinvg2Qe"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/schedule-synchronization.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Administration/ScheduleSynchronization.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-qvQKrEBUyf0jntDEwO8SP6kHjgaM1OzjIvfrVAw3gU0aaZENgbztT9Qe95syc9uX"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/notification-settings.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Admin/notificationsettings.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css"
+    ],
+    "integrity": "sha384-xSPgjpiOO0qMUP/hXZei11zffSGW0HjD9Af/YPkhob8EPt4QB1MPTK0vqRqFXGeG"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/notification-settings.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Administration/NotificationSettings.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-NMbqrLbquOV5N9tc4uHnsZMhErfkCvXtR3VgaPpWohGW28747Yza9EQZSYNesZLg"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/license-settings.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Admin/LicenseSettings.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Editor/easymde.min.css",
+      "wwwroot/Styles/scss/pages/Components/popup.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/Payment/UpdateCard.css"
+    ],
+    "integrity": "sha384-VYhnEH36+by5bblTVxALPIjiwGbJLfLkx3PbVJMN4EMlDzvCfgrOuc4boJPlPlEy"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/license-settings.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Administration/LicenseSettings.js",
+      "wwwroot/Scripts/Editor/easymde.min.js",
+      "wwwroot/Scripts/Payment/UpdateCard.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-ZjuO74TB42jGU4F/tq6ELJ6SvFU3HBNGdw+cFRVa2ZXrUXbThuBff02VK/0GMepJ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-settings.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/EssentialJS2/ej2.dropdowntree.min.css",
+      "wwwroot/Styles/scss/pages/Admin/reportsettings.css",
+      "wwwroot/Styles/scss/pages/Admin/deploymentreports.css",
+      "wwwroot/Styles/Editor/easymde.min.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-c6ohkyZzQNXx5pbDwxeLauDdUkeeBf/UvuBlSQTEBU1rXliwowmfYoNTCfKlhtuE"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-settings.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Administration/reportSettings.js",
+      "wwwroot/Scripts/Core/ServerCommon.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.4.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.data.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.grid.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.pager.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.radiobutton.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.autocomplete.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.toolbar.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Administration/DeploymentReports.js"
+    ],
+    "integrity": "sha384-tWARvVLAb/+tm6CjRhwy9Hr9cDKCV5YhbeOMfkqsMpWIcoLDgzIcS+L0SIQHPpbA"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/embed-settings.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/administration/embed-settings.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-IpoSqgJhFzxEGhxLJTvSSygvVGsLY5p8K/EaeH5R9jA9TsGO8mLgLs6lo92yY52n"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/embed-settings.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Administration/embed.settings.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-YuDn4sWTOeLHb4a4O3F5D9oQYWpc2FY9VV6qviac40ex4LSYOCDmUd6kkVZs1gnV"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/update-card.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Payment/UpdateCard.css"
+    ],
+    "integrity": "sha384-Yt3EHY8C4YabQAlMEl4NC4YnzEyI51jXoikqTM9eDEfF4HuI60z7Fk16Crafdrsl"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/update-card.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Payment/UpdateCard.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-USGMegoJLQnoHvOu3Yv4Ac3o/70+iKw+dN2PtFppYXTHFW/BsG0fM2Ch0LlHMfLO"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/home.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/Home.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css",
+      "wwwroot/Styles/scss/pages/Components/RadioButton.css"
+    ],
+    "integrity": "sha384-Y2SAPW2O0AjV9yRw1SiTaGBm537h3uLxA/SzXXgGP5KOAXOLCIoTWt0xS4ueCJDq"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/home.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Items/Items.js",
+      "wwwroot/Scripts/Items/items.add.js",
+      "wwwroot/Scripts/Items/items.get-link.js",
+      "wwwroot/Scripts/Items/items.share-permission.js",
+      "wwwroot/Scripts/DataSourceDesigner/ConnectionDialog.js",
+      "wwwroot/Scripts/scheduler/scheduler.js",
+      "wwwroot/Scripts/Home/Home.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-WZdMdODpx66+QrFicDnfWDLgRjfTLY6QyzcZOfch204h45xrgbO0jnme3RK34XlI"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/addgroup.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/GroupManagement.css"
+    ],
+    "integrity": "sha384-DjoTCxVRkjgqEk7aAooOyxr1+iyAc98juYHm9ppy9URTaL/CD/7viknQmmvyQgpF"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/addgroup.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Group/Group.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-3P8ZJKEUyme9+/5twhJ9jbLYnmwG/UcXceQ1tvZSAbBGlBQjk8q/g+A+ZKZdJCQy"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/viewgroup.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/ViewGroup.css",
+      "wwwroot/Styles/scss/pages/customattribute/custom-attribute.css"
+    ],
+    "integrity": "sha384-Imw/XC2PF+L1QHODHXMXTJKbRmc4CkiQNlL5Emusy9tdCcbiwnBeTxCk6CxR740a"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/viewgroup.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Group/EditGroup.js",
+      "wwwroot/Scripts/CustomAttribute/custom-attribute.js",
+      "wwwroot/Scripts/Group/Group.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Eg9igPfchHJpg2vm4vfwpf+4HfnNAJGE/TD8R3oJDstAd3JS6ejileevlb0c83f1"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/editgroup.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/GroupManagement.css"
+    ],
+    "integrity": "sha384-V//GQtNGuiwWrgmZqXxKSAyKxo9N0zQsuBZem7rqu93Mz8FIYIpmAg3riZVV9CFS"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/editgroup.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Items/items.share-permission.js",
+      "wwwroot/Scripts/Group/EditGroup.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/Password/PasswordPolicy.js",
+      "wwwroot/Scripts/Password/ShowHidePassword.js",
+      "wwwroot/Scripts/User/AddUser.js",
+      "wwwroot/Scripts/Group/Group.js",
+      "wwwroot/Scripts/Group/DeleteGroupUser.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-0QeUuQ1U5c+ZO41VlBSy0NvsDuSDIuCWTQ8LkVRsHUK3CE1BuSDsR0UwIMcrAt+f"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/deleteconfirm.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-server.css",
+      "wwwroot/Styles/scss/pages/GroupManagement.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-aiffhbEB237Gu4GOCJR4h+zCgJwmGzXQX2fwh66Qi4HWkXs1WP3CuHBaRWmdwK6F"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/editdelete.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/GroupManagement.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-6NJvN/aRGPSV7hU6BxZZMZYvdeRhJQQlgV0UxvOzTIvxoEu6Qg1ZpRlTNLMZuE8f"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/schedulerdialog.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.treeview.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.min.js",
+      "wwwroot/Scripts/EssentialJS2/ej2-grid.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/scheduler/scheduler.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-i8zseNbX/s14VORolZdN8hCI4GP3+KPADiu6vg0Kya2pwe2DkTnLq8lmkfmAwxh9"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/schedulerrecurrence.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/scheduler/RecurrenceType.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-8XPCy+HrTOxe2HpfFNPmaPFJB0qD8yBfHoc4m6ykPE54Rvs9gD6spNlu4V7mIaZK"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/datachanges.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.daterangepicker.min.js",
+      "wwwroot/Scripts/scheduler/Datachanges.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-BXuViQlgoMOgtGUWEhklhOlab5l3ZWoSvYeiaMKOAzgcY8JSJQIK3ialrjYSHohT"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/schedulerrecipients.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/EssentialJS/ej2-multiselect.min.js",
+      "wwwroot/Scripts/scheduler/ScheduleRecipients.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-yo4qCTP5sULTbxQCscUq5dl7Gu2cA50FcPzOOIIi8NUXpRmLRDjiOw7CxdvPpwo8"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/emaileditor.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Editor/easymde.min.js",
+      "wwwroot/Scripts/Scheduler/SchedulerEmailEditor.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-6RJTR7zR86npbkr3ky7rH5ZvLaQLkdIUmFcTMyk2N6wW1S2Ly07Ni3IbGqycjtvD"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/configureemail.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Editor/marked.min.js",
+      "wwwroot/Scripts/EssentialJS2/ej2.web.all.min.js",
+      "wwwroot/Scripts/EssentialJS2/ej2.richtexteditor.all.min.js",
+      "wwwroot/Scripts/Administration/EmailConfigure.js"
+    ],
+    "integrity": "sha384-2m9eEZV8LoRDhU5qYdIL687srKfKMBQjkBhD2rtgtfVJETyYHh2Ej0n4C1GVgPOY"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/scheduleemaileditor.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Scheduler/SchedulerEmailEditor.js",
+      "wwwroot/Scripts/Editor/simplemde.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-XnCNHh8LWjfYGCUAvYOln8kGMOgdvxIMU9lv8B1ibntdwaC8m9aKCHttQnwXz0ZT"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/customexpressioneditor.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/scheduler/scheduler.js",
+      "wwwroot/Scripts/scheduler/Datachanges.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Scheduler/CustomExpressionEditor.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Imo8PwECqpSaH5mY4FBJEzNpDL157XhR2sQCgJIa+nByX95Cc9aQefH61xzkoQwH"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/scheduleparameter.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/i18n/ej.cultures.en-US.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.timepicker.min.js",
+      "wwwroot/Scripts/essentialJS/i18n/ej.culture.de-DE.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/Items/items.export.js",
+      "wwwroot/Scripts/Scheduler/ScheduleParameter.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-nwEqYbxFZ0wLiz6D1i0WQvuSJjaCW9HcYf1lYJSiYvqUGD3sYwpOr0kQ+Nn9xRgI"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/schedulerdialog.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS2/tailwind3.min.css",
+      "wwwroot/Styles/EssentialJS2/fusion-theme-compatability/ej.theme.css",
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/scheduler.css",
+      "wwwroot/Styles/EssentialJS2/ej2.dropdowntree.min.css",
+      "wwwroot/Styles/scss/pages/DataDrivenschedule.css"
+    ],
+    "integrity": "sha384-/QG1QO20FAxm/FwkgUUKqoQkAlcfkfP3fYE8e3Wjar2FTCVMA8+MscktiLcmy+ys"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/datachanges.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css"
+    ],
+    "integrity": "sha384-S01Kh3yQ0J2rjZBjOdETiP6goIOEwLpZ15Y2VqCUSzEiBNhd/G3dtbXSIDJBSPq+"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/schedulerrecurrence.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/EssentialJS2/fusion-theme-compatability/ej.theme.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/scss/pages/Components/TimePicker.css",
+      "wwwroot/Styles/scss/pages/Components/NumericTextBox.css",
+      "wwwroot/Styles/scss/pages/Components/DateTimePicker.css",
+      "wwwroot/Styles/scss/pages/Scheduler.css"
+    ],
+    "integrity": "sha384-Kl5tNFl0ZpTfzpUmvR8fhCWTCXPkFgkrqG83Q/IJjOdKz8PDbt3Vf/iC/kTTnz26"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/emaileditor.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Editor/easymde.min.css"
+    ],
+    "integrity": "sha384-IrR5+apNk3e26ZrFa72KE7O6SMClQ1K5NFWEI6VmGDimFlx5qhF7HjzWbLVlrlfc"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/scheduleemaileditor.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Editor/simplemde.min.css"
+    ],
+    "integrity": "sha384-aleQ+q5lixNhQ3YPLCRoixrD2c12s++D9Wc4mh070TQNnC4H/zkWyjQ/anbWPmYS"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/scheduleparameter.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/EssentialJS2/fusion-theme-compatability/ej.theme.css",
+      "wwwroot/Styles/scss/pages/Components/Radiobutton.css",
+      "wwwroot/Styles/Less/scheduler.css",
+      "wwwroot/Styles/EssentialJS2/ej2.dropdowntree.min.css"
+    ],
+    "integrity": "sha384-8Nv/R9JWhfGEs8knl/8onQn0BX2HnfUdL11gnNQ+yoYfdYagIgNUynRghI7CUlMP"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/shareviewdialog.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Items/ItemViewShare.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-hyquo211ov7LVvW6CSiWRgRGgwiOiLK0Sg1IjdtKeIFAQ5pC6c4HOsA96MN1mxMK"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/shareviewdialog.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/ShareItemView.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css"
+    ],
+    "integrity": "sha384-/SajD3OIaZ/wv4NJm/I0NtVriOu/6pg9Ndaqp+a0yA8S7wcCtC1XY6HlwoAvPUKQ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/notification-listing.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Notification/user-notification.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-lUrH3CewcsSVHLcqubbQjEF9uohMsQ3UiVklRzt5TXVCAdCoqZaxbJDBs8dCM1JG"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/notification-listing.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/notification/user-notification.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css"
+    ],
+    "integrity": "sha384-psmHiyYNVqz0z/syUy1dV4W+SY9DPGw/nOKw0ovgmobTRUW0Fa2aVkQkYbrWU49D"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/comments-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/Bootstrap/respond.min.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Editor/easymde.min.js",
+      "wwwroot/Scripts/Comments/Comment.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-H+viygzd8gSaqyZEM6XqEfCkWxw7GaowxBU7NaQdRTTFvuC4kMPyT/NDOASBcJPs"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/comments-page.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.scroller.min.css",
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/global.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/Editor/easymde.min.css",
+      "wwwroot/Styles/scss/pages/Comments.css",
+      "wwwroot/Styles/scss/pages/Mixins.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-XLpSzVr4WtnV08s8cjI9KgE+EQiSQGwHcH5CrrDoAtFjHKNDXr+0ImdvGAtj32n3"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/comment.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Comments/Comment.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-ITJ5m6vMR5jkJG5eLPJlmLxMhuCAnEn0aeWJDYa1SfdHCvh+Kfqu+o+45UKC0b0x"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/bootstrapjs.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js"
+    ],
+    "integrity": "sha384-cytox/dCL8LPTZM0e4PvYCP2WUzvN1B0jCAxgN8oMAhA+N/2z5EW/UzuLTg+lwpP"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/save-view.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Report/ReportViews.js",
+      "wwwroot/Scripts/Report/reportviewercommon.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-GqeUdPZ3VsO4liApDGWzxcPOfauzz72/s1YQ9DZz0hizTc4nNfIy8llMFgbPWoQ4"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/save-view-v2.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/Report/ReportViews.js",
+      "wwwroot/Scripts/Report/reportviewercommon.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-GqeUdPZ3VsO4liApDGWzxcPOfauzz72/s1YQ9DZz0hizTc4nNfIy8llMFgbPWoQ4"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/save-view.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/SaveView.css"
+    ],
+    "integrity": "sha384-BgeQF+Wshp3zTvN3B0a70jeFzEDuBkHPnBi0S8HFUnF8P7eZwxo4c2CyQogovIC8"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/error-page.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/ErrorPage.css"
+    ],
+    "integrity": "sha384-rKc/1SdFvO3dYgFQ40FbmvQltoAjM5tfy0APt+hVQzIRySfIwTzuAznhYfeniSQr"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/error-page-new.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/error/error-page.css"
+    ],
+    "integrity": "sha384-JMnwGIm34xq4wNgnI8CoWSzQgt1vkKV3vMe6Qtj3Wq8IEIBxdqAlkq+T0TVfHV2+"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/error-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-mDS6T9X5r6eL6+ioOU1X6PB5271Tpn5aohkT4pKPH3xB2bQkCNogh2zQBrSuPSbk"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/tenant-registration-page.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/serverconfiguration/tenantregistration.css"
+    ],
+    "integrity": "sha384-cUinhKe7/a/Ep6PZpor9MN02szzs5xEfAEXZy7VrZbVgNTSXXT0kH0RJu6skgSFD"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/license-activation.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/serverconfiguration/LicenseActivation.css"
+    ],
+    "integrity": "sha384-gkUuzPYy25Et2Go09H7M0Es0MzIT+O4iJCsBAYcUFQl4U8tKtZmzH+2ki9kJGxIH"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/create-datasource-dependent.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/LoaderBlue.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-1g2REtDbUCPb4lOaPB4bHGV7neiSRuAxVIkNNlPy2Icba1ul1e/fMTqbBYo+5lCv"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/create-datasource.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/DataSources/CreateDataSource/Index.css",
+      "wwwroot/Styles/scss/pages/DataSources/CreateDataSource/Header.css",
+      "wwwroot/Styles/scss/pages/DataSources/CreateDataSource/ConnectorsList.css",
+      "wwwroot/Styles/scss/pages/DataSources/CreateDataSource/Connector.css",
+      "wwwroot/Styles/scss/pages/Items/DataSetForm.css",
+      "wwwroot/Styles/scss/pages/DataSources/CreateDataSource/Footer.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-txCTGGWW1a5XY8wvvOl6IS1AkERhbyAWNDBnOy7YoYU9Dz1nbCTRcUF1NxWToy/j"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/create-datasource-dependent.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js"
+    ],
+    "integrity": "sha384-JPyReqTcIsXYsKzSpkZlicpWFZWXIRWuUv+XijewIR5Wj9o4qvC4/h8RXFrkZOpF"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/crypto-js.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/CryptoHelper/crypto-js.js"
+    ],
+    "integrity": "sha384-Tb/l7lTSbcRVizxsi76enLjfMw2FwxU+/wN9Zqt/+EtbICMQMovcmrj4wFot4wlY"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/server-core.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Core/Server.Core.js"
+    ],
+    "integrity": "sha384-O5IgjkE3opnFPmi3CBXExa7CSLN16XvomoRek8j/fJLxG2Rs0pDe8hbT1h+uMhiL"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/create-datasource.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/DataSource/DataUtility.js",
+      "wwwroot/Scripts/DataSource/CreateDataSource/App.js",
+      "wwwroot/Scripts/DataSource/CreateDataSource/Index.js",
+      "wwwroot/Scripts/DataSource/CreateDataSource/Header.js",
+      "wwwroot/Scripts/DataSource/CreateDataSource/ConnectorsList.js",
+      "wwwroot/Scripts/DataSource/CreateDataSource/Connector.js",
+      "wwwroot/Scripts/Items/DataSetForm.js",
+      "wwwroot/Scripts/DataSource/CreateDataSource/Footer.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-X2fLYCDyfjsxAfMTmwjb7RALCF8rX0bK3WQDjEY6wCFHNbiExvTDKSxHQbSYsl6A"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/update-datasource-dependent.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/LoaderBlue.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-1g2REtDbUCPb4lOaPB4bHGV7neiSRuAxVIkNNlPy2Icba1ul1e/fMTqbBYo+5lCv"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/update-datasource.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/DataSources/UpdateDataSource/Index.css",
+      "wwwroot/Styles/scss/pages/DataSources/UpdateDataSource/Header.css",
+      "wwwroot/Styles/scss/pages/DataSources/UpdateDataSource/Connector.css",
+      "wwwroot/Styles/scss/pages/DataSources/UpdateDataSource/Footer.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-a2KjNqRZu8onPY+37otcyrRxpm9qY7b6/6Y03jPChJcvcxhpqpVxoftgxRrkanQx"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/update-datasource-dependent.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js"
+    ],
+    "integrity": "sha384-JPyReqTcIsXYsKzSpkZlicpWFZWXIRWuUv+XijewIR5Wj9o4qvC4/h8RXFrkZOpF"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/update-datasource.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/DataSource/DataUtility.js",
+      "wwwroot/Scripts/DataSource/UpdateDataSource/App.js",
+      "wwwroot/Scripts/DataSource/UpdateDataSource/Index.js",
+      "wwwroot/Scripts/DataSource/UpdateDataSource/Header.js",
+      "wwwroot/Scripts/DataSource/UpdateDataSource/Connector.js",
+      "wwwroot/Scripts/DataSource/UpdateDataSource/Footer.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Y290VZ7xAFH03O+9GlcMhLa1gjl03cngjCAVp/p80enxXx+aa+vKeo/fExcpBeR4"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/create-dataset-dependent.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/LoaderBlue.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-tgVkVcZ06Naa0sWeL8+L3VFOcqFcl0ntl/RFyGluLfF12c6/2BgUcanHTlXRLKdg"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/create-dataset.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/DataSets/CreateDataSet/Index.css",
+      "wwwroot/Styles/scss/pages/DataSets/CreateDataSet/Header.css",
+      "wwwroot/Styles/scss/pages/DataSets/CreateDataSet/DataSet.css",
+      "wwwroot/Styles/scss/pages/DataSets/CreateDataSet/DataSetCards.css",
+      "wwwroot/Styles/scss/pages/Items/DataSetForm.css",
+      "wwwroot/Styles/scss/pages/DataSets/CreateDataSet/Footer.css"
+    ],
+    "integrity": "sha384-crxdCCsYeHr8OMqkZTaF9cEDo0qPwf24EBNFs9CT1lVs2xxVsWA/r0TV4FO/aEMV"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/create-dataset-dependent.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-GzGJw2KOgAnI47AM3EyWaDgPjdEgua63JDui1ARgyJmAG7lG5fmTPEdQZ7eed3tS"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/create-dataset.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/DataSource/DataUtility.js",
+      "wwwroot/Scripts/DataSet/CreateDataSet/App.js",
+      "wwwroot/Scripts/DataSet/CreateDataSet/Index.js",
+      "wwwroot/Scripts/DataSet/CreateDataSet/Header.js",
+      "wwwroot/Scripts/DataSet/CreateDataSet/DataSet.js",
+      "wwwroot/Scripts/DataSet/CreateDataSet/DataSetCards.js",
+      "wwwroot/Scripts/Items/DataSetForm.js",
+      "wwwroot/Scripts/DataSet/CreateDataSet/Footer.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-oTTuYX4YdeXWDYQU6LTzB/XChAVnta92wM79X5X+J3ePMW/RkRl9wTGDaN+FVgOP"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/addsampleitem.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/AddSampleItem.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-7Qmt7RTwjGfsIaZQMBE6VrJiSn6VtSRYvg+yw9POZVOfN9VWDmFDJOEzdErJ1Dso"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/addsamplereportparts.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/AddSampleReportParts.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-NPLT5aZavbkqCj/t6A5e6AYkiQm2H5EuFcim83WDMxip7AlknIGgEdRkG44DsTn+"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/addsampleitem.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Items/AddSampleItem.js"
+    ],
+    "integrity": "sha384-4K6CJnl2U0WGJ2zKU8jj4+aNRygaWpptwn9++DYirHya9cuawnVbjObGHWi+UVJh"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/addsamplereportpart.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Items/AddSampleReportPart.js"
+    ],
+    "integrity": "sha384-+0PFcGfQkWZZPb3hPf/4t3yXXykxmIFb7RHxl9zDUcW81gigj6g3mK7jSt7e2Uj/"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/reports-tour.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-tour-standalone.min.css",
+      "wwwroot/Styles/scss/pages/DesignerTour.css"
+    ],
+    "integrity": "sha384-Ut0uMiItNb/OUgRNYoIQZZ+XTNkp5tRoHF93IpBeTPioHRWPxPeC0NI6LxRk3yQ7"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/reports-tour.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap-tour-standalone.min.js",
+      "wwwroot/Scripts/Tour/DesignerTour.js",
+      "wwwroot/Scripts/Tour/Tour.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-hWZQ1Sh+Uw7q+Cy+UV9BkXcosfCTi/bs+5H4N3GfYrgNH25+hJF+9fhGD2/MURQ7"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/dashboard-feedback.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Feedback.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/Components/popup.css",
+      "wwwroot/Styles/scss/pages/Support/Support.css",
+      "wwwroot/Styles/Editor/easymde.min.css"
+    ],
+    "integrity": "sha384-c26QtLI+mudC/fq5GwWbINGQPYP8jJTilLQFOhxjbi2jVAPq1ZV7xbGS4tw6uyiP"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/dashboard-feedback.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.uploadbox.min.js",
+      "wwwroot/Scripts/FeedBack/Feedback.js",
+      "wwwroot/Scripts/Editor/easymde.min.js",
+      "wwwroot/Scripts/Support/Support.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-WoLFaGtfp22bmSf2YV83nMz7JTSed0awRSqfK2W3DLZKAZModvfmqzc69Cr8sItU"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/concierge-support.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Support/ConciergeSupport.css"
+    ],
+    "integrity": "sha384-uIb7/72R6VVGF3CgeH0D4A/5IYaqZQ3FCvagoaP+hRBGNPfSuuH14FScEQeYHpSJ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/concierge-support.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Support/ConciergeSupport.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Xd+Qxg/BOcf8RLxaQuPJQCgd9pMxrPShtJhOpzume5k9l/cd9UoJrIPArjNt+Kv/"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/view-incident.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css"
+    ],
+    "integrity": "sha384-jSxHf+Dz52mxkfx5lP5pBUoo2sbZZSeSVfCfqIaajDzGdeuZTQxDuM8I6qp946rt"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/view-incident.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js"
+    ],
+    "integrity": "sha384-cytox/dCL8LPTZM0e4PvYCP2WUzvN1B0jCAxgN8oMAhA+N/2z5EW/UzuLTg+lwpP"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/list-tickets.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.tooltip.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js"
+    ],
+    "integrity": "sha384-GRdPunGQ7oX8RcrV85PhWUIC83A2e2/6Umbi5UbL1WJOBbEsYQr2Nv7Tr5HsIP9v"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/list-tickets.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/TicketListing.css"
+    ],
+    "integrity": "sha384-Kfujic5d+hDYdSvI0MI03JpWpHWsTRmH+t3yWmttAylqJXnKzdL3Nkm7Oj84psMN"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/connected-accounts.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.grid.min.js",
+      "wwwroot/Scripts/essentialjs/ej.pager.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/essentialjs/ej.editor.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/User/ConnectedAccount.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-F/75uYl6aqGaDHD2ts4JVjQhffQCZG5TzKTLYZzlssQW9ZRecBePVMYlhk+VR7CI"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/create-item-menu.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/general/create-item-menu.css"
+    ],
+    "integrity": "sha384-ZOD6p1BLlAM23D/g3hefFQMn9fzaoQP/tilUV/a/zgOK6DARfH5W9q6jm8aXrH9c"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/create-item-menu.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Items/CreateItemMenu.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-FpcR3cdyVPdzCkJhp4HqSGbniJlEb/4wvDzguIuLTe8Pi3DzBIX5DECYhCXMiTrl"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/embed-login.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Embed/Embed.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-URAvUvZjiB8SslwMUfvBI79DoH4K3+qWe4GBN3yZwyXHiY4dKPw1a3nqzTeBg+3e"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/embed-login.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/LoaderBlue.css",
+      "wwwroot/Styles/scss/pages/EmbedLogin.css"
+    ],
+    "integrity": "sha384-/ktyD9PE6qVeKto2wUW7eRlb1yqI2btDN2xbg/kXpHWEjjF8Y/Q2OAJMckDVZsWb"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/share-permission.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/RadioButton.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css"
+    ],
+    "integrity": "sha384-Ke31zDFy48H2TYdLyhzPVK7TCHsd6GSDqWLHMh6rfpU87k5rRe45WOKwndgcfBlG"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/share-permission.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/ej.radiobutton.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/essentialjs/ej.toolbar.min.js",
+      "wwwroot/Scripts/essentialjs/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Items/items.get-link.js",
+      "wwwroot/Scripts/Items/items.share-permission.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-dLANK9j2Gh2KNZJDe7uKwNB+U1HTg6unO5otPU4fsL5vguUri+XqLQu0b3Z0amEg"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/default-pages.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/default/default.css"
+    ],
+    "integrity": "sha384-AHV1spqYebJkehHQKU17DSxBrqb/dvK950n4sk5QvYdW+CJD3aRYT4/4UC1/loZY"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/unlock-features.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/unlockfeatures/unlockfeatures.css"
+    ],
+    "integrity": "sha384-u+v01h6YnxPl2pyd5zwtFegiAuSgiZUpkk9PaZ70DNWmojavWjcKmi9HwmeyTdao"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/unlock-features.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/UnlockFeatures/UnlockFeatures.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-yRj+YL/HCMkmWqZ/vwZNPc5hh5bv/rvjNi7YyUCOEYQOsyRUq6rBP3RnrxT78azO"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/tenant-registration.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/serverconfiguration/circle-progress.min.js",
+      "wwwroot/Scripts/serverconfiguration/deployment-progress.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-useVIYK2n6x5+5vgX8dYPjlEZtt9W34qu1++LbYmxQTsPAiqcYtNvSlT62sOnqoC"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/license-activation.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.signalR-2.4.3.min.js",
+      "wwwroot/Scripts/serverconfiguration/licenseactivation.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-cW4jHe1qhkHTcuGmCPPA5fFTwOpeclSiha7DSkrTabPDqJivVC/Yhg2VzqhRrxoZ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/connector-page.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Admin/SystemSettings.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/LoaderBlue.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css"
+    ],
+    "integrity": "sha384-4tJYPUX/i1JOfAfBqbgjLAj5rU8hYHExgtLN31Fwo0jRYGcz8svfpty1d82a/1Xb"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/dataconnector-settings.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Components/DataConnectorSettings.css",
+      "wwwroot/Styles/Fonts/font-Server.css"
+    ],
+    "integrity": "sha384-fEbCETlFxXf/3SDhylxKOSfYxYTz1vgKBcah7qCF3hXhnrsAwKOZvYYWBV4MbWE2"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/dataconnector-settings.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/Administration/DataConnector.js"
+    ],
+    "integrity": "sha384-d0+9GN946xLexgpo2cbP0j3qv18fxfs5B7kKOgPP0jDBJIqgFqW5JPmoHP35QlGS"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/connector-page.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Administration/PublishConnector.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.core.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-3d34E68qXiygLodMgqm6PCA7HAAsIrgQ3g/WMAYwEDi1iLB1ignbjx2MfAfyTwYF"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/file-render-report.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/global.css",
+      "wwwroot/Styles/scss/pages/ReportComment.css",
+      "wwwroot/Styles/scss/pages/ReportViews.css",
+      "wwwroot/Styles/scss/pages/reportviewercommon.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/Components/popup.css"
+    ],
+    "integrity": "sha384-/2Ih1Ip5ol6Sm+YHhta8fcssguomZNVya3sjEc91EbsGlMxqz7qZOFiLrVsBRezj"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/file-render-report-mobile.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/scss/pages/ReportComment.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/ReportViews.css",
+      "wwwroot/Styles/scss/pages/reportviewercommon.css",
+      "wwwroot/Styles/scss/global.css",
+      "wwwroot/Styles/scss/pages/ReportMobile.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css"
+    ],
+    "integrity": "sha384-DZREVxurnCXn2WfIHEGe3YGTolWWwepK2TMkToBEKKgG3Z450U6lS/EJpccTf5QW"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-render-mobile.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Comments/ReportComment.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Report/ReportViews.js",
+      "wwwroot/Scripts/Report/reportviewercommon.js",
+      "wwwroot/Scripts/Report/ReportMobile.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Items/ItemViewShare.js",
+      "wwwroot/Scripts/Links/ShareLink.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-iRcFhKq1DTJRv7lloJMaTC0Fyn/2oHYE6kbFEkLRbHVbsZIMOyvUnmkASwtBpAYF"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-render-jquery-mobile.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js"
+    ],
+    "integrity": "sha384-8++Zs88FMVFKziZ8ABZ3lHGv8aEQjfTctE0NUZeeFpJy3mtBo9eO4Yj/SEAzHbeZ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-render-jquery.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js"
+    ],
+    "integrity": "sha384-8++Zs88FMVFKziZ8ABZ3lHGv8aEQjfTctE0NUZeeFpJy3mtBo9eO4Yj/SEAzHbeZ"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-render.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Comments/ReportComment.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Report/ReportViews.js",
+      "wwwroot/Scripts/Report/reportviewercommon.js",
+      "wwwroot/Scripts/Items/ItemViewShare.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-2ITmPXH/QB5lM79V6Fbnl5HpvXYdPuKZRfJUbCaunRDsfnLrfwPtIeTGQrHwANGC"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-designer.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/global.css",
+      "wwwroot/Styles/scss/pages/Mixins.css",
+      "wwwroot/Styles/scss/pages/Accounts/footer.css",
+      "wwwroot/Styles/scss/pages/ReportDesigner.css"
+    ],
+    "integrity": "sha384-FnhBQf6ycvLmu7buOlRMUE9MHF5gwXlydeHkLQZbKKgJdaHRvLyIN2iZmlIn/UHT"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/designer.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/CodeMirror/codemirror.css",
+      "wwwroot/Styles/CodeMirror/show-hint.css"
+    ],
+    "integrity": "sha384-BgV3Hvq5lJ+LmTyERCsy+p7eLANnRki+zAx1UkPNXo25efGwRBjvTfhwawHnYrVE"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-render-server-mobile.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Comments/ReportComment.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Report/ReportViews.js",
+      "wwwroot/Scripts/Report/reportviewercommon.js",
+      "wwwroot/Scripts/Report/ReportMobile.js",
+      "wwwroot/Scripts/Items/ItemViewShare.js",
+      "wwwroot/Scripts/Links/ShareLink.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-noCKcrLMYFKHVOyoOchw8b5fL0AkykVi+661MxyoDW+ZmxJ0KHWimO+GUOqBqcKj"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-render-server.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js",
+      "wwwroot/Scripts/Comments/ReportComment.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Report/ReportViews.js",
+      "wwwroot/Scripts/Report/reportviewercommon.js",
+      "wwwroot/Scripts/Items/ItemViewShare.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-2ITmPXH/QB5lM79V6Fbnl5HpvXYdPuKZRfJUbCaunRDsfnLrfwPtIeTGQrHwANGC"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-designer.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/NewMaster.css",
+      "wwwroot/Styles/scss/global.css",
+      "wwwroot/Styles/scss/pages/Mixins.css",
+      "wwwroot/Styles/scss/pages/Accounts/footer.css",
+      "wwwroot/Styles/scss/pages/ReportDesigner.css"
+    ],
+    "integrity": "sha384-FnhBQf6ycvLmu7buOlRMUE9MHF5gwXlydeHkLQZbKKgJdaHRvLyIN2iZmlIn/UHT"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-designer.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Report/MessageBox.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-OwK+o3ObPPnqioUFaFWVhKoPfUXtE3cqijCAlGA3PoLQ801Nlpxf5mhK3jyLP9I3"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-designer-service.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/CodeMirror/codemirror.js",
+      "wwwroot/Scripts/CodeMirror/show-hint.js",
+      "wwwroot/Scripts/CodeMirror/sql.js",
+      "wwwroot/Scripts/CodeMirror/sql-hint.js",
+      "wwwroot/Scripts/CodeMirror/vb.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.draggable.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.checkbox.min.js",
+      "wwwroot/Scripts/CryptoHelper/crypto-js.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-+Okep+WOU1NW3qGKaqT0D9Azlf4bkJsVVP8PmlwgKIMJYhowbrangxGFdRW1bqx4"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-xml-editor.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/CodeMirrorDesigner/codemirror.css",
+      "wwwroot/Styles/CodeMirrorDesigner/dialog.css"
+    ],
+    "integrity": "sha384-GlYn8HoatiluFW8ad//q3mq9+VQ59tLz21hB/3VRZyXnNb2t0S9t/HmGRoSCofMy"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-xml-editor.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/CodeMirrorDesigner/codemirror.js",
+      "wwwroot/Scripts/CodeMirrorDesigner/xml.js",
+      "wwwroot/Scripts/CodeMirrorDesigner/search.js",
+      "wwwroot/Scripts/CodeMirrorDesigner/searchcursor.js",
+      "wwwroot/Scripts/CodeMirrorDesigner/dialog.js",
+      "wwwroot/Scripts/Core/ServerCommon.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Items/EditAsXML.js"
+    ],
+    "integrity": "sha384-AuFbnkp+v5XnftLOLV715oZLgQ6vtWhFMWjWChm2V/8mHcS2ovLBUEGppb5Z9Ibd"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/jquery-bundle.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js"
+    ],
+    "integrity": "sha384-M2EKt/KH0x8BXRL5PSzmgpXg5+xft+xtRv2Lv4cZjrop11oknszYjzdXqjGh0l6l"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-security.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Items/ReportSecurity.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-fkPZIYNCNxp4cg26E+Wz2Bkh5o8dlhRU/T5aWiM7PTSvletz3mTrpowFpV4iLAfo"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-security.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/reportsecurity/report-security.css"
+    ],
+    "integrity": "sha384-8uyBNrNGHQPU9wreVNe2NbS3QhcKrIpiuU+XAEQd2nerC8mG5bndjwFpqczQHSV7"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/publish-report.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Items/publish.report.js",
+      "wwwroot/Scripts/Items/external.sites.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-M1d4ro5dLMXcEXAx/+alCxqIeKmfFaJv7Nh6vVC2RGconMK099mb2MslxSesS3WK"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/publish-report.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/publishreport/publish-report.css",
+      "wwwroot/Styles/scss/pages/publishreport/external-sites.css"
+    ],
+    "integrity": "sha384-dqZ6UI5oKYQrkFFVFEgo3o5hm8zt7JcvB21PgO06I5CeM82ZevlvB+V/F8YTJSCh"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/published-items.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Components/PageWrapper.css",
+      "wwwroot/Styles/scss/pages/Grid.css",
+      "wwwroot/Styles/scss/pages/published-items.css"
+    ],
+    "integrity": "sha384-P2Q1c3UrnEf9cV0HXYwMW0l2heq/pvce/MfkygBnVVBMLRJocgfONgErAP4po6x8"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/published-items.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.core.min.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.data.min.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.draggable.min.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.globalize.min.js",
+      "wwwroot/Scripts/EssentialJS/common/ej.scroller.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.grid.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.pager.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.radiobutton.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.dropdownlist.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.dialog.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.button.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.autocomplete.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.checkbox.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.datepicker.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.datetimepicker.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.editor.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.toolbar.min.js",
+      "wwwroot/Scripts/EssentialJS/ej.menu.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Publish/published-items.js",
+      "wwwroot/Scripts/Publish/publish-info.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-gyKOnP5UoCOoosbL6xx2x5SpMuLfRBaFPdAKMWptHxRq5Ri7UWJD6s6eIw9JFuxY"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/custom-ui.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Core/custom-ui.js"
+    ],
+    "integrity": "sha384-yX3dnS7+caCGBFRRABcNaMRJgf3HCfBG01OpPyqAc7Zy71f3xwGBAJWICVNiLzY4"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/theme/light.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/apptheme/lighttheme.css"
+    ],
+    "integrity": "sha384-7X6p1xWI2Bciz4p343fnZccM42pZz6XVy9X2bilTOsODceewrbE16J6cqeNuu727"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/fonts/font-RobotoRegular.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Fonts/font-RobotoRegular.css"
+    ],
+    "integrity": "sha384-NMW8lLmOuXuDv/wZm4brGBO2C0y3jEAsDc9mtIIq/7zOJSh4fHw4aWYHBK33KPxB"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/essentialjs/datatile-configuration-dependency.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jsrender.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js",
+      "wwwroot/Scripts/Report/MessageBox.js"
+    ],
+    "integrity": "sha384-Mp345LrIoEPIdktNfDni3BBnnT1NHOUe5jm75STJESxpBPWhO6v+0ldqOMcHzUyu"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/bootstrap-dependencies.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Bootstrap/bootstrap.min.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css"
+    ],
+    "integrity": "sha384-Bbfn3BpQsrcxRKJ4mdXraY+Y65/CVEu5fUMIptCx/9o3PsA0+Je8r2w7I4Zxs5Sd"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-viewer-utilities.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/scss/pages/Components/Buttons.css",
+      "wwwroot/Styles/scss/pages/Components/popup.css"
+    ],
+    "integrity": "sha384-uwkiHbU3iHDsW8daoT8GQ6iPgr7S9zoFsEirxjNXgg8ySULViUYyiHm9D7zN/h7u"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-viewer-v2.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/scss/pages/reportviewercommon.css",
+      "wwwroot/Styles/scss/pages/ReportComment.css",
+      "wwwroot/Styles/scss/pages/reportviewerv2.css"
+    ],
+    "integrity": "sha384-jmZasN9YvDCnnSt5oI4YlzM+0OazwAESPg5cfSpJtFjwjts3JO7kTD13iBmumSeM"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-viewer-mobile-v2.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/ReportMobile.css"
+    ],
+    "integrity": "sha384-TuPDAx7x65CeXizKX9F4ezdfs38CnhNMGTi1jNvUfTrqqzW8D7RIlEtGpa1w/PR+"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/share-permission-v2.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/scss/pages/Components/RadioButton.css",
+      "wwwroot/Styles/scss/pages/Components/Switch.css",
+      "wwwroot/Styles/scss/pages/ItemsView.css"
+    ],
+    "integrity": "sha384-d5DeBAaKZ+YDXceDCEf0UizQCAwmworRfyrZf3LeZf6OAcNXW8QkKmf/IiRrRDeM"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/bootstrap-dependencies.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Bootstrap/bootstrap.bundle.min.js",
+      "wwwroot/Scripts/Bootstrap/bootstrap-select.min.js"
+    ],
+    "integrity": "sha384-xWIz4U2Pikao7prqpT7Ojr4/HAcJTyo9qvAIp0CZVOTSlC0/qu9lB/44QEdKc5hg"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/jquery-dependencies.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jQuery/jquery-3.5.1.min.js",
+      "wwwroot/Scripts/jQuery/jquery.easing-1.3.min.js",
+      "wwwroot/Scripts/jQuery/jquery.globalize.min.js",
+      "wwwroot/Scripts/jQuery/jquery.validate.min.js"
+    ],
+    "integrity": "sha384-0GEmmlIpw5Qx9ntgZA5T1nkWiwhUoDnN6YgOluBg+j6AA7dwPvk7LrtLg0Gln51f"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-viewer-ej-dependencies.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/essentialjs/common/ej.core.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.globalize.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.data.min.js",
+      "wwwroot/Scripts/essentialjs/common/ej.scroller.min.js",
+      "wwwroot/Scripts/essentialjs/ej.dialog.min.js",
+      "wwwroot/Scripts/essentialjs/ej.button.min.js",
+      "wwwroot/Scripts/essentialjs/ej.waitingpopup.min.js",
+      "wwwroot/Scripts/essentialjs/ej.autocomplete.min.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-GyOPYcnK2ywftLGROVRnjaz/sQbeYQ8RhCBoxg1rBsOh6gMyucRK1BsODpjl2DT/"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/share-permission-v2.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Items/items.get-link.js",
+      "wwwroot/Scripts/Items/items.share-permission-v2.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-xVAFUyJqltM2VytP7TPv9+P7Q/pbM2LCEDvPRjSx+BWmXFLNuj6vB7Mr5WpCjHfu"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-viewer-v2.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Report/reportviewercommon.js",
+      "wwwroot/Scripts/Report/save-views-v2.js",
+      "wwwroot/Scripts/Comments/ReportComment.js",
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Items/ItemViewShare.js",
+      "wwwroot/Scripts/Report/reportviewerv2.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-NjvyrRtkJOI7QMdnmOEufA+Kx0monSu7rnpmeOqcCHMTcKLxAAsyXcfy8H6A8iRE"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-viewer-mobile-v2.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Report/ReportMobile.js",
+      "wwwroot/Scripts/Links/ShareLink.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-zSowIMeUiZo2wAvvB7konJjKwwr0tUeEm7pN59r0ZaQoufnqy5lrKGzo+O96U40D"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-viewer-views-v2.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/Fonts/font-Server.css",
+      "wwwroot/Styles/EssentialJS/ej.widgets.core.min.css",
+      "wwwroot/Styles/EssentialJS/ej.theme.min.css",
+      "wwwroot/Styles/scss/pages/reportviewercommon.css",
+      "wwwroot/Styles/scss/pages/ReportViews.css"
+    ],
+    "integrity": "sha384-2eu6PACCQ/+2Wq/+6vtiQdMu9NOvRdexLyX3QJDVMWDLIugIhg+eP+LbiTHQ+McV"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-viewer-views-v2.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Core/Server.Common.js",
+      "wwwroot/Scripts/Items/ItemViewShare.js",
+      "wwwroot/Scripts/Report/report-views-v2.js",
+      "wwwroot/Scripts/Report/reportviewercommon.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-Cm0aaQw3DnQ6wGfBozt9pwYWeiXgvQMEmHYU1B/lFwSqXWsXMemfM0IhTXTbQjd7"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/cors-settings.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Administration/CorsSettings.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-GTfW5FWTxbQ7+JRhm2DEIQamiV7OpqgwRu4WpEBRwx+wP5s8klMjolHJol/5hqfn"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/content-security-policy.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Administration/ContentSecurityPolicy.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-/Amug7lW1ukc2umpVV6VcmqJLwT8rp/BvN45ik7X15cpBZhGJSeBs0FIGbcFzTjd"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/designercommon.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Report/designercommon.js"
+    ],
+    "integrity": "sha384-qVuuk4DVcK8hn/YQBFG4hZkjkHRopUZonRfY1D6pkw4FLwmk1oGP6UnHEFwCeBP5"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/report-server-tour.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/DriverJS/driver.min.js",
+      "wwwroot/Scripts/Tour/ReportServerTour.js",
+      "wwwroot/Scripts/Core/ServerCommon.js"
+    ],
+    "integrity": "sha384-XnPhvNlPmYh5vFzrHcm8iA15fRBZAXKmmfOQWuZF8vAOJtkxwokAvZpBBgOkAWmH"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/report-server-tour.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/DriverJS/driver.min.css"
+    ],
+    "integrity": "sha384-AQrA2PK/HqLTUS9kSvsjLxxKJOZHkVmmlwgGqi/HBVq+KvCvDSTqrLi7ApvacSnv"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/emailActivityLog.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Administration/EmailActivityLog.js",
+      "wwwroot/Scripts/Core/Server.Core.js"
+    ],
+    "integrity": "sha384-hKE+JM7lOuiiG/ZXTVlHCgUqcP4pCGjv/I5+dqcltOHLjxVhEc+7kG6tBbPwDp4P"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/look-and-feel.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/pages/Admin/LookAndFeel.css",
+      "wwwroot/Styles/scss/pages/Dialogs.css",
+      "wwwroot/Styles/Bootstrap/bootstrap-select.css",
+      "wwwroot/Styles/scss/pages/Admin/SystemSettings.css"
+    ],
+    "integrity": "sha384-9V44nel97qhvHTJi8fkZ3YZwp490cC0ZgPKH+ydZ54PGkGbDguxNGmiB7aku0JzB"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/scripts/look-and-feel.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Administration/LookAndFeel.js",
+      "wwwroot/Scripts/Core/Server.Core.js",
+      "wwwroot/Scripts/EssentialJS/ej.waitingpopup.min.js"
+    ],
+    "integrity": "sha384-OvCqWK/UiMwjfmlzsrpmSlDywuLUHW6WRMr9rKL2QjQyWdGh3T8DsxNzmlNYSC64"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/theme/light.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/apptheme/lighttheme.css"
+    ],
+    "integrity": "sha384-7X6p1xWI2Bciz4p343fnZccM42pZz6XVy9X2bilTOsODceewrbE16J6cqeNuu727"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/theme/dark.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/scss/apptheme/darktheme.css"
+    ],
+    "integrity": "sha384-SKU7qadpNtglTkU1udZqK8Pyt2zWyo9kbOBRS4Amj2dDkf/HP34I9S7cXdU/GoYj"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/theme/lightdefault.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/theme/lightDefault.css"
+    ],
+    "integrity": "sha384-lfpFIESgjm1E5vYVRs43E9ILppKCidRP4XTCYWWef17RWH4VwjngGZ+qQliTnfh9"
+  },
+  {
+    "outputFileName": "wwwroot/cdn/css/theme/darkdefault.min.css",
+    "inputFiles": [
+      "wwwroot/Styles/theme/darkDefault.css"
+    ],
+    "integrity": "sha384-nu5cnV+GaCa7kPhU8pGJbYYrSr7XJ/9Z+JEQZC6qjPGaiIiKrmMi1rua2LxI3wfG"
+  }
+]
