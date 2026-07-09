@@ -137,30 +137,29 @@
 
         </ul>
     }
-    @if (isAdmin || (model != null && (model[SettingsScopes.All] || model[SettingsScopes.Widgets] || (ServerAppConfig.IsSelfHosted && (model[SettingsScopes.DataStoreSettings] || model[SettingsScopes.Connectors])))))
+    @if (ServerAppConfig.IsSelfHosted)
     {
-        <label for="admin-menu-category-designer">@T["Designer"]</label>
-        <ul class="admin-menu-category" id="admin-menu-category-designer">
-                @if (ServerAppConfig.IsSelfHosted)
+        @if (isAdmin || (model != null && (model[SettingsScopes.All] || model[SettingsScopes.DataStoreSettings] || model[SettingsScopes.Connectors] || model[SettingsScopes.Widgets])))
+        {
+                <label for="admin-menu-category-designer">@T["Designer"]</label>
+            <ul class="admin-menu-category" id="admin-menu-category-designer">
+                @if (!ServerAppConfig.Sandbox.BI.Enabled && (isAdmin || (model != null && (model[SettingsScopes.All] || model[SettingsScopes.DataStoreSettings]))))
                 {
-                    @if (!ServerAppConfig.Sandbox.BI.Enabled && (isAdmin || (model != null && (model[SettingsScopes.All] || model[SettingsScopes.DataStoreSettings]))))
-                    {
-                        <li class="admin-menu-item @(currentUrl.IndexOf(dataStoreSettingsUrl, StringComparison.CurrentCultureIgnoreCase) > -1 ? "active" : string.Empty)">
-                            <a id="dataStore-settings-link" href="@dataStoreSettingsUrl">
-                                <i class="su su-datastorage"></i>
-                                <span>@T["Data Process"]</span>
-                            </a>
-                        </li>
-                    }
-                    @if (isAdmin || (model != null && (model[SettingsScopes.All] || model[SettingsScopes.Connectors])))
-                    {
-                        <li class="admin-menu-item @(currentUrl.IndexOf(dataConnectorUrl, StringComparison.CurrentCultureIgnoreCase) > -1 ? "active" : string.Empty)">
-                            <a id="datasource-settings-link" href="@dataConnectorUrl">
-                                <i class="su su-connector"><i class="su-connector path1" style="padding-right:0px"></i></i>
-                                <span>@T["Connectors"]</span>
-                            </a>
-                        </li>
-                    }
+                    <li class="admin-menu-item @(currentUrl.IndexOf(dataStoreSettingsUrl, StringComparison.CurrentCultureIgnoreCase) > -1 ? "active" : string.Empty)">
+                        <a id="dataStore-settings-link" href="@dataStoreSettingsUrl">
+                            <i class="su su-datastorage"></i>
+                            <span>@T["Data Process"]</span>
+                        </a>
+                    </li>
+                }
+                @if (isAdmin || (model != null && (model[SettingsScopes.All] || model[SettingsScopes.Connectors])))
+                {
+                    <li class="admin-menu-item @(currentUrl.IndexOf(dataConnectorUrl, StringComparison.CurrentCultureIgnoreCase) > -1 ? "active" : string.Empty)">
+                        <a id="datasource-settings-link" href="@dataConnectorUrl">
+                            <i class="su su-connector"><i class="su-connector path1" style="padding-right:0px"></i></i>
+                            <span>@T["Connectors"]</span>
+                        </a>
+                    </li>
                 }
                 @if (isAdmin || (model != null && (model[SettingsScopes.All] || model[SettingsScopes.Widgets])))
                 {
@@ -171,7 +170,8 @@
                         </a>
                     </li>
                 }
-        </ul>
+            </ul>
+        }
     }
     @if (isAdmin || (model != null && (model[SettingsScopes.All] || model[SettingsScopes.UserDirectorySettings] || (ServerAppConfig.IsSelfHosted && model[SettingsScopes.Accounts]) || model[SettingsScopes.AuthenticationSettings] || model[PermissionEntity.UsersandGroups] || model[PermissionEntity.AllGroups] || model[PermissionEntity.SpecificGroup] || (await _featureManager.IsEnabledAsync(@FeatureManagement.AllUsersPermissionEntity) && model[PermissionEntity.AllUsers]))))
     {

@@ -10,8 +10,8 @@
         "dependencies": {
           "Syncfusion.Dashboard.Connection.Presto.Json": "1.0.0",
           "Syncfusion.Dashboard.Connection.Presto.Model": "1.0.0",
-          "Syncfusion.Dashboard.Connection.Presto.Json.Reference": "16.1.80.0",
-          "Syncfusion.Dashboard.Connection.Presto.Model.Reference": "16.1.80.0"
+          "Syncfusion.Dashboard.Connection.Presto.Json.Reference": "16.1.81.0",
+          "Syncfusion.Dashboard.Connection.Presto.Model.Reference": "16.1.81.0"
         },
         "runtime": {
           "Syncfusion.Dashboard.Connection.Presto.dll": {}
@@ -146,19 +146,19 @@
           }
         }
       },
-      "Syncfusion.Dashboard.Connection.Presto.Json.Reference/16.1.80.0": {
+      "Syncfusion.Dashboard.Connection.Presto.Json.Reference/16.1.81.0": {
         "runtime": {
           "Syncfusion.Dashboard.Connection.Presto.Json.dll": {
-            "assemblyVersion": "16.1.80.0",
-            "fileVersion": "16.1.80.0"
+            "assemblyVersion": "16.1.81.0",
+            "fileVersion": "16.1.81.0"
           }
         }
       },
-      "Syncfusion.Dashboard.Connection.Presto.Model.Reference/16.1.80.0": {
+      "Syncfusion.Dashboard.Connection.Presto.Model.Reference/16.1.81.0": {
         "runtime": {
           "Syncfusion.Dashboard.Connection.Presto.Model.dll": {
-            "assemblyVersion": "16.1.80.0",
-            "fileVersion": "16.1.80.0"
+            "assemblyVersion": "16.1.81.0",
+            "fileVersion": "16.1.81.0"
           }
         }
       }
@@ -250,12 +250,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Connection.Presto.Json.Reference/16.1.80.0": {
+    "Syncfusion.Dashboard.Connection.Presto.Json.Reference/16.1.81.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Connection.Presto.Model.Reference/16.1.80.0": {
+    "Syncfusion.Dashboard.Connection.Presto.Model.Reference/16.1.81.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
