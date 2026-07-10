@@ -156,13 +156,11 @@ $(document).ready(function () {
     });
     addTenantDialog.appendTo("#add-tenant-popup");
 
-    initializeEj2CheckBox("all-settings");
-    initializeEj2CheckBox("date-and-time");
-    initializeEj2CheckBox("look-and-feel");
-    initializeEj2CheckBox("branding");
-    initializeEj2CheckBox("email");
-    initializeEj2CheckBox("account");
-    initializeEj2CheckBox("language");
+    ["all-settings", "date-and-time", "look-and-feel", "branding", "email", "account", "language"].forEach(function (id) {
+        if (document.getElementById(id)) {
+            initializeEj2CheckBox(id);
+        }
+    });
 
     var query = window.location.search;
     if (query.includes("?tab=general")) {
@@ -1377,6 +1375,10 @@ function changeIndeterminateState() {
 }
 
 function onChangeGlobalSettings(args) {
+    if (isBoldReportsSite) {
+        return;
+    }
+
     document.getElementById("all-settings").ej2_instances[0].indeterminate = false;
     if (this.element.id == "all-settings" && args.checked) {
         $(".enable-disable").each(function () {

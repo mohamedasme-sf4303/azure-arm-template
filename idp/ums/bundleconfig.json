@@ -88,7 +88,7 @@
       "wwwroot/scripts/administration/api-keys.js",
       "wwwroot/scripts/tenants/mastersite.js"
     ],
-    "integrity": "sha384-wOX/7xroVpTSMyPOLZPJ1WHZb+Vqv1vxzeNMEP0L12xFfczT+N4KzTwit0qruG80"
+    "integrity": "sha384-pgtjqZQQus2Iy/7AwG6snXhGhkq0G/ERfH0gusIUwlt9qPJBr/aacQvijKZAZojI"
   },
   {
     "bundles/js/auth-settings-page.js": [
@@ -202,7 +202,7 @@
       "wwwroot/scripts/tenants/addtenant.js",
       "wwwroot/scripts/tenants/mastersite.js"
     ],
-    "integrity": "sha384-8owyTPz+J+7W3FBVay4eqOaGnlP/M6i94vcEXk+JBOL6BeT9IMdstDk4TdsJj+uT"
+    "integrity": "sha384-grxcsJpv5jgIIsWxK2yA//XqjWaKbVZQ0DnohyU5HsACiub5+XCQrqoZ4gqPzA3x"
   },
   {
     "bundles/js/ej2.js": [
@@ -402,7 +402,7 @@
       "wwwroot/styles/scss/pages/sites/viewsite.css",
       "wwwroot/styles/scss/pages/usermanagement/usermanagementprofile.css"
     ],
-    "integrity": "sha384-eaxPm1y2Kz+6EoxjW0EdQ9hBl1phr/s/pUXUumGDGmjtbOXBlX8cPPop7QDdgBMs"
+    "integrity": "sha384-+UdUrorSxzDR5U12WFOaPO1sMARWXI9vkhbs9Uv7pqTnSCpGoeYbmMuUxgCzp/oC"
   },
   {
     "bundles/css/user-management-module.css": [
@@ -460,7 +460,7 @@
       "wwwroot/styles/scss/pages/customattribute/custom-attribute.css",
       "wwwroot/styles/scss/pages/sites/viewsite.css"
     ],
-    "integrity": "sha384-xRfS20Qe46QDox+yAbivFli34tCmlQpq1t5N3WM9i84+W1dqXcEUG9M9iJ8T5DsJ"
+    "integrity": "sha384-PeTiJH+KhRmZlENkrGb41LA+NuPF8cPllQmdINo5KdUPYPCIosUBHgb9PYr6+xwq"
   },
   {
     "bundles/css/error-page.css": [
@@ -510,7 +510,7 @@
       "wwwroot/styles/scss/pages/customattribute/custom-attribute.css",
       "wwwroot/styles/scss/pages/addtenant.css"
     ],
-    "integrity": "sha384-9iB7WEaGbmfi7DIws4GT2/Vz0ZxPUmlCOb1Ctc/GFGOhPGROkPKbEQeTnK6NzzGH"
+    "integrity": "sha384-d2WdMZTf4s0p7VNfQoT7idr1fZtgxu72cxNQpUCXqB1mfN6NwEoAFxcZwhV3xFAy"
   },
   {
     "bundles/fonts/font-robotoregular.css": [

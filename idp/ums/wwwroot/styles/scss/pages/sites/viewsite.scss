@@ -84,6 +84,16 @@
                 .settings-info {
                     color: $info-text-color;
                 }
+
+                .reports-settings-header {
+                    font-weight: 600;
+                    padding-left: 0;
+                }
+
+                .site-settings-tooltip-target {
+                    display: inline-flex;
+                    align-items: center;
+                }
             }
 
             .e-checkbox-wrapper .e-frame {

@@ -374,7 +374,17 @@
                                                 <option value="@(GlobalSettingsOptions.Account.ToString())">@EnumHelper.GetDescription(GlobalSettingsOptions.Account)</option>
                                             </select>
                                         </div>
-                                        <span class="col-lg-12 col-sm-12 col-12 float-start col-md-12 info-content">@T["Based on branding chosen, localization, date format and images will be copied to tenant. Otherwise, default images and values will be used for the tenant branding."]</span>
+                                        <div class="reports-email-inheritance">
+                                            <label class="field-label">@T["Inherit Email Settings"]</label>
+                                            <span tabindex="0" class="info-icon su su-info" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus" data-bs-content="@T["Choose whether the new site should use the email settings configured in UMS."]"></span>
+                                            <div id="reports-email-inheritance-option" title="@(canDisableEmailSettingsOption ? T["Email settings are not configured in UMS. Configure email settings in UMS before enabling inheritance."].Value : "")" data-bs-toggle="tooltip">
+                                                <select id="reports-global-settings-options" data-width="100%">
+                                                    <option value="@(GlobalSettingsOptions.Email.ToString())">@EnumHelper.GetDescription(GlobalSettingsOptions.Email)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <span class="bi-inheritance-info col-lg-12 col-sm-12 col-12 float-start col-md-12 info-content">@T["Based on branding chosen, localization, date format and images will be copied to tenant. Otherwise, default images and values will be used for the tenant branding."]</span>
+                                        <span class="reports-inheritance-info col-lg-12 col-sm-12 col-12 float-start col-md-12 info-content">@T["When selected, the new site will use the email settings configured in UMS."]</span>
                                     </div>
                                     <div class="col-lg-12 col-sm-12 col-12 float-start col-md-12 no-padding make-master-checkbox">
                                         @Html.CheckBox("change-master", false, new { @class = "material-checkbox  make-master-checkbox" })

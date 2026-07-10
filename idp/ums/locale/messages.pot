@@ -2380,6 +2380,18 @@ msgstr ""
 msgid "Inherit Global Settings"
 msgstr ""
 
+msgid "Inherit UMS Settings"
+msgstr ""
+
+msgid "Choose whether the new site should use the email settings configured in UMS."
+msgstr ""
+
+msgid "Email settings are not configured in UMS. Configure email settings in UMS before enabling inheritance."
+msgstr ""
+
+msgid "When selected, the new site will use the email settings configured in UMS."
+msgstr ""
+
 msgid "The date format, time format, and time zone information will be inherited from UMS."
 msgstr ""
 

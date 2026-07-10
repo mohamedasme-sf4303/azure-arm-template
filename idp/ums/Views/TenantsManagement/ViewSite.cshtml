@@ -222,7 +222,7 @@
                     <li role="presentation" class="@isAttributesTab" id="custom-attribute">
                         <a href="#custom-attribute-tab" class="text-decoration-none" aria-controls="custom-attribute-tab" role="tab" data-bs-toggle="tab">@T["Attributes"]</a>
                     </li>
-                    @if (Model.TenantTypeId == (int)TenantType.BoldBIOnPremise)
+                    @if (Model.TenantTypeId == (int)TenantType.BoldBIOnPremise || Model.TenantTypeId == (int)TenantType.BoldReportsOnPremise)
                     {
                         <li role="presentation" class="@isSettingsTab" id="site-settings">
                             <a href="#site-settings-tab" class="text-decoration-none" aria-controls="site-settings-tab" role="tab" data-bs-toggle="tab">@T["Settings"]</a>
@@ -245,7 +245,7 @@
                         @await Html.PartialAsync("_SiteAIServiceKey")
                         @await Html.PartialAsync("_SiteCustomAttribute")
                         @await Html.PartialAsync("_SiteResourceLimitation")
-                        @if (Model.TenantTypeId == (int)TenantType.BoldBIOnPremise)
+                        @if (Model.TenantTypeId == (int)TenantType.BoldBIOnPremise || Model.TenantTypeId == (int)TenantType.BoldReportsOnPremise)
                         {
                             @await Html.PartialAsync("_GlobalSiteSettings")
                         }

@@ -300,6 +300,10 @@ html {
                   html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .tenant-registration-form .branding-type .info-icon {
                     margin-left: 5px;
                     cursor: pointer; }
+                  html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .tenant-registration-form .reports-email-inheritance {
+                    padding-top: 15px; }
+                    html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .tenant-registration-form .reports-email-inheritance .field-label {
+                      font-size: 14px; }
                   html body .add-tenant-dialog-wrapper #popup-container .modal-tenant-body #dialog-body .dialog-body-div #dialog-body-container .tenant-registration-form #input-domain {
                     border-radius: 0 4px 4px 0;
                     border-left: 0; }

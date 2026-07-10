@@ -123,11 +123,11 @@
         var isCloudMode = @Json.Serialize(@ViewBag.IsCloudMode);
     </script>
 </head>
-<body ng-app="updateDataSourceApp">
+<body>
     <div id="updateDesigner" style="display:none !important"></div>
-    <div class="ud-container" ng-controller="updateDataSourceCtrl">
+    <div class="ud-container">
         @{ await Html.RenderPartialAsync("~/Views/DataSources/UpdateDataSource/_Header.cshtml"); }
-        <div class="ud-connector" ng-if="selectedDataConnector">
+        <div class="ud-connector">
             @{ await Html.RenderPartialAsync("~/Views/DataSources/UpdateDataSource/_Connector.cshtml"); }
         </div>
         <div class="dc-toast"></div>

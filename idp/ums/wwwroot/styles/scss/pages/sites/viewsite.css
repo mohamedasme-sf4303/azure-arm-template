@@ -230,6 +230,12 @@ span.su-password-tick {
     margin-left: 30px; }
   .admin-page-content #site-settings-tab .admin-page-body .site-settings .settings-info {
     color: var(--info-text-color); }
+  .admin-page-content #site-settings-tab .admin-page-body .site-settings .reports-settings-header {
+    font-weight: 600;
+    padding-left: 0; }
+  .admin-page-content #site-settings-tab .admin-page-body .site-settings .site-settings-tooltip-target {
+    display: inline-flex;
+    align-items: center; }
 .admin-page-content #site-settings-tab .admin-page-body .e-checkbox-wrapper .e-frame {
   height: 16px;
   width: 16px; }

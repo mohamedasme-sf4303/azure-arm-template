@@ -310,8 +310,8 @@
                                             <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <input type="text" class="form-control no-margin" name="oauthProviderName" placeholder="[[[Provider Name]]]" value="@providerName" id="oauth-provider-name" required pattern="^[a-zA-Z0-9\s\-_]+$" />
                                                 <span id="oauth-provider-name-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" title="" data-bs-content="[[[Name of the authentication provider to be displayed in the login page.]]]" tabindex="0"></span>
+                                                <span id="oauth-provider-name-validation" class="validation-message d-none">Please enter the OAuth provider name.</span>
                                             </div>
-                                            <span id="oauth-provider-name-validation" class="validation-message d-flex justify-content-center d-none">Please enter the OAuth provider name.</span>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-group">
@@ -328,8 +328,8 @@
                                                     </div>
                                                 </div>
                                                 <span id="oauth-logo-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title= "" data-bs-content="[[[Logo of the authentication provider to be displayed in the login page.]]]" tabindex="0"></span>
-                                                <span id="oauth-logo-validation" class="validation-message top-padding d-none">Please select a provider logo.</span>
                                             </div>
+                                            <span id="oauth-logo-validation" class="validation-message d-none">Please select a provider logo.</span>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-group">
@@ -338,9 +338,9 @@
                                             <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <input type="text" class="form-control oauth-dependent col-md-6 no-margin" name="oauthAuthorizationEP" value="@authorizationEndPoint" placeholder="[[[Authorization Endpoint]]]" id="oauth-authorization-endpoint" required />
                                                 <span id="oauth-auth-endpoint-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title="" data-bs-content="[[[An authorization URL where the resource owner grants authorization to the OAuth client to access protected resources.]]]" tabindex="0"> </span>
+                                                <span id="oauth-authorization-required-validation" class="validation-message d-none">Please enter the authorization endpoint.</span>
+                                                <span id="oauth-authorization-pattern-validation" class="validation-message d-none">Please enter a valid authorization endpoint.</span>
                                             </div>
-                                            <span id="oauth-authorization-required-validation" class="validation-message  d-flex justify-content-center d-none">Please enter the authorization endpoint.</span>
-                                            <span id="oauth-authorization-pattern-validation" class="validation-message  d-flex justify-content-center d-none">Please enter a valid authorization endpoint.</span>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-group">
@@ -373,7 +373,7 @@
                                         <div class="col-md-6 no-padding no-margin">
                                             <label class="app-textbox-label col-md-4 no-margin">[[[User Information Endpoint]]]</label>
 
-                                            <div class="col-md-8 no-margin form-input-field float-end">
+                                            <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <select id="user-info-method-type" class="selectpicker method-type">
                                                     @if (ViewBag.OAuthSettings.OAuthAuthSettings.UserInfoEndPointMethod == "GET")
                                                     {
@@ -390,9 +390,9 @@
                                                     <input type="text"  class="form-control oauth-dependent col-md-6 no-margin" value="@userInfoEndPoint" name="oauthUserInfoEP" placeholder="[[[User Information Endpoint]]]" id="oauth-userinfo-endpoint" required />
                                                     <span id="oauth-user-info-endpoint-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title="" data-bs-content="[[[URL to retrieve the user information based on the token.]]]" tabindex="0"></span>
                                                 </div>
+                                                <span id="oauth-userinfo-required-validation" class="validation-message d-none">Please enter the user information endpoint.</span>
+                                                <span id="oauth-userinfo-pattern-validation" class="validation-message d-none">Please enter a valid user information endpoint.</span>
                                             </div>
-                                            <span id="oauth-userinfo-required-validation" class="validation-message  d-flex justify-content-center d-none">Please enter the user information endpoint.</span>
-                                            <span id="oauth-userinfo-pattern-validation" class="validation-message  d-flex justify-content-center d-none">Please enter a valid user information endpoint.</span>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-group">
@@ -421,8 +421,8 @@
                                             <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <input type="text" class="form-control oauth-dependent col-md-6 no-margin" value="@ViewBag.OAuthSettings.OAuthAuthSettings.Scopes" name="oauthScopes" placeholder="[[[Comma separated scopes]]]" id="oauth-scopes" required />
                                                 <span id="oauth-scopes-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title=""  data-bs-content="[[[Scope is a mechanism in OAuth 2.0 to limit an application's access to a user's account. An application can request one or more scopes. This information is then presented to the user in the consent screen, and the access token issued to the application will be limited to the scopes granted.]]]" tabindex="0"></span>
+                                                <span id="oauth-scopes-validation" class="validation-message d-none">Please enter comma separated scopes.</span>
                                             </div>
-                                            <span id="oauth-scopes-validation" class="validation-message  d-flex justify-content-center d-none">Please enter comma separated scopes.</span>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-group">
@@ -431,8 +431,8 @@
                                             <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <input type="text" class="form-control oauth-dependent col-md-6 no-margin" value="@logoutEndPoint" name="oauthLogoutEndpoint" placeholder="[[[Logout Endpoint (Optional)]]]" id="oauth-logout-endpoint" />
                                                 <span id="oauth-logoutendpoint-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title="" data-bs-content="[[[We support logout endpoints that have static request parameters.]]]" tabindex="0"></span>
+                                                <span id="oauth-logout-pattern-validation" class="validation-message d-none">Please enter a valid logout endpoint.</span>
                                             </div>
-                                            <span id="oauth-logout-pattern-validation" class="validation-message  d-flex justify-content-center d-none">Please enter a valid logout endpoint.</span>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-group">
@@ -559,7 +559,7 @@
                                             </label>
                                             <div class="col-md-8 no-margin form-input-field float-end">
                                                 <input type="text" class="form-control oauth-dependent col-md-6 no-margin" value="@userInfoEmail" name="userInfoEmail" placeholder="[[[Email]]]" id="user-info-email" required />
-                                                <span id="user-info-email-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter the value for email.]]]</span>
+                                                <span id="user-info-email-validation" class="validation-message d-none">[[[Please enter the value for email.]]]</span>
                                             </div>
                                         </div>
                                     </div>
@@ -691,7 +691,7 @@
                                                 <input type="text" class="form-control no-margin" name="openidProviderName" placeholder="[[[Provider Name]]]" value="@OpenIDProviderName" id="openid-provider-name" required />
                                                 <span id="openid-provider-name-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title="" data-bs-content="[[[Name of the authentication provider to be displayed in the login page.]]]" tabindex="0"></span>
                                             </div>
-                                            <span id="openid-provider-name-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter the OpenID provider name.]]]</span>
+                                            <span id="openid-provider-name-validation" class="validation-message d-none">[[[Please enter the OpenID provider name.]]]</span>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-group">
@@ -708,7 +708,7 @@
                                                     </div>
                                                 </div>
                                                 <span id="openid-logo-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title="" data-bs-content="[[[Logo of the authentication provider to be displayed in the login page.]]]" tabindex="0"></span>
-                                                <span id="openid-logo-validation" class="validation-message top-padding d-none"></span>
+                                                <span id="openid-logo-validation" class="validation-message d-none"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -718,9 +718,9 @@
                                             <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <input type="text" class="form-control no-margin" name="openidAuthority" placeholder="[[[Authority]]]" value="@authority" id="openid-authority" required />
                                                 <span id="openid-authority-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title="" data-bs-content="[[[Endpoint to authenticate the user and grant access to the protected resource. It returns the claims about the authenticated user.]]]" tabindex="0"></span>
+                                                <span id="openid-authority-required-validation" class="validation-message d-none">[[[Please enter the Authority URL.]]]</span>
+                                                <span id="openid-authority-pattern-validation" class="validation-message d-none">[[[Please enter a valid Authority URL.]]]</span>
                                             </div>
-                                            <span id="openid-authority-required-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter the Authority URL.]]]</span>
-                                            <span id="openid-authority-pattern-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter a valid Authority URL.]]]</span>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-group">
@@ -729,7 +729,7 @@
                                             <div class="col-md-8 no-margin form-input-field float-end">
                                                 <input type="password" class="form-control col-md-6 no-margin" value="@openIDClientId" name="openidClientId" placeholder="[[[Client ID]]]" id="openid-client-id" required />
                                                 <div class="show-hide-password su su-eye"></div>
-                                                <span id="openid-client-id-validation" class="validation-message d-flex d-none">[[[Please enter the Client ID.]]]</span>
+                                                <span id="openid-client-id-validation" class="validation-message d-none">[[[Please enter the Client ID.]]]</span>
                                             </div>
                                         </div>
                                     </div>
@@ -739,7 +739,7 @@
                                             <div class="col-md-8 no-margin form-input-field float-end">
                                                 <input type="password" class="form-control col-md-6 no-margin" name="openidClientSecret" id="openid-client-secret" placeholder="[[[Client Secret]]]" required />
                                                 <div class="show-hide-password su su-eye"></div>
-                                                <span id="openid-client-secret-validation" class="validation-message d-flex d-none">[[[Please enter the client secret.]]]</span>
+                                                <span id="openid-client-secret-validation" class="validation-message d-none">[[[Please enter the client secret.]]]</span>
                                             </div>
                                         </div>
                                     </div>
@@ -749,8 +749,8 @@
                                             <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <input type="text" class="form-control no-margin" name="openidIdentifier" placeholder="[[[Identifier]]]" value="@identifier" id="openid-identifier" required />
                                                 <span id="openid-identifier-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title="" data-bs-content="[[[These claims are normally represented by a JSON object that contains a collection of name and value pairs for each claim. Provide the JSON key to identify the unique identity (email) of the user.]]]" tabindex="0"></span>
+                                                <span id="openid-identifier-validation" class="validation-message d-none">[[[Please enter the Identifier.]]]</span>
                                             </div>
-                                            <span id="openid-identifier-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter the Identifier.]]]</span>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-group">
@@ -770,8 +770,8 @@
                                             <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <input type="text" class="form-control no-margin" name="openidLogoutUrl" placeholder="[[[Logout Endpoint (Optional)]]]" value="@logoutUrl" id="openid-logout-url" />
                                                 <span id="openid-logouturl-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title="" data-bs-content="[[[We support logout endpoints that have static request parameters.]]]" tabindex="0"></span>
+                                                <span id="openid-logout-url-validation" class="validation-message d-none">[[[Please enter a valid logout endpoint.]]]</span>
                                             </div>
-                                            <span id="openid-logout-url-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter a valid logout endpoint.]]]</span>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-group">
@@ -964,8 +964,8 @@
                                             <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <input type="text" class="form-control no-margin" name="jwtProviderName" placeholder="[[[Provider Name]]]" value="@jwtProviderName" id="jwt-provider-name" required />
                                                 <span id="jwt-provider-name-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" title="" data-bs-content="[[[Name of the authentication provider to be displayed on the login page.]]]" tabindex="0"></span>
+                                                <span id="jwt-provider-name-validation" class="validation-message d-none">[[[Please enter the JWT provider name.]]] </span>
                                             </div>
-                                            <span id="jwt-provider-name-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter the JWT provider name.]]] </span>
                                         </div>
                                     </div>
                                     <!-- Provider Logo -->
@@ -983,7 +983,7 @@
                                                     </div>
                                                 </div>
                                                 <span id="jwt-settings-tab" class="su su-info info-popup" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-html="true" title="" data-bs-content="[[[Logo of the authentication provider to be displayed on the login page.]]]"></span>
-                                                <span id="jwt-logo-validation" class="validation-message top-padding d-none">
+                                                <span id="jwt-logo-validation" class="validation-message d-none">
                                                     [[[Please select JWT provider logo]]]
                                                 </span>
                                             </div>
@@ -996,9 +996,9 @@
                                             <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <input type="text" class="form-control col-md-6 no-margin" id="jwt-login-url" name="jwtLoginUrl" placeholder="[[[Remote Login URL]]]" value="@(ViewBag.JwtSettings?.JWTSettings?.LoginUrl ?? "")" required />
                                                 <span class="su su-info info-popup" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" title="" data-bs-content="[[[A remote login URL where the resource owner grants authorization to the client to access protected resources.]]]"></span>
+                                                <span id="jwt-login-url-required-validation" class="validation-message d-none">[[[Please enter the login URL.]]]</span>
+                                                <span id="jwt-login-url-pattern-validation" class="validation-message d-none">[[[Please enter a valid login URL.]]]</span>
                                             </div>
-                                            <span id="jwt-login-url-required-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter the login URL.]]]</span>
-                                            <span id="jwt-login-url-pattern-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter a valid login URL.]]]</span>
                                         </div>
                                     </div>
                                     <!-- Remote Logout URL -->
@@ -1008,9 +1008,9 @@
                                             <div class="col-md-8 no-margin form-input-field float-end input-with-icon">
                                                 <input type="text" class="form-control col-md-6 no-margin" id="jwt-logout-url" name="jwtLogoutUrl" placeholder="[[[Remote Logout URL]]]" value="@(ViewBag.JwtSettings?.JWTSettings?.LogOutUrl ?? "")" required />
                                                 <span class="su su-info info-popup" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" title="" data-bs-content="[[[We support logout endpoints that have static request parameters.]]]"></span>
+                                                <span id="jwt-logout-url-required-validation" class="validation-message d-none">[[[Please enter the logout URL.]]]</span>
+                                                <span id="jwt-logout-url-pattern-validation" class="validation-message d-none">[[[Please enter a valid logout URL.]]]</span>
                                             </div>
-                                            <span id="jwt-logout-url-required-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter the logout URL.]]]</span>
-                                            <span id="jwt-logout-url-pattern-validation" class="validation-message d-flex justify-content-center d-none">[[[Please enter a valid logout URL.]]]</span>
                                         </div>
                                     </div>
                                     <!-- Signing Key -->

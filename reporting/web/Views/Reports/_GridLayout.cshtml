@@ -547,9 +547,10 @@
 
         dataManager.executeQuery(ej.Query()).done(function () {
             if (recentItemsList) {
-                state.$applyAsync(function () {
-                    state.recentItems = recentItemsList;
-                });
+                var scope = getDashboardScope();
+                if (scope) {
+                    scope.recentItems = recentItemsList;
+                }
             }
         });
     }

@@ -21,6 +21,14 @@ var tooltip;
 var emailTooltip = null;
 var isDatabaseErrorDialogOpen = false;
 
+function updateInheritanceSettingsVisibility() {
+    var isReports = isBoldReportsTenantType();
+    $(".bi-branding").toggle(!isReports);
+    $(".reports-email-inheritance").toggle(isReports);
+    $(".bi-inheritance-info").toggle(!isReports);
+    $(".reports-inheritance-info").toggle(isReports);
+}
+
 $(document).ready(function () {
     if (isCommonLogin) {
         $(".selector").addClass("selector-alignment");
@@ -101,10 +109,12 @@ $(document).ready(function () {
     if (tenantTypeDropDown.toLowerCase() != "boldbionpremise") {
         $(".reports-branding").css("display", "inline");
         $(".bi-branding").css("display", "none");
+        $(".reports-email-inheritance").css("display", "inline");
         $(".selector").addClass("selector-alignment");
     }
     else {
         $(".bi-branding").css("display", "inline");
+        $(".reports-email-inheritance").css("display", "none");
         $(".reports-branding").css("display", "none");
         $(".selector").addClass("selector-alignment");
     }
@@ -154,6 +164,23 @@ $(document).ready(function () {
         cssClass: 'e-outline e-custom e-non-float'
     });
     globalSettingsListObj.appendTo('#global-settings-options');
+
+    var reportsEmailSettingsListObj = new ejs.dropdowns.MultiSelect({
+        placeholder: window.Server.App.LocalizationContent.SelectSettings,
+        mode: 'CheckBox',
+        showSelectAll: false,
+        allowFiltering: false,
+        showDropDownIcon: true,
+        enabled: !canDisableEmailSettingsOption,
+        cssClass: 'e-outline e-custom e-non-float'
+    });
+    reportsEmailSettingsListObj.appendTo('#reports-global-settings-options');
+    updateInheritanceSettingsVisibility();
+
+    var reportsEmailInheritanceOption = document.getElementById('reports-email-inheritance-option');
+    if (canDisableEmailSettingsOption && reportsEmailInheritanceOption) {
+        new bootstrap.Tooltip(reportsEmailInheritanceOption);
+    }
 
     waitingPopUpElement = 'add-tenant-popup';
     if (actionType.toLowerCase() == "edit") {
@@ -838,7 +865,8 @@ function addTenant() {
     }
 
     var globalSettingsValues = [];
-    $(document.getElementById('global-settings-options').ej2_instances[0].value).each(function () {
+    var inheritanceSettingsElementId = isBoldReportsTenantType() ? 'reports-global-settings-options' : 'global-settings-options';
+    $(document.getElementById(inheritanceSettingsElementId).ej2_instances[0].value).each(function () {
         globalSettingsValues.push(this);
     });
 

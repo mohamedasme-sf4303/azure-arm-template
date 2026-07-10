@@ -351,6 +351,9 @@ function changeTenantType(args) {
 
             $(".reports-branding").css("display", "inline");
             $(".bi-branding").css("display", "none");
+            $(".reports-email-inheritance").css("display", "inline");
+            $(".reports-inheritance-info").css("display", "inline");
+            $(".bi-inheritance-info").css("display", "none");
             $(".select-storage").html(window.Server.App.LocalizationContent.SelectStorage);
             $("#header-description").html(window.Server.App.LocalizationContent.BoldReportsMultiTenancy.format(reportsProductname));
             $("#master-site-description").html(window.Server.App.LocalizationContent.MasterSiteDescription.format("reports", "reports"));
@@ -393,6 +396,9 @@ function changeTenantType(args) {
             $(".selector").addClass("selector-alignment");
             $(".reports-branding").css("display", "none");
             $(".bi-branding").css("display", "inline");
+            $(".reports-email-inheritance").css("display", "none");
+            $(".reports-inheritance-info").css("display", "none");
+            $(".bi-inheritance-info").css("display", "inline");
             $(".select-intermediate-database").html(window.Server.App.LocalizationContent.SiteDataStore);
             $(".select-storage").html(window.Server.App.LocalizationContent.SelectStorage);
             $("#header-description").html(window.Server.App.LocalizationContent.BoldBiMultiTenancy.format(biProductname));
