@@ -329,13 +329,14 @@
     <ScheduleExportInfo>ScheduleExportInfo</ScheduleExportInfo>
     <IsNoDataEnabled>IsNoDataEnabled</IsNoDataEnabled>
     <SkipAttachment>SkipAttachment</SkipAttachment>
-	  <SkipMail>SkipMail</SkipMail>
+	<SkipMail>SkipMail</SkipMail>
     <ScheduleBucketExportInfo>ScheduleBucketExportInfo</ScheduleBucketExportInfo>
-	  <ReplytoEmail>ReplytoEmail</ReplytoEmail>
+	<ReplytoEmail>ReplytoEmail</ReplytoEmail>
     <ScheduleRunStatus>ScheduleRunStatus</ScheduleRunStatus>
     <ExportTypes>ExportTypes</ExportTypes>
 	<DataDrivenScheduleDetails>DataDrivenScheduleDetails</DataDrivenScheduleDetails>
 	<IsDataDrivenSchedule>IsDataDrivenSchedule</IsDataDrivenSchedule>
+	<IsGroupingEnabled>IsGroupingEnabled</IsGroupingEnabled>
   </DB_ScheduleDetail>
   <DB_ScheduleLog>
     <DB_TableName>ScheduleLog</DB_TableName>
@@ -391,6 +392,7 @@
     <EmailIds>EmailIds</EmailIds>
     <SubscribedDate>SubscribedDate</SubscribedDate>
     <ModifiedDate>ModifiedDate</ModifiedDate>
+	<IsCC>IsCC</IsCC>
     <IsActive>IsActive</IsActive>
   </DB_SubscrExtnRecpt>
   <DB_SubscribedGroup>
@@ -401,6 +403,7 @@
     <RecipientGroupId>RecipientGroupId</RecipientGroupId>
     <SubscribedDate>SubscribedDate</SubscribedDate>
     <ModifiedDate>ModifiedDate</ModifiedDate>
+	<IsCC>IsCC</IsCC>
     <IsActive>IsActive</IsActive>
   </DB_SubscribedGroup>
   <DB_SubscribedUser>
@@ -411,6 +414,7 @@
     <RecipientUserId>RecipientUserId</RecipientUserId>
     <SubscribedDate>SubscribedDate</SubscribedDate>
     <ModifiedDate>ModifiedDate</ModifiedDate>
+	<IsCC>IsCC</IsCC>
     <IsActive>IsActive</IsActive>
   </DB_SubscribedUser>
   <DB_SystemLog>

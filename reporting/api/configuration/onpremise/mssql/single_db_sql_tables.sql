@@ -269,6 +269,7 @@ CREATE TABLE [BOLDRS_ScheduleDetail](
 	[ExportFileName] [nvarchar](150) NULL,
 	[ScheduleExportInfo] [nvarchar](4000) NULL,
 	[ScheduleBucketExportInfo] [nvarchar](max) NULL,
+	[IsGroupingEnabled] [bit] NOT NULL,
 	[ReplytoEmail] [nvarchar](640) NULL,
     [ScheduleRunStatus] [nvarchar](1000) NULL ,
 	[ExportTypes] [nvarchar](500) NULL,

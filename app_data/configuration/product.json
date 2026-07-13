@@ -11,7 +11,7 @@
     {
       "Name": "BoldReports",
       "SetupName": "BoldReportsServer",
-      "Version": "14.1.7",
+      "Version": "14.1.9",
       "IDPVersion": "5.1.23",
       "IsCommonLogin": true
     }

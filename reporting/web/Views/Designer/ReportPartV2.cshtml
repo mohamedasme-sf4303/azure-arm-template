@@ -1047,6 +1047,7 @@
                 content: reportPartName,
                 position: 'TopCenter'
             });
+            reportPartNameTooltip.beforeRender = $.proxy(ej.WidgetUtil.onBeforeRender,this,reportPartNameTooltip)
             reportPartNameTooltip.appendTo('#' + controlId + '_designer_header_reportPartName');        
             var items = [{ text: 'Publish As', value: 'reportpart' }];
             var splitButton = new ejs.splitbuttons.SplitButton({
