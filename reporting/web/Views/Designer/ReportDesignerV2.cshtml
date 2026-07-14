@@ -1132,7 +1132,7 @@
                 content: reportName,
                 position: 'TopCenter'
             });
-            reportNameTooltip.beforeRender = $.proxy(ej.WidgetUtil.onBeforeRender,this,reportNameTooltip)
+            reportNameTooltip.beforeRender = $.proxy(ej.WidgetUtil.onBeforeRender,this,reportNameTooltip);
             reportNameTooltip.appendTo('#' + controlId + '_designer_header_reportName');
             var items = [{ text: '[[[Publish As]]]', value: 'report' }];
             if (enableReportPart) {

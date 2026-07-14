@@ -468,7 +468,14 @@
                                             <label class="app-textbox-label col-md-4 no-margin" for="add-oauth-user-to-default-group">[[[Add User to default group]]]</label>
                                             <div class="col-md-8 form-input-field float-end switch-align">
                                                 <span class="material-switch text-left">
-                                                    <input type="checkbox" id="add-oauth-user-to-default-group" name="oauthAddUserToDefaultGroup" ng-model="oauthAddUserToDefaultGroup" ng-init="oauthAddUserToDefaultGroup=@(ViewBag.OAuthSettings?.OAuthAuthSettings?.AddUserToDefaultGroup ?? false ? "true" : "false")" ng-checked="oauthAddUserToDefaultGroup" data-ng-disabled="!oauthIsEnabled" />
+                                                    @if ((bool)ViewBag.OAuthSettings?.OAuthAuthSettings?.AddUserToDefaultGroup)
+                                                    {
+                                                        <input type="checkbox" id="add-oauth-user-to-default-group" name="oauthAddUserToDefaultGroup" checked />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input type="checkbox" id="add-oauth-user-to-default-group" name="oauthAddUserToDefaultGroup" />
+                                                    }
                                                     <label for="add-oauth-user-to-default-group" class="label-primary"></label>
                                                 </span>
                                                 <span id="oauth-add-user-default-group-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="right" data-html="true" title="" data-bs-content="[[[Automatically add newly authenticated users to the default group.]]]" tabindex="0" style="margin-left: 12px;"></span>
@@ -807,7 +814,14 @@
                                             <label class="app-textbox-label col-md-4 no-margin" for="add-openid-user-to-default-group">[[[Add User to default group]]]</label>
                                             <div class="col-md-8 form-input-field float-end switch-align">
                                                 <span class="material-switch text-left">
-                                                    <input type="checkbox" id="add-openid-user-to-default-group" name="openidAddUserToDefaultGroup" ng-model="openidAddUserToDefaultGroup" ng-init="openidAddUserToDefaultGroup=@(ViewBag.OpenIDSettings?.OIDCAuthSettings?.AddUserToDefaultGroup ?? false ? "true" : "false")" ng-checked="openidAddUserToDefaultGroup" data-ng-disabled="!openidIsEnabled" />
+                                                    @if ((bool)ViewBag.OpenIDSettings?.OIDCAuthSettings?.AddUserToDefaultGroup)
+                                                    {
+                                                        <input type="checkbox" id="add-openid-user-to-default-group" name="openidAddUserToDefaultGroup" checked />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input type="checkbox" id="add-openid-user-to-default-group" name="openidAddUserToDefaultGroup" />
+                                                    }
                                                     <label for="add-openid-user-to-default-group" class="label-primary"></label>
                                                 </span>
                                                 <span id="openid-add-user-default-group-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="right" data-html="true" title="" data-bs-content="[[[Automatically add newly authenticated users to the default group.]]]" tabindex="0" style="margin-left: 12px;"></span>
@@ -1032,7 +1046,14 @@
                                             <label class="app-textbox-label col-md-4 no-margin" for="add-jwt-user-to-default-group">[[[Add User to default group]]]</label>
                                             <div class="col-md-8 form-input-field float-end switch-align">
                                                 <span class="material-switch text-left">
-                                                    <input type="checkbox" id="add-jwt-user-to-default-group" name="jwtAddUserToDefaultGroup" ng-model="jwtAddUserToDefaultGroup" ng-init="jwtAddUserToDefaultGroup = @(ViewBag.JwtSettings?.JWTSettings?.AddUserToDefaultGroup ?? false ? "true" : "false")" ng-checked="jwtAddUserToDefaultGroup" data-ng-disabled="!jwtIsEnabled" />
+                                                    @if ((bool)ViewBag.JwtSettings?.JWTSettings?.AddUserToDefaultGroup)
+                                                    {
+                                                        <input type="checkbox" id="add-jwt-user-to-default-group" name="jwtAddUserToDefaultGroup" checked />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input type="checkbox" id="add-jwt-user-to-default-group" name="jwtAddUserToDefaultGroup" />
+                                                    }
                                                     <label for="add-jwt-user-to-default-group" class="label-primary"></label>
                                                 </span>
                                                 <span id="jwt-add-user-default-group-info" class="su su-info info-popup" data-bs-toggle="popover" data-bs-placement="right" data-html="true" title="" data-bs-content="[[[Automatically add newly authenticated users to the default group.]]]" tabindex="0" style="margin-left: 12px;"></span>
