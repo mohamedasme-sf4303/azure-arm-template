@@ -127,12 +127,6 @@
             Controller for Data Connectors.
             </summary>
         </member>
-        <member name="M:BoldReports.Server.Services.CacheStorageSettings.DeleteExpiredBlobsWithErrorHandling">
-            <summary>
-            Wrapper for DeleteExpiredBlobs with proper error handling and logging.
-            This method prevents exceptions from being silently swallowed in fire-and-forget tasks.
-            </summary>
-        </member>
         <member name="T:BoldReports.Server.Services.CacheManager">
             <summary>
             Manages the caching of data in memory
@@ -318,24 +312,39 @@
             Oracle Cloud Infrastructure Object Storage.
             </summary>
         </member>
-        <member name="T:BoldReports.Server.Services.Storage.Abstractions.StorageItemInfo">
+        <member name="T:BoldReports.Server.Services.Storage.Providers.StorageItemInfo">
             <summary>
             Represents a blob item with its name and last modified time.
             </summary>
         </member>
-        <member name="T:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider">
+        <member name="T:BoldReports.Server.Services.Storage.Providers.StorageProvider">
             <summary>
-            Defines a common abstraction for storage operations across all providers (Local, Azure, S3, OCI).
+            Defines a common abstraction for storage operations across all providers (Local, Azure, S3, OCI)
+            and exposes a static factory method to resolve the active provider from a
+            <see cref="T:BoldReports.Server.Services.StorageAPIResponse"/>.
             </summary>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.GetLastModifiedTime(System.String)">
+        <member name="F:BoldReports.Server.Services.Storage.Providers.StorageProvider.RootFolderName">
+            <summary>
+            Gets the root folder name for the cloud storage provider.
+            </summary>
+        </member>
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.CreateProvider(BoldReports.Server.Services.StorageType,BoldReports.Server.Services.StorageAPIResponse)">
+            <summary>
+            Creates the active storage provider using the specified storage API response.
+            </summary>
+            <param name="storageType">The type of storage to create.</param>
+            <param name="storageResponse">The storage API response containing provider configuration.</param>
+            <returns>The resolved <see cref="T:BoldReports.Server.Services.Storage.Providers.StorageProvider"/> instance, or <c>null</c> for file-system storage.</returns>
+        </member>
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.GetLastModifiedTime(System.String)">
             <summary>
             Gets the last modified time of the specified blob.
             </summary>
             <param name="blobName">The name or path of the blob.</param>
             <returns>The <see cref="T:System.DateTime"/> when the blob was last modified.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.UploadFrombyteArray(System.Byte[],System.String,System.DateTime)">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.UploadFrombyteArray(System.Byte[],System.String,System.DateTime)">
             <summary>
             Uploads the provided byte array to storage using the given blob name and associates it with a report time.
             </summary>
@@ -343,147 +352,87 @@
             <param name="blobName">The target blob name or path.</param>
             <param name="reportTime">The report time to associate with the uploaded item.</param>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.DownloadToText(System.String)">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.DownloadToText(System.String)">
             <summary>
             Downloads the content of the specified blob and returns it as a text string.
             </summary>
             <param name="sourceBlobName">The name or path of the source blob.</param>
             <returns>The blob content as a string.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.DownloadToStream(System.String)">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.DownloadToStream(System.String)">
             <summary>
             Downloads the content of the specified blob as a <see cref="T:System.IO.Stream"/>.
             </summary>
             <param name="sourceBlobName">The name or path of the source blob.</param>
             <returns>A <see cref="T:System.IO.Stream"/> containing the blob data.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.UploadFromStream(System.IO.Stream,System.String)">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.UploadFromStream(System.IO.Stream,System.String)">
             <summary>
             Uploads the content of the specified stream to the object storage.
             </summary>
             <param name="stream">The stream containing the data to upload.</param>
             <param name="destinationBlobName">The object key where the content will be stored.</param>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.DownloadToByteArray(System.String)">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.DownloadToByteArray(System.String)">
             <summary>
             Downloads the content of the specified blob and returns it as a byte array.
             </summary>
             <param name="blobName">The name or path of the blob.</param>
             <returns>The blob content as a byte array.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.DeleteBlobItem(System.String)">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.DeleteBlobItem(System.String)">
             <summary>
             Deletes the specified blob item from storage.
             </summary>
             <param name="blobPath">The name or path of the blob to delete.</param>
             <returns><c>true</c> if the blob was deleted; otherwise <c>false</c>.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.GetBlobItems(System.String)">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.GetBlobItems(System.String)">
             <summary>
             Gets a list of blob items under the specified prefix, including their names and last modified times.
             </summary>
             <param name="prefix">The prefix to filter blobs.</param>
-            <returns>A list of <see cref="T:BoldReports.Server.Services.Storage.Abstractions.StorageItemInfo"/> objects.</returns>
+            <returns>A list of <see cref="T:BoldReports.Server.Services.Storage.Providers.StorageItemInfo"/> objects.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.GetAppDataFolderPath">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.GetAppDataFolderPath">
             <summary>
             Gets the application data folder path based on storage type.
             </summary>
             <returns>The application data folder path.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.GetConfigJsonPath">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.GetConfigJsonPath">
             <summary>
             Gets the configuration JSON file path.
             </summary>
             <returns>The configuration JSON path.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.GetProductJsonPath">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.GetProductJsonPath">
             <summary>
             Gets the product JSON file path.
             </summary>
             <returns>The product JSON path.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.GetReportingConfigPath">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.GetReportingConfigPath">
             <summary>
             Gets the reporting configuration folder path.
             </summary>
             <returns>The reporting configuration path.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.GetPrivateKeyPath">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.GetPrivateKeyPath">
             <summary>
             Gets the private key file path.
             </summary>
             <returns>The private key path.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.GetResourcePath">
+        <member name="M:BoldReports.Server.Services.Storage.Providers.StorageProvider.GetResourcePath">
             <summary>
             Gets the resource folder path.
             </summary>
             <returns>The resource path.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider.IsAzureStorage">
-            <summary>
-            Determines whether this provider uses Azure Blob Storage.
-            </summary>
-            <returns><c>true</c> if using Azure storage; otherwise <c>false</c>.</returns>
-        </member>
-        <member name="T:BoldReports.Server.Services.Storage.Abstractions.IStorageProviderFactory">
-            <summary>
-            Defines a factory abstraction for resolving the active storage provider.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Abstractions.IStorageProviderFactory.CreateProvider(BoldReports.Server.Services.StorageAPIResponse)">
-            <summary>
-            Creates the active storage provider using the specified storage API response.
-            </summary>
-            <param name="storageResponse">The storage API response containing provider configuration.</param>
-            <returns>The resolved storage provider instance.</returns>
-        </member>
-        <member name="T:BoldReports.Server.Services.Storage.Factory.StorageProviderFactory">
-            <summary>
-            Factory for creating storage provider instances based on the storage API response.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Factory.StorageProviderFactory.CreateProvider(BoldReports.Server.Services.StorageAPIResponse)">
-            <summary>
-            Creates the active storage provider using the specified storage API response.
-            </summary>
-            <param name="storageResponse">The storage API response containing provider configuration.</param>
-            <returns>An instance of the requested storage provider.</returns>
-        </member>
         <member name="T:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider">
             <summary>
-            Implementation of <see cref="T:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider"/> for Azure Blob Storage.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.ConnectionString">
-            <summary>
-            Gets the Azure Blob connection string.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.ContainerName">
-            <summary>
-            Gets the Azure Blob container name.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.AccountName">
-            <summary>
-            Gets the Azure Blob storage account name.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.AccessKey">
-            <summary>
-            Gets the Azure Blob storage access key.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.StorageUri">
-            <summary>
-            Gets the Azure Blob storage URI.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.ConnectionType">
-            <summary>
-            Gets the Azure Blob connection type (http, https, or CustomEndPoint).
+            Implementation of <see cref="T:BoldReports.Server.Services.Storage.Providers.StorageProvider"/> for Azure Blob Storage.
             </summary>
         </member>
         <member name="M:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.#ctor(BoldReports.Server.Services.StorageAPIAzureBlob)">
@@ -527,10 +476,10 @@
         </member>
         <member name="M:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.UploadFromStream(System.IO.Stream,System.String)">
             <summary>
-            Uploads the content of the specified stream to the object storage.
+            Uploads the content of the specified stream to Azure Blob Storage at the given blob name.
             </summary>
             <param name="stream">The stream containing the data to upload.</param>
-            <param name="destinationBlobName">The object key where the content will be stored.</param>
+            <param name="destinationBlobName">The target blob name or path.</param>
         </member>
         <member name="M:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.DownloadToByteArray(System.String)">
             <summary>
@@ -551,78 +500,12 @@
             Gets a list of blob items under the specified prefix, including their names and last modified times.
             </summary>
             <param name="prefix">The prefix to filter blobs.</param>
-            <returns>A list of <see cref="T:BoldReports.Server.Services.Storage.Abstractions.StorageItemInfo"/> objects.</returns>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.GetAppDataFolderPath">
-            <summary>
-            Gets the application data folder path for Azure Blob storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.GetConfigJsonPath">
-            <summary>
-            Gets the configuration JSON path for Azure Blob storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.GetProductJsonPath">
-            <summary>
-            Gets the product JSON path for Azure Blob storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.GetReportingConfigPath">
-            <summary>
-            Gets the reporting configuration path for Azure Blob storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.GetPrivateKeyPath">
-            <summary>
-            Gets the private key path for Azure Blob storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.GetResourcePath">
-            <summary>
-            Gets the resource path for Azure Blob storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.AzureBlobStorageProvider.IsAzureStorage">
-            <summary>
-            Determines whether this provider uses Azure Blob Storage.
-            </summary>
-            <returns><c>true</c> if using Azure storage; otherwise <c>false</c>.</returns>
+            <returns>A list of <see cref="T:BoldReports.Server.Services.Storage.Providers.StorageItemInfo"/> objects.</returns>
         </member>
         <member name="T:BoldReports.Server.Services.Storage.Providers.OciStorageProvider">
             <summary>
-            Implementation of <see cref="T:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider"/> for OCI Object Storage.
+            Implementation of <see cref="T:BoldReports.Server.Services.Storage.Providers.StorageProvider"/> for OCI Object Storage.
             NOTE: OCI provider stub - full implementation requires OCI SDK at runtime.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.Region">
-            <summary>
-            Gets the OCI region.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.BucketName">
-            <summary>
-            Gets the OCI bucket name.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.AccessKey">
-            <summary>
-            Gets the OCI access key.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.SecretKey">
-            <summary>
-            Gets the OCI secret key.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.OCINameSpace">
-            <summary>
-            Gets the OCI namespace.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.RootFolderName">
-            <summary>
-            Gets the root folder name in OCI.
             </summary>
         </member>
         <member name="M:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.#ctor(BoldReports.Server.Services.StorageAPIOCIObject)">
@@ -694,72 +577,11 @@
             Gets a list of blob items under the specified prefix, including their names and last modified times.
             </summary>
             <param name="prefix">The prefix to filter objects.</param>
-            <returns>A list of <see cref="T:BoldReports.Server.Services.Storage.Abstractions.StorageItemInfo"/> objects.</returns>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.GetAppDataFolderPath">
-            <summary>
-            Gets the application data folder path for OCI Object Storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.GetConfigJsonPath">
-            <summary>
-            Gets the configuration JSON path for OCI Object Storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.GetProductJsonPath">
-            <summary>
-            Gets the product JSON path for OCI Object Storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.GetReportingConfigPath">
-            <summary>
-            Gets the reporting configuration path for OCI Object Storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.GetPrivateKeyPath">
-            <summary>
-            Gets the private key path for OCI Object Storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.GetResourcePath">
-            <summary>
-            Gets the resource path for OCI Object Storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.IsAzureStorage">
-            <summary>
-            Determines whether this provider uses Azure Blob Storage.
-            </summary>
-            <returns><c>true</c> if using Azure storage; otherwise <c>false</c>.</returns>
+            <returns>A list of <see cref="T:BoldReports.Server.Services.Storage.Providers.StorageItemInfo"/> objects.</returns>
         </member>
         <member name="T:BoldReports.Server.Services.Storage.Providers.S3StorageProvider">
             <summary>
-            Implementation of <see cref="T:BoldReports.Server.Services.Storage.Abstractions.IStorageProvider"/> for Amazon S3 storage.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.Region">
-            <summary>
-            Gets the AWS region.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.BucketName">
-            <summary>
-            Gets the S3 bucket name.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.AccessKeyId">
-            <summary>
-            Gets the AWS access key ID.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.AccessKeySecret">
-            <summary>
-            Gets the AWS secret access key.
-            </summary>
-        </member>
-        <member name="P:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.RootFolderName">
-            <summary>
-            Gets the root folder name in S3.
+            Implementation of <see cref="T:BoldReports.Server.Services.Storage.Providers.StorageProvider"/> for Amazon S3 storage.
             </summary>
         </member>
         <member name="M:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.#ctor(BoldReports.Server.Services.StorageAPIAmazonS3)">
@@ -831,45 +653,17 @@
             Gets a list of blob items under the specified prefix, including their names and last modified times.
             </summary>
             <param name="prefix">The prefix to filter objects.</param>
-            <returns>A list of <see cref="T:BoldReports.Server.Services.Storage.Abstractions.StorageItemInfo"/> objects.</returns>
+            <returns>A list of <see cref="T:BoldReports.Server.Services.Storage.Providers.StorageItemInfo"/> objects.</returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.GetAppDataFolderPath">
+        <member name="M:BoldReports.Server.Services.ServiceUtil.GetStorageDetailsFromEnv">
             <summary>
-            Gets the application data folder path for Amazon S3 storage.
+            Builds a storage API response using storage-related environment variables.
             </summary>
+            <returns>
+            The storage API response, or null if the required environment variables are not set.
+            </returns>
         </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.GetConfigJsonPath">
-            <summary>
-            Gets the configuration JSON path for Amazon S3 storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.GetProductJsonPath">
-            <summary>
-            Gets the product JSON path for Amazon S3 storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.GetReportingConfigPath">
-            <summary>
-            Gets the reporting configuration path for Amazon S3 storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.GetPrivateKeyPath">
-            <summary>
-            Gets the private key path for Amazon S3 storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.GetResourcePath">
-            <summary>
-            Gets the resource path for Amazon S3 storage.
-            </summary>
-        </member>
-        <member name="M:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.IsAzureStorage">
-            <summary>
-            Determines whether this provider uses Azure Blob Storage.
-            </summary>
-            <returns><c>true</c> if using Azure storage; otherwise <c>false</c>.</returns>
-        </member>
-        <member name="M:BoldReports.Server.Services.ServiceUtil.GetStorageDetails">
+        <member name="M:BoldReports.Server.Services.ServiceUtil.GetStorageDetailsFromIdpApi">
             <summary>
             Retrieves the storage details from the IDP API.
             </summary>
