@@ -98,7 +98,7 @@
       "wwwroot/scripts/administration/authsettings.js",
       "wwwroot/scripts/administration/admin-common.js"
     ],
-    "integrity": "sha384-y1c4DH5ApZk6p7kbxJ0D5ON4BPXXVbpeIYxMfdihiaGXhMnhR5AvPhfSuGUz8Guw"
+    "integrity": "sha384-yiVmuVvmBvxtgNeTsKOWOQM8OgjYaqz8cpOSgnrOSDHrPTAoZSUu+/+pxDbZkyQM"
   },
   {
     "bundles/js/change-password.js": [

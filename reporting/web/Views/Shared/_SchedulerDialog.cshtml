@@ -409,6 +409,7 @@
     var updateScheduleUrl = "@Url.Action("UpdateSchedule", "scheduler")";
     var getDatasetUrl = "@Url.Action("GetDatasetsByDatasource", "scheduler")";
     var getDatasetColumnUrl = "@Url.Action("GetDatasetSchema", "scheduler")";
+    var getDataPreviewUrl = "@Url.Action("GetDatasetPreview", "scheduler")";
     var isSelfHosted = @Json.Serialize(ServerAppConfig.IsSelfHosted);
     var schedulerDialogNonce = "@Context.Items["ScriptNonce"]";
     $("#selected_dashboard").selectpicker();

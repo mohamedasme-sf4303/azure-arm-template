@@ -7,6 +7,12 @@ var dialog;
 $(document).ready(function () {
     jwtSigningKeyShowHide();
     addPlacehoder("body");
+    var initialOAuthState = "";
+    var initialOpenIdState = "";
+    var initialJwtState = "";
+    var initialWindowsAdState = "";
+    var initialAzureAdState = "";
+    var initialAzureAdB2CState = "";
 
     signingKeyConfirmationDlg();
     var scope = createAuthSettingsState();
@@ -171,6 +177,13 @@ $(document).ready(function () {
     initializeOAuthSettings();
     initializeOpenIdSettings();
     initializeJwtSettings();
+    captureInitialAuthStates();
+    validateOAuthSettingsForm({ showErrors: false });
+    validateOpenIdSettingsForm({ showErrors: false });
+    validateJwtSettingsForm({ showErrors: false });
+    validateWindowsAdDomainInput();
+    validateAzureAdSettingsForm({ showErrors: false });
+    validateAzureAdB2CSettingsForm({ showErrors: false });
 
 
     if (!$("#enable-defaultauthentication").is(":checked")) {
@@ -214,8 +227,10 @@ $(document).ready(function () {
 
     function validateWindowsAdDomainInput() {
         var isEnabled = $("#enable-windows-ad").is(":checked");
+        var isDirty = getComparableWindowsAdState() !== initialWindowsAdState;
         if (!isEnabled) {
             toggleWindowsAdDomainValidation(false, false);
+            $("#update-windowsad-settings").prop("disabled", !isDirty);
             return true;
         }
 
@@ -223,7 +238,7 @@ $(document).ready(function () {
         var isRequiredInvalid = domain.length === 0;
         var isPatternInvalid = !isRequiredInvalid && !/^[a-z0-9]+([\-.]{1}[a-z0-9]+)*\.[a-z]{2,6}$/i.test(domain);
         toggleWindowsAdDomainValidation(isRequiredInvalid, isPatternInvalid);
-        $("#update-windowsad-settings").prop("disabled", isRequiredInvalid || isPatternInvalid);
+        $("#update-windowsad-settings").prop("disabled", isRequiredInvalid || isPatternInvalid || !isDirty);
         return !(isRequiredInvalid || isPatternInvalid);
     }
 
@@ -260,10 +275,12 @@ $(document).ready(function () {
     function validateAzureAdSettingsForm(options) {
         var showErrors = shouldShowValidationErrors(options);
         var isEnabled = $("#enable-sso").is(":checked");
+        var isDirty = getComparableAzureAdState() !== initialAzureAdState;
         if (!isEnabled) {
             toggleAzureAdFieldError("application-id", false, false, true);
             toggleAzureAdFieldError("application-id-uri", false, false, true);
             toggleAzureAdFieldError("tenant-name", false, false, true);
+            $("#update-saml-settings").prop("disabled", !isDirty);
             return true;
         }
 
@@ -282,7 +299,7 @@ $(document).ready(function () {
         toggleAzureAdFieldError("tenant-name", tenantRequiredInvalid, tenantPatternInvalid, showErrors);
 
         var hasInvalid = appIdRequiredInvalid || appIdUriRequiredInvalid || tenantRequiredInvalid || tenantPatternInvalid;
-        $("#update-saml-settings").prop("disabled", hasInvalid);
+        $("#update-saml-settings").prop("disabled", hasInvalid || !isDirty);
         return !hasInvalid;
     }
 
@@ -333,8 +350,9 @@ $(document).ready(function () {
     function validateAzureAdB2CSettingsForm(options) {
         var showErrors = shouldShowValidationErrors(options);
         var isEnabled = $("#enable-sso-b2c").is(":checked");
+        var isDirty = getComparableAzureAdB2CState() !== initialAzureAdB2CState;
         if (!isEnabled) {
-            $("#update-azure-b2c-settings").prop("disabled", false);
+            $("#update-azure-b2c-settings").prop("disabled", !isDirty);
             return true;
         }
 
@@ -368,7 +386,7 @@ $(document).ready(function () {
         toggleAuthLogoError("#azureb2c-logo-validation", logoInvalid, showErrors);
 
         var hasInvalid = providerRequiredInvalid || providerMaxLengthInvalid || appIdRequiredInvalid || tenantRequiredInvalid || tenantPatternInvalid || tenantIdRequiredInvalid || clientSecretRequiredInvalid || policyRequiredInvalid || logoInvalid;
-        $("#update-azure-b2c-settings").prop("disabled", hasInvalid);
+        $("#update-azure-b2c-settings").prop("disabled", hasInvalid || !isDirty);
         return !hasInvalid;
     }
 
@@ -426,7 +444,113 @@ $(document).ready(function () {
     }
 
     function isLogoInvalid(logoValue, validationSelector, isValidLogo) {
-        return isValidLogo === false || !logoValue || logoValue === "none" || hasVisibleValidationMessage(validationSelector);
+        var normalizedLogoValue = (logoValue || "").replace(/\s+/g, "").toLowerCase();
+        var isEmptyPreview = !normalizedLogoValue ||
+            normalizedLogoValue === "none" ||
+            normalizedLogoValue === 'url("")' ||
+            normalizedLogoValue === "url('')" ||
+            normalizedLogoValue === "url()";
+
+        return isValidLogo === false || isEmptyPreview || hasVisibleValidationMessage(validationSelector);
+    }
+
+    function hasPersistedLogoValue(selector) {
+        var persistedLogo = ($(selector).val() || "").trim();
+        return persistedLogo.length > 0;
+    }
+
+    function getComparableAuthState(authPrefix) {
+        var isOAuth = authPrefix === "oauth";
+        var state = {
+            isEnabled: $("#" + authPrefix + "IsEnabled").is(":checked"),
+            providerName: ($("#" + authPrefix + "-provider-name").val() || "").trim(),
+            persistedLogo: ($(isOAuth ? "input[name='oauthLogo']" : "input[name='openidLogo']").val() || "").trim(),
+            previewLogo: ($(isOAuth ? "#oauth-image-upload-box .js-image-preview" : "#openid-image-upload-box .js-image-preview").css("background-image") || "").replace(/\s+/g, ""),
+            canCreateAccount: $("#enable-" + authPrefix + "-account-creation").is(":checked")
+        };
+
+        if (isOAuth) {
+            state.authorizationEndPoint = ($("#oauth-authorization-endpoint").val() || "").trim();
+            state.tokenEndPoint = ($("#oauth-token-endpoint").val() || "").trim();
+            state.tokenMethod = document.getElementById("token-method-type").ej2_instances[0].value;
+            state.userInfoEndPoint = ($("#oauth-userinfo-endpoint").val() || "").trim();
+            state.userInfoMethod = document.getElementById("user-info-method-type").ej2_instances[0].value;
+            state.issuerEndPoint = ($("#oauth-issuer-endpoint").val() || "").trim();
+            state.jwksEndPoint = ($("#oauth-Jwks-endpoint").val() || "").trim();
+            state.clientId = ($("#oauth-client-id").val() || "").trim();
+            state.clientSecret = ($("#oauth-client-secret").val() || "").trim();
+            state.scopes = ($("#oauth-scopes").val() || "").trim();
+            state.logoutEndPoint = ($("#oauth-logout-endpoint").val() || "").trim();
+            state.userInfoEmail = ($("#user-info-email").val() || "").trim();
+            state.userInfoFirstname = ($("#user-info-firstname").val() || "").trim();
+            state.userInfoLastname = ($("#user-info-lastname").val() || "").trim();
+        }
+        else {
+            state.authority = ($("#openid-authority").val() || "").trim();
+            state.clientId = ($("#openid-client-id").val() || "").trim();
+            state.clientSecret = ($("#openid-client-secret").val() || "").trim();
+            state.identifier = ($("#openid-identifier").val() || "").trim();
+            state.logoutEndpoint = ($("#openid-logout-endpoint").val() || "").trim();
+            state.enableTokenStorage = $("#enable-openid-token-storage").is(":checked");
+            state.usePkce = $("#enable-openid-pkce").is(":checked");
+            state.responseType = document.getElementById("response-type-dropdown").ej2_instances[0].value;
+        }
+
+        return JSON.stringify(state);
+    }
+
+    function getComparableJwtState() {
+        return JSON.stringify({
+            isEnabled: $("#enable-jwt").is(":checked"),
+            providerName: ($("#jwt-provider-name").val() || "").trim(),
+            persistedLogo: ($("input[name='jwtLogo']").val() || "").trim(),
+            previewLogo: ($("#jwt-image-upload-box .js-image-preview").css("background-image") || "").replace(/\s+/g, ""),
+            loginUrl: ($("#jwt-authority").val() || "").trim(),
+            logoutUrl: ($("#jwt-client-id").val() || "").trim(),
+            encryptionEnabled: $("#enable-jwt-encryption").is(":checked")
+        });
+    }
+
+    function getComparableWindowsAdState() {
+        return JSON.stringify({
+            isEnabled: $("#enable-windows-ad").is(":checked"),
+            domain: ($("#windowsad-Settings-Domain").val() || "").trim()
+        });
+    }
+
+    function getComparableAzureAdState() {
+        return JSON.stringify({
+            isEnabled: $("#enable-sso").is(":checked"),
+            applicationId: ($("#application-id").val() || "").trim(),
+            applicationIdUri: ($("#application-id-uri").val() || "").trim(),
+            tenantName: ($("#tenant-name").val() || "").trim(),
+            mobileAppId: ($("#mobile-app-id").val() || "").trim(),
+            sloEnabled: $("#enable-slo").is(":checked")
+        });
+    }
+
+    function getComparableAzureAdB2CState() {
+        return JSON.stringify({
+            isEnabled: $("#enable-sso-b2c").is(":checked"),
+            providerName: ($("#azure-b2c-provider-name").val() || "").trim(),
+            applicationId: ($("#application-id-b2c").val() || "").trim(),
+            tenantName: ($("#tenant-name-b2c").val() || "").trim(),
+            tenantId: ($("#tenant-id-b2c").val() || "").trim(),
+            clientSecret: ($("#client-secret-b2c").val() || "").trim(),
+            policy: ($("#policy-b2c").val() || "").trim(),
+            persistedLogo: ($("input[name='azureB2CLogo']").val() || "").trim(),
+            previewLogo: ($("#azure-b2c-image-upload-box .js-image-preview").css("background-image") || "").replace(/\s+/g, ""),
+            sloEnabled: $("#enable-slo-b2c").is(":checked")
+        });
+    }
+
+    function captureInitialAuthStates() {
+        initialOAuthState = getComparableAuthState("oauth");
+        initialOpenIdState = getComparableAuthState("openid");
+        initialJwtState = getComparableJwtState();
+        initialWindowsAdState = getComparableWindowsAdState();
+        initialAzureAdState = getComparableAzureAdState();
+        initialAzureAdB2CState = getComparableAzureAdB2CState();
     }
 
     function toggleAuthLogoError(selector, isInvalid, showErrors) {
@@ -488,8 +612,9 @@ $(document).ready(function () {
     function validateOAuthSettingsForm(options) {
         var showErrors = shouldShowValidationErrors(options);
         var isEnabled = $("#oauthIsEnabled").is(":checked");
+        var isDirty = getComparableAuthState("oauth") !== initialOAuthState;
         if (!isEnabled) {
-            $("#update-oauth-settings").prop("disabled", false);
+            $("#update-oauth-settings").prop("disabled", !isDirty);
             return true;
         }
 
@@ -523,7 +648,8 @@ $(document).ready(function () {
         var userInfoEmailRequiredInvalid = userInfoEmail.length === 0;
         var logoValue = scope && scope.oauthLogoUrl ? scope.oauthLogoUrl : $("#oauth-image-upload-box .js-image-preview").css("background-image");
         var isValidLogo = scope && scope.oauthSettingsForm ? scope.oauthSettingsForm.isValidOAuthLogoUrl : true;
-        var logoInvalid = isLogoInvalid(logoValue, "#oauth-logo-validation", isValidLogo);
+        var persistedLogoExists = hasPersistedLogoValue("input[name='oauthLogo']");
+        var logoInvalid = !persistedLogoExists && isLogoInvalid(logoValue, "#oauth-logo-validation", isValidLogo);
         var groupImportInvalid = !validateGroupImportSettingsForm("oauth", options);
 
         toggleOAuthFieldError("provider-name", providerNameRequiredInvalid, providerNameMaxInvalid, showErrors);
@@ -540,7 +666,7 @@ $(document).ready(function () {
         toggleAuthLogoError("#oauth-logo-validation", logoInvalid, showErrors);
 
         var hasInvalid = providerNameRequiredInvalid || providerNameMaxInvalid || authorizationRequiredInvalid || authorizationPatternInvalid || tokenRequiredInvalid || tokenPatternInvalid || userInfoRequiredInvalid || userInfoPatternInvalid || issuerPatternInvalid || jwksPatternInvalid || clientIdRequiredInvalid || clientSecretRequiredInvalid || scopesRequiredInvalid || logoutPatternInvalid || userInfoEmailRequiredInvalid || logoInvalid || groupImportInvalid;
-        $("#update-oauth-settings").prop("disabled", hasInvalid);
+        $("#update-oauth-settings").prop("disabled", hasInvalid || !isDirty);
         return !hasInvalid;
     }
 
@@ -611,8 +737,9 @@ $(document).ready(function () {
     function validateOpenIdSettingsForm(options) {
         var showErrors = shouldShowValidationErrors(options);
         var isEnabled = $("#openidIsEnabled").is(":checked");
+        var isDirty = getComparableAuthState("openid") !== initialOpenIdState;
         if (!isEnabled) {
-            $("#update-openid-settings").prop("disabled", false);
+            $("#update-openid-settings").prop("disabled", !isDirty);
             return true;
         }
 
@@ -634,7 +761,8 @@ $(document).ready(function () {
         var logoutPatternInvalid = logoutEndpoint.length > 0 && !endpointRegex.test(logoutEndpoint);
         var logoValue = scope && scope.openidLogoUrl ? scope.openidLogoUrl : $("#openid-image-upload-box .js-image-preview").css("background-image");
         var isValidLogo = scope && scope.oauthSettingsForm ? scope.oauthSettingsForm.isValidOpenIdLogoUrl : true;
-        var logoInvalid = isLogoInvalid(logoValue, "#openid-logo-validation", isValidLogo);
+        var persistedLogoExists = hasPersistedLogoValue("input[name='openidLogo']");
+        var logoInvalid = !persistedLogoExists && isLogoInvalid(logoValue, "#openid-logo-validation", isValidLogo);
         var groupImportInvalid = !validateGroupImportSettingsForm("openid", options);
 
         toggleOpenIdFieldError("provider-name", providerRequiredInvalid, providerMaxLengthInvalid, showErrors);
@@ -646,7 +774,7 @@ $(document).ready(function () {
         toggleAuthLogoError("#openid-logo-validation", logoInvalid, showErrors);
 
         var hasInvalid = providerRequiredInvalid || providerMaxLengthInvalid || authorityRequiredInvalid || authorityPatternInvalid || clientIdRequiredInvalid || clientSecretRequiredInvalid || identifierRequiredInvalid || logoutPatternInvalid || logoInvalid || groupImportInvalid;
-        $("#update-openid-settings").prop("disabled", hasInvalid);
+        $("#update-openid-settings").prop("disabled", hasInvalid || !isDirty);
         return !hasInvalid;
     }
 
@@ -776,6 +904,7 @@ $(document).ready(function () {
             if (query != "?view=oauth-settings") {
                 history.pushState(null, '', '?view=oauth-settings');
             }
+            initialOAuthState = getComparableAuthState("oauth");
             validateOAuthSettingsForm({ showErrors: false });
         }
         else if ($(this).attr("id") == "openid-settings") {
@@ -791,6 +920,7 @@ $(document).ready(function () {
             if (query != "?view=openid-settings") {
                 history.pushState(null, '', '?view=openid-settings');
             }
+            initialOpenIdState = getComparableAuthState("openid");
             validateOpenIdSettingsForm({ showErrors: false });
         }
         else if ($(this).attr("id") == "default-authentication-settings") {
@@ -839,6 +969,7 @@ $(document).ready(function () {
             if (query != "?view=jwt-settings") {
                 history.pushState(null, '', '?view=jwt-settings');
             }
+            initialJwtState = getComparableJwtState();
             validateJwtSettingsForm({ showErrors: false });
         }
         else if ($(this).attr("id") == "azure-ad-settings") {
@@ -854,6 +985,7 @@ $(document).ready(function () {
             if (query != "?view=azure-ad-settings") {
                 history.pushState(null, '', '?view=azure-ad-settings');
             }
+            initialAzureAdState = getComparableAzureAdState();
             validateAzureAdSettingsForm({ showErrors: false });
         }
         else if ($(this).attr("id") == "azure-ad-b2c-settings") {
@@ -869,6 +1001,7 @@ $(document).ready(function () {
             if (query != "?view=azure-ad-b2c-settings") {
                 history.pushState(null, '', '?view=azure-ad-b2c-settings');
             }
+            initialAzureAdB2CState = getComparableAzureAdB2CState();
             validateAzureAdB2CSettingsForm({ showErrors: false });
         }
         else if ($(this).attr("id") == "windows-ad-settings") {
@@ -884,6 +1017,8 @@ $(document).ready(function () {
             if (query != "?view=windows-ad-settings") {
                 history.pushState(null, '', '?view=windows-ad-settings');
             }
+            initialWindowsAdState = getComparableWindowsAdState();
+            validateWindowsAdDomainInput();
         }
         $(".success-message, .error-message").hide();
     });
@@ -940,8 +1075,9 @@ $(document).ready(function () {
     function validateJwtSettingsForm(options) {
         var showErrors = shouldShowValidationErrors(options);
         var isEnabled = $("#enable-jwt").is(":checked");
+        var isDirty = getComparableJwtState() !== initialJwtState;
         if (!isEnabled) {
-            $("#update-jwt-settings").prop("disabled", false);
+            $("#update-jwt-settings").prop("disabled", !isDirty);
             return true;
         }
 
@@ -957,7 +1093,8 @@ $(document).ready(function () {
         var loginPatternInvalid = !loginRequiredInvalid && !urlRegex.test(loginUrl);
         var logoutPatternInvalid = logoutUrl.length > 0 && !urlRegex.test(logoutUrl);
         var isValidLogo = scope && scope.jwtSettingsForm ? scope.jwtSettingsForm.isValidjwtLogoUrl : true;
-        var logoMissing = isLogoInvalid(logo, "#jwt-logo-validation", isValidLogo);
+        var persistedLogoExists = hasPersistedLogoValue("input[name='jwtLogo']");
+        var logoMissing = !persistedLogoExists && isLogoInvalid(logo, "#jwt-logo-validation", isValidLogo);
 
         toggleJwtFieldError("provider-name", providerRequiredInvalid, false, providerMaxLengthInvalid, showErrors);
         toggleJwtFieldError("login-url", loginRequiredInvalid, loginPatternInvalid, false, showErrors);
@@ -966,7 +1103,7 @@ $(document).ready(function () {
         toggleAuthLogoError("#jwt-logo-validation", logoMissing, showErrors);
 
         var isInvalid = providerRequiredInvalid || providerMaxLengthInvalid || loginRequiredInvalid || loginPatternInvalid || logoutPatternInvalid || logoMissing;
-        $("#update-jwt-settings").prop("disabled", isInvalid);
+        $("#update-jwt-settings").prop("disabled", isInvalid || !isDirty);
         return !isInvalid;
     }
 

@@ -36208,7 +36208,7 @@ body #server-app-container {
   display: none;
 }
 .schedule-dialog #selected-users, .schedule-dialog #cc-selected-users {
-  width: 895px !important;
+  width: 1000px !important;
 }
 .schedule-dialog #user-search-container .bootstrap-select, .schedule-dialog #group-search-container .bootstrap-select, .schedule-dialog #cc-user-search-container .bootstrap-select, .schedule-dialog #cc-group-search-container .bootstrap-select {
   width: 250px !important;

@@ -30,13 +30,13 @@ CREATE TABLE BOLDRS_CustomEmailTemplate (
 
 ALTER TABLE BOLDRS_ScheduleDetail ALTER COLUMN ScheduleBucketExportInfo  TYPE TEXT
 ;
-ALTER TABLE BOLDRS_ScheduleDetail ADD IsGroupingEnabled  smallint NOT NULL DEFAULT 0
+ALTER TABLE BOLDRS_ScheduleDetail ADD COLUMN IsGroupingEnabled smallint NOT NULL DEFAULT 0
 ;
-ALTER TABLE BOLDRS_SubscribedUser ADD IsCC  smallint NOT NULL DEFAULT 0
+ALTER TABLE BOLDRS_SubscribedUser ADD COLUMN IsCC smallint NOT NULL DEFAULT 0
 ;
-ALTER TABLE BOLDRS_SubscribedGroup ADD IsCC  smallint NOT NULL DEFAULT 0
+ALTER TABLE BOLDRS_SubscribedGroup ADD COLUMN IsCC smallint NOT NULL DEFAULT 0
 ;
-ALTER TABLE BOLDRS_SubscrExtnRecpt ADD IsCC  smallint NOT NULL DEFAULT 0
+ALTER TABLE BOLDRS_SubscrExtnRecpt ADD COLUMN IsCC smallint NOT NULL DEFAULT 0
 ;
 ALTER TABLE BOLDRS_ScheduleDetail ADD COLUMN ExportTypes varchar(500) NULL;
 ALTER TABLE BOLDRS_ScheduleDetail ADD COLUMN DataDrivenScheduleDetails  varchar(4000)  NULL;

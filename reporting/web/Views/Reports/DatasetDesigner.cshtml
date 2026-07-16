@@ -469,7 +469,7 @@
             }), {
                 fnction: function (args) {
                     queryDesigner.datasetName = datasetName;
-                    queryDesigner.editDataSet(ej.ReportUtil.decryptDatasetModel(args, queryDesigner), dataSources);
+                    queryDesigner.editDataSet(ej.EncryptionUtil.decryptDatasetModel(args, queryDesigner), dataSources);
                 },
                 indicator: [function () {
                     ejs.popups.showSpinner($('#' + ctrlId + '_div_designerArea')[0]);

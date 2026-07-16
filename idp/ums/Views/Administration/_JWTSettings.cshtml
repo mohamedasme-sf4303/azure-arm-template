@@ -18,7 +18,7 @@
         <form id="jwt-setting" name="jwtSettingsForm" class="auth-settings-form col-lg-12 col-md-12 col-sm-12 float-start no-padding" method="post" enctype="multipart/form-data" autocomplete="off">
             @Html.AntiForgeryToken()
             <input type="hidden" name="jwtAuthenticationProvider" value="@ViewBag.JwtSettings.AuthProvider">
-            <input type="hidden" name="jwtLogo" value="">
+            <input type="hidden" name="jwtLogo" value="@ViewBag.JwtSettings.JwtSettings.Logo">
             <div class="col-12 float-start no-padding">
                 <div class="material-switch inline-align">
                     <input type="checkbox" id="enable-jwt" @(isJwtEnabled ? "checked" : string.Empty) />
