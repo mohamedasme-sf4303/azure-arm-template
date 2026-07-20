@@ -43,7 +43,7 @@ ALTER TABLE [BOLDRS_SubscrExtnRecpt] ADD [IsCC]  [bit] NOT NULL DEFAULT 0
 ;ALTER TABLE [BOLDRS_ScheduleDetail] ADD [DataDrivenScheduleDetails] [nvarchar](4000) NULL;
 ALTER TABLE [BOLDRS_ScheduleDetail] ADD [IsDataDrivenSchedule] [bit] NOT NULL DEFAULT 0;
 ALTER TABLE [BOLDRS_Schedulelog] ADD [RowDetails]  varchar(8000)  NULL;
-ALTER TABLE [BOLDRS_Schedulelog] ADD [IsDataDriven] smallint NOT NULL DEFAULT 0;
+ALTER TABLE [BOLDRS_Schedulelog] ADD [IsDataDriven] [bit] NOT NULL DEFAULT 0; 
 ALTER TABLE [BOLDRS_ScheduleDetail] ADD [ExportTypes] [nvarchar](500) NULL;
 ALTER TABLE [BOLDRS_ScheduleLog] ADD [ExportFileName] NVARCHAR(255) NULL;
 ALTER TABLE [BOLDRS_ScheduleLog] ADD [IsFileActive] BIT NOT NULL DEFAULT 0;

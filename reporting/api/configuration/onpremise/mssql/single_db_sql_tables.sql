@@ -284,7 +284,8 @@ CREATE TABLE [BOLDRS_SubscribedUser](
 	[RecipientUserId] [int] NOT NULL,
 	[SubscribedDate] [datetime] NOT NULL,
 	[ModifiedDate] [datetime] NOT NULL,
-	[IsActive] [bit] NOT NULL)
+	[IsActive] [bit] NOT NULL,
+	[IsCC] [bit] NOT NULL)
 ;
 
 CREATE TABLE [BOLDRS_SubscribedGroup](
@@ -294,7 +295,8 @@ CREATE TABLE [BOLDRS_SubscribedGroup](
 	[RecipientGroupId] [int] NOT NULL,
 	[SubscribedDate] [datetime] NOT NULL,
 	[ModifiedDate] [datetime] NOT NULL,
-	[IsActive] [bit] NOT NULL)
+	[IsActive] [bit] NOT NULL,
+	[IsCC] [bit] NOT NULL)
 ;
 
 CREATE TABLE [BOLDRS_SubscrExtnRecpt](
@@ -304,7 +306,8 @@ CREATE TABLE [BOLDRS_SubscrExtnRecpt](
 	[EmailIds] [NVARCHAR](4000) NOT NULL,
 	[SubscribedDate] [datetime] NOT NULL,
 	[ModifiedDate] [datetime] NOT NULL,
-	[IsActive] [bit] NOT NULL)
+	[IsActive] [bit] NOT NULL,
+	[IsCC] [bit] NOT NULL)
 ;
 	
 CREATE TABLE [BOLDRS_ScheduleStatus](

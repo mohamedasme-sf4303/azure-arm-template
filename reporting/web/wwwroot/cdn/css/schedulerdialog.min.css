@@ -36125,6 +36125,12 @@ body #server-app-container {
 .schedule-dialog #group-search_popup {
   width: 240px !important;
 }
+.schedule-dialog #cc-user-search_popup {
+  width: 240px !important;
+}
+.schedule-dialog #cc-group-search_popup {
+  width: 240px !important;
+}
 .schedule-dialog .e-multi-select-list-wrapper .e-input-filter.e-input {
   padding: 4px 8px !important;
   box-sizing: border-box !important;
@@ -36134,6 +36140,21 @@ body #server-app-container {
 }
 .schedule-dialog .e-input-group.e-control-wrapper {
   border-color: lightgrey !important;
+}
+.schedule-dialog .e-multiselect .e-close-hooker.e-chips-close {
+  transform: translateY(-3px);
+}
+.schedule-dialog .e-multiselect .e-delim-view {
+  position: relative;
+  top: 4px;
+}
+.schedule-dialog .e-multiselect .e-searcher {
+  position: relative;
+  top: 2px;
+}
+.schedule-dialog .e-multiselect .e-dropdownbase {
+  position: relative;
+  top: 2px;
 }
 .schedule-dialog .day-dropdown-width {
   width: 140px !important;

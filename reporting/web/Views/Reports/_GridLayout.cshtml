@@ -22,6 +22,7 @@
     var hideViews = iscustomUIProfile && (hideMenusAndOptions || customUI.Profiles[0].Reports.HideViews || !(schemes?.Views ?? true));
     var hideViewSchedules = iscustomUIProfile && (hideMenusAndOptions || customUI.Profiles[0].Reports.HideViewSchedules || !(schemes?.ViewSchedules ?? true));
     var hideInfo = iscustomUIProfile && (hideMenusAndOptions || customUI.Profiles[0].Reports.HideInfo || !(schemes?.Info ?? true));
+    var hideSecurity = iscustomUIProfile && (hideMenusAndOptions || customUI.Profiles[0].Reports.HideSecurity || !(schemes?.Security ?? true));
     var hideProcessingOptions = iscustomUIProfile && (hideMenusAndOptions || customUI.Profiles[0].Reports.HideProcessingOptions || !(schemes?.ProcessingOptions ?? true));
     var hideMove = iscustomUIProfile && (hideMenusAndOptions || customUI.Profiles[0].Reports.HideMove || !(schemes?.Move ?? true));
     var hideCopy = iscustomUIProfile && (hideMenusAndOptions || customUI.Profiles[0].Reports.HideCopy || !(schemes?.Copy ?? true));
@@ -238,6 +239,15 @@
                 <a href="#" class="openInfo option-click" data-item-name="{{:Name}}" data-description="{{:~renderDoubleQuotes(Description)}}" data-item-id="{{:Id}}" data-createdByDisplayName="{{:CreatedByDisplayName}}" data-createdDate="{{:CreatedDate}}" data-modifiedByFullName="{{:ModifiedByFullName}}" data-modifiedDate="{{:ModifiedDate}}" data-categoryName="{{:CategoryName}}" data-isDraft="{{:IsDraft}}" data-itemType="{{:ItemType}}">
                     <i class="su su-info"></i>
                     <span>[[[Info]]]</span>
+                </a>
+            </li>
+            {{/if}}
+            {{if (CanWrite || @(Convert.ToBoolean(isAdmin).ToString().ToLower()) == true) && ~checkTablet() && !IsLocked && !IsMultiDashboard && !IsDraft && @(Convert.ToBoolean(hideSecurity).ToString().ToLower()) == false }}
+            <li role="separator" class="divider"></li>
+            <li>
+                <a href="#" class="option-click report-security-grid" data-item-id="{{:Id}}" data-item-name="{{:Name}}" data-item-type="{{:ItemType}}" data-category-name="{{:CategoryName}}" id="report-security">
+                    <i class="su su-shield"></i>
+                    <span>[[[Security]]]</span>
                 </a>
             </li>
             {{/if}}
@@ -678,4 +688,22 @@
         }
     }
 
+    // Open the Item Security dialog when the Security menu item is clicked in Grid View.
+    $(document).on("click", "#report-security", function (e) {
+        e.preventDefault();
+        var $element = $(this);
+        var itemId = $element.attr("data-item-id");
+        var itemName = $element.attr("data-item-name");
+        var itemType = parseInt($element.attr("data-item-type"));
+        var categoryName = $element.attr("data-category-name");
+        var dashboardItem = {
+            Id: itemId,
+            Name: itemName,
+            ItemType: itemType,
+            CategoryName: categoryName
+        };
+        if (typeof openItemSettingsDialog === "function") {
+            openItemSettingsDialog(dashboardItem);
+        }
+    });
 </script>

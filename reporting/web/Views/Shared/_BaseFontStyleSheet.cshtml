@@ -4,7 +4,7 @@
     var globalAppSettings = _globalAppSettings;
     var dashboardServerResourceUrl = globalAppSettings != null && globalAppSettings.SystemSettings != null ? globalAppSettings.SystemSettings.CDNLink.TrimEnd('/') : ServerAppConfig.IsSelfHosted ? new GlobalAppSettings().HttpPathBase + ServerAppConfig.AppSettings.EndPoints.CdnLink : ServerAppConfig.AppSettings.EndPoints.CdnLink.TrimEnd('/');
     var url = new Uri(Context.Request.GetDisplayUrl());
-    var themePreference = _identityResponse.UserPreference.ServerFeatures.ThemeSettings;
+    var themePreference = _identityResponse.UserPreference == null ? ServerAppConfig.Theme : _identityResponse.UserPreference.ServerFeatures.ThemeSettings;
     var appFontStyle = ServerAppConfig.IsSelfHosted ? (!themePreference.IsInheritFromGlobalLookAndFeelSettings ? themePreference.FontPreference : ServerAppConfig.FontFamily) : themePreference.FontPreference;
     var dns = url.GetLeftPart(UriPartial.Authority);
     var keyValuePairs = new Dictionary<string, string>();

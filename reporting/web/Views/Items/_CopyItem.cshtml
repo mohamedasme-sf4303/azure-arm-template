@@ -722,6 +722,15 @@
             if (sharedDataSource && sharedDataSource.length > 0) {
                 renderSharedDataSource(sharedDataSource, availableSharedDataSource);
             }
+            var itemIdsRaw = $("#ItemIdsHidden").val();
+        var allItemIds = itemIdsRaw
+            ? itemIdsRaw.split(',').filter(function (id) { return id.trim() !== ''; })
+            : (itemId ? [itemId] : []);
+
+            if (allItemIds.length > 1) {
+            
+            $("#copyreport_advance_button").css('display', 'none');
+            }
             window.$('#ItemAction_wrapper').ejWaitingPopup("hide");
         });
 

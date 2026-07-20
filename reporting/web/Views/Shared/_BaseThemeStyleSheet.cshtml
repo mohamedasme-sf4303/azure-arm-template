@@ -4,7 +4,7 @@
     var url = new Uri(Context.Request.GetDisplayUrl());
     var dns = url.GetLeftPart(UriPartial.Authority);
     var themeAppearanceName = string.Empty;
-    var themePreference = _identityResponse.UserPreference.ServerFeatures.ThemeSettings;
+    var themePreference = _identityResponse.UserPreference == null ? ServerAppConfig.Theme : _identityResponse.UserPreference.ServerFeatures.ThemeSettings;
     if (ServerAppConfig.IsSelfHosted)
     {
         if (!themePreference.IsInheritFromGlobalLookAndFeelSettings)

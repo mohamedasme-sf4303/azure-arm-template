@@ -537,6 +537,13 @@
             </summary>
             <param name="folderPath">The folder path to create.</param>
         </member>
+        <member name="M:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.IsObjectExists(System.String)">
+            <summary>
+            Checks if the specified OCI object exists in the configured bucket.
+            </summary>
+            <param name="key">The object key to check.</param>
+            <returns><c>true</c> if the object exists; otherwise <c>false</c>.</returns>
+        </member>
         <member name="M:BoldReports.Server.Services.Storage.Providers.OciStorageProvider.DownloadToText(System.String)">
             <summary>
             Downloads the specified OCI object and returns its content as a string.
@@ -612,6 +619,13 @@
             Creates a folder marker (empty blob with trailing slash) in S3.
             </summary>
             <param name="folderPath">The folder path to create.</param>
+        </member>
+        <member name="M:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.IsObjectExists(System.String)">
+            <summary>
+            Checks if the specified S3 object exists in the configured bucket.
+            </summary>
+            <param name="key">The S3 key of the object to check.</param>
+            <returns><c>true</c> if the object exists; otherwise <c>false</c>.</returns>
         </member>
         <member name="M:BoldReports.Server.Services.Storage.Providers.S3StorageProvider.DownloadToText(System.String)">
             <summary>

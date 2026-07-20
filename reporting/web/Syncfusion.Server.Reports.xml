@@ -112,7 +112,7 @@
              <param name="tenantName"></param>
              <returns></returns>
         </member>
-        <member name="M:Syncfusion.Server.Reports.Controllers.Items.ItemsController.TenantCopy(Syncfusion.Server.Base.DataClasses.PublishType,System.Guid,System.Guid,System.String,System.String,System.Boolean,System.String)">
+        <member name="M:Syncfusion.Server.Reports.Controllers.Items.ItemsController.TenantCopy(Syncfusion.Server.Base.DataClasses.PublishType,System.Guid,System.Guid,System.String,System.String,System.Boolean,System.Collections.Generic.List{Syncfusion.Server.Base.DataClasses.DataSetMappingInfo},System.Collections.Generic.List{Syncfusion.Server.Base.DataClasses.DataSourceMappingInfo},System.Collections.Generic.List{Syncfusion.Server.Base.DataClasses.ReportMappingInfo},System.String)">
              <summary>
             
              </summary>
@@ -663,7 +663,7 @@
             <param name="reportPartType">Type of sample report part</param>
             <returns>Status of operation</returns>
         </member>
-        <member name="M:Syncfusion.Server.Reports.Models.ItemModel.MultiTenantCopyAsync(System.Guid,System.Collections.Generic.IList{Syncfusion.Server.Base.DataClasses.TenantCopyTarget},System.Boolean,System.Guid,System.Net.Http.IHttpClientFactory,Syncfusion.Server.Base.Models.IPublishManagement)">
+        <member name="M:Syncfusion.Server.Reports.Models.ItemModel.MultiTenantCopyAsync(System.Guid,System.Collections.Generic.IList{Syncfusion.Server.Base.DataClasses.TenantCopyTarget},System.Boolean,System.Guid,System.Net.Http.IHttpClientFactory,Syncfusion.Server.Base.Models.IPublishManagement,System.Collections.Generic.List{Syncfusion.Server.Base.DataClasses.DataSourceMappingInfo},System.Collections.Generic.List{Syncfusion.Server.Base.DataClasses.DataSetMappingInfo})">
             <summary>
             Copies a single report to one or more tenant destinations.
             </summary>
@@ -717,28 +717,28 @@
             </summary>
             <param name="scheduleId"></param>
         </member>
-        <member name="M:Syncfusion.Server.Reports.Models.ScheduleManagement.DeactivateGroup(System.Guid,System.Collections.Generic.IEnumerable{System.Int32})">
+        <member name="M:Syncfusion.Server.Reports.Models.ScheduleManagement.DeactivateGroup(System.Guid,System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Boolean})">
             <summary>
             Deactivate the group
             </summary>
             <param name="scheduleId"></param>
             <param name="resultGroupList"></param>
         </member>
-        <member name="M:Syncfusion.Server.Reports.Models.ScheduleManagement.ActivateGroup(System.Guid,System.Int32)">
+        <member name="M:Syncfusion.Server.Reports.Models.ScheduleManagement.ActivateGroup(System.Guid,System.Int32,System.Nullable{System.Boolean})">
             <summary>
             Activate the group
             </summary>
             <param name="scheduleId"></param>
             <param name="groupId"></param>
         </member>
-        <member name="M:Syncfusion.Server.Reports.Models.ScheduleManagement.ActivateUser(System.Guid,System.Int32)">
+        <member name="M:Syncfusion.Server.Reports.Models.ScheduleManagement.ActivateUser(System.Guid,System.Int32,System.Nullable{System.Boolean})">
             <summary>
             Activates the user
             </summary>
             <param name="scheduleId"></param>
             <param name="username"></param>
         </member>
-        <member name="M:Syncfusion.Server.Reports.Models.ScheduleManagement.DeactivateUser(System.Guid,System.Collections.Generic.IEnumerable{System.Int32})">
+        <member name="M:Syncfusion.Server.Reports.Models.ScheduleManagement.DeactivateUser(System.Guid,System.Collections.Generic.IEnumerable{System.Int32},System.Nullable{System.Boolean})">
             <summary>
             Deactivate the user
             </summary>

@@ -468,7 +468,7 @@
                                             <label class="app-textbox-label col-md-4 no-margin" for="add-oauth-user-to-default-group">[[[Add User to default group]]]</label>
                                             <div class="col-md-8 form-input-field float-end switch-align">
                                                 <span class="material-switch text-left">
-                                                    @if ((bool)ViewBag.OAuthSettings?.OAuthAuthSettings?.AddUserToDefaultGroup)
+                                                    @if (ViewBag.OAuthSettings?.OAuthAuthSettings?.AddUserToDefaultGroup ?? false)
                                                     {
                                                         <input type="checkbox" id="add-oauth-user-to-default-group" name="oauthAddUserToDefaultGroup" checked />
                                                     }
@@ -814,7 +814,7 @@
                                             <label class="app-textbox-label col-md-4 no-margin" for="add-openid-user-to-default-group">[[[Add User to default group]]]</label>
                                             <div class="col-md-8 form-input-field float-end switch-align">
                                                 <span class="material-switch text-left">
-                                                    @if ((bool)ViewBag.OpenIDSettings?.OIDCAuthSettings?.AddUserToDefaultGroup)
+                                                    @if (ViewBag.OpenIDSettings?.OIDCAuthSettings?.AddUserToDefaultGroup ?? false)
                                                     {
                                                         <input type="checkbox" id="add-openid-user-to-default-group" name="openidAddUserToDefaultGroup" checked />
                                                     }
@@ -1046,7 +1046,7 @@
                                             <label class="app-textbox-label col-md-4 no-margin" for="add-jwt-user-to-default-group">[[[Add User to default group]]]</label>
                                             <div class="col-md-8 form-input-field float-end switch-align">
                                                 <span class="material-switch text-left">
-                                                    @if ((bool)ViewBag.JwtSettings?.JWTSettings?.AddUserToDefaultGroup)
+                                                    @if (ViewBag.JwtSettings?.JWTSettings?.AddUserToDefaultGroup ?? false)
                                                     {
                                                         <input type="checkbox" id="add-jwt-user-to-default-group" name="jwtAddUserToDefaultGroup" checked />
                                                     }
