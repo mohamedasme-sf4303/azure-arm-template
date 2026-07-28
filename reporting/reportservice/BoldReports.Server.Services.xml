@@ -72,6 +72,11 @@
             Holds the Destination Id value of the dataset
             </summary>
         </member>
+        <member name="P:BoldReports.Server.Service.Models.DatasetDetail.IsPublishedWithTimestamp">
+            <summary>
+            Holds the Is Published With Timestamp value of the dataset
+            </summary>
+        </member>
         <member name="P:BoldReports.Server.Service.Models.DatasourceDetail.Id">
             <summary>
             Holds the Publis ID of the data source
@@ -120,6 +125,11 @@
         <member name="P:BoldReports.Server.Service.Models.DatasourceDetail.DestinationId">
             <summary>
             Holds the Destination Id value of the data source
+            </summary>
+        </member>
+        <member name="P:BoldReports.Server.Service.Models.DatasourceDetail.IsPublishedWithTimestamp">
+            <summary>
+            Holds the Is Published With Timestamp value of the data source
             </summary>
         </member>
         <member name="T:BoldReports.Server.Controllers.ConfigurationController">
@@ -1118,6 +1128,11 @@
         <member name="P:BoldReports.Server.Report.Model.ApiReportDataSetUpdate.ItemContent">
             <summary>
             Provide the item as in stream of bytes
+            </summary>
+        </member>
+        <member name="P:BoldReports.Server.Report.Model.ApiReportDataSetUpdate.IsPublishedWithTimestamp">
+            <summary>
+            Holds the Is Published With Timestamp value of the dataset
             </summary>
         </member>
         <member name="T:BoldReports.Server.Report.Model.IRequestContext">

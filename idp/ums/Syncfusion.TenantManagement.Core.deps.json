@@ -407,29 +407,29 @@
           "lib/net6.0/Amazon.AspNetCore.DataProtection.SSM.dll": {}
         }
       },
-      "AngleSharp/0.17.1": {
+      "AngleSharp/1.5.2": {
         "runtime": {
-          "lib/netstandard2.0/AngleSharp.dll": {
-            "assemblyVersion": "0.17.1.0",
-            "fileVersion": "0.17.1.0"
+          "lib/net10.0/AngleSharp.dll": {
+            "assemblyVersion": "1.5.2.0",
+            "fileVersion": "1.5.2.0"
           }
         },
         "compile": {
-          "lib/netstandard2.0/AngleSharp.dll": {}
+          "lib/net10.0/AngleSharp.dll": {}
         }
       },
-      "AngleSharp.Css/0.17.0": {
+      "AngleSharp.Css/1.0.0-beta.216": {
         "dependencies": {
-          "AngleSharp": "0.17.1"
+          "AngleSharp": "1.5.2"
         },
         "runtime": {
-          "lib/net7.0/AngleSharp.Css.dll": {
-            "assemblyVersion": "0.17.0.0",
-            "fileVersion": "0.17.0.0"
+          "lib/net10.0/AngleSharp.Css.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         },
         "compile": {
-          "lib/net7.0/AngleSharp.Css.dll": {}
+          "lib/net10.0/AngleSharp.Css.dll": {}
         }
       },
       "AWS.Logger.Core/3.1.0": {
@@ -724,15 +724,15 @@
           "lib/netstandard2.0/ExcelNumberFormat.dll": {}
         }
       },
-      "HtmlSanitizer/9.0.892": {
+      "HtmlSanitizer/9.1.966-beta": {
         "dependencies": {
-          "AngleSharp": "0.17.1",
-          "AngleSharp.Css": "0.17.0"
+          "AngleSharp": "1.5.2",
+          "AngleSharp.Css": "1.0.0-beta.216"
         },
         "runtime": {
           "lib/net8.0/HtmlSanitizer.dll": {
             "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.892.0"
+            "fileVersion": "9.1.966.0"
           }
         },
         "compile": {
@@ -2471,7 +2471,7 @@
           "Azure.Storage.Blobs": "12.14.1",
           "Bold.Licensing": "14.1.12",
           "ClosedXML": "0.105.0",
-          "HtmlSanitizer": "9.0.892",
+          "HtmlSanitizer": "9.1.966-beta",
           "MailKit": "4.16.0",
           "Microsoft.Azure.Management.AppService.Fluent": "1.38.1",
           "Microsoft.Graph": "6.1.0",
@@ -4648,19 +4648,19 @@
       "path": "amazon.aspnetcore.dataprotection.ssm/3.1.0",
       "hashPath": "amazon.aspnetcore.dataprotection.ssm.3.1.0.nupkg.sha512"
     },
-    "AngleSharp/0.17.1": {
+    "AngleSharp/1.5.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5MPI4bbixlwxb0W/smOMeIR+QlxMy5/5jD+WnIAw4pBC+7AhLPe5bS3cLgQMJyvd6q0A48sG+uYOt/ep406GLA==",
-      "path": "anglesharp/0.17.1",
-      "hashPath": "anglesharp.0.17.1.nupkg.sha512"
+      "sha512": "sha512-LVZ7rrr6GHbhERhTgVDarVygl1e6KwE96pronA90LBOMacDhxR4lB+xYLjn/vlnUu+xbOB2RM9fuCPEx5bdyWA==",
+      "path": "anglesharp/1.5.2",
+      "hashPath": "anglesharp.1.5.2.nupkg.sha512"
     },
-    "AngleSharp.Css/0.17.0": {
+    "AngleSharp.Css/1.0.0-beta.216": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bg0AcugmX6BFEi/DHG61QrwRU8iuiX4H8LZehdIzYdqOM/dgb3BsCTzNIcc1XADn4+xfQEdVwJYTSwUxroL4vg==",
-      "path": "anglesharp.css/0.17.0",
-      "hashPath": "anglesharp.css.0.17.0.nupkg.sha512"
+      "sha512": "sha512-RVt/B1pp7HREgerDw8BVZSDC+Uqh+yeL/OGtu57mLLhBBPIQ1oSYrPKOYgdt0EZEK34l7BNCjx4BaQRNRN/ZIw==",
+      "path": "anglesharp.css/1.0.0-beta.216",
+      "hashPath": "anglesharp.css.1.0.0-beta.216.nupkg.sha512"
     },
     "AWS.Logger.Core/3.1.0": {
       "type": "package",
@@ -4749,7 +4749,7 @@
     "Bold.Licensing/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ey6NeRmLN0JvvoxyoD7ylS7Y21/FtOsTfGxK9tXosMji27HGsg7kVXVE7cUhuTQUd6deUc/uWo0o6XdS2OOyVg==",
+      "sha512": "sha512-pOt4LZE+8gdxgqN5XLdQw2JQf0UAp1qy9iCJ1MnwtDIlOyuss40Vk1bsMOp1HhA/BFh9UePIMR5N8IIsRW2JfQ==",
       "path": "bold.licensing/14.1.12",
       "hashPath": "bold.licensing.14.1.12.nupkg.sha512"
     },
@@ -4809,12 +4809,12 @@
       "path": "excelnumberformat/1.1.0",
       "hashPath": "excelnumberformat.1.1.0.nupkg.sha512"
     },
-    "HtmlSanitizer/9.0.892": {
+    "HtmlSanitizer/9.1.966-beta": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zdkMmpNCjTkxna8Y+jmPIFm2st+HjHrf32yNElFYwe7L4GmDm+mdKR6TzDyf6ewJ0RUUz84D4IkHNgrwGi4VbQ==",
-      "path": "htmlsanitizer/9.0.892",
-      "hashPath": "htmlsanitizer.9.0.892.nupkg.sha512"
+      "sha512": "sha512-Pzy9Pu7mKPpJE7d4kHB5x4S4tlbpnXrvNvnjBI4HP8X9gsm2rCzMTKf0y2OMw8lEK3rWiHmJS6yGqbbnz61tpQ==",
+      "path": "htmlsanitizer/9.1.966-beta",
+      "hashPath": "htmlsanitizer.9.1.966-beta.nupkg.sha512"
     },
     "jose-jwt/5.1.1": {
       "type": "package",

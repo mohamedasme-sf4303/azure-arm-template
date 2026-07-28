@@ -7844,105 +7844,105 @@
     "Bold.Data.Analytics.Base/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OXDNnR275nTceNzsXb5vrgUeZbAxEATjFyITBth1T42Bdc1KboI5DHEVKtKzE+Ih/31iVZMGYJltyfGKbFwakw==",
+      "sha512": "sha512-4WFUGKKnxMCur3+dHi2/csi6UGOAKIaNnDwMj0hGN11uRuuboGDRXWfix4ecVHNhlqUreAp4W55FQnpIlS0ebw==",
       "path": "bold.data.analytics.base/14.1.12",
       "hashPath": "bold.data.analytics.base.14.1.12.nupkg.sha512"
     },
     "Bold.Licensing/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ey6NeRmLN0JvvoxyoD7ylS7Y21/FtOsTfGxK9tXosMji27HGsg7kVXVE7cUhuTQUd6deUc/uWo0o6XdS2OOyVg==",
+      "sha512": "sha512-pOt4LZE+8gdxgqN5XLdQw2JQf0UAp1qy9iCJ1MnwtDIlOyuss40Vk1bsMOp1HhA/BFh9UePIMR5N8IIsRW2JfQ==",
       "path": "bold.licensing/14.1.12",
       "hashPath": "bold.licensing.14.1.12.nupkg.sha512"
     },
     "BoldReports.CRI.Barcode/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-knlVQja0RpDXAukR3E+PgzEugRx6cfgYvAYja39bvDX0XeDcMaIb2BKX7TQlBCQXEzhTpj9p8N3FC+clyFMn7Q==",
+      "sha512": "sha512-PzNo/dRocNDrfOWpsNz3IB03qC5jLR5UxgWV6j5ulCsYd7DTaST+SNows7EiAI8IInBTUUgt1K9RmIDN5d2dUw==",
       "path": "boldreports.cri.barcode/14.1.12",
       "hashPath": "boldreports.cri.barcode.14.1.12.nupkg.sha512"
     },
     "BoldReports.CRI.Html/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-V2VYgc4c1vL0r3NsqwZqdEHAaccmar8WbKZvq7JyN0z2T/hUAYGg3u7WfHu+Jx0UTkfZKJARgUlGsBCmE4OzUg==",
+      "sha512": "sha512-JQJISd3T+bKaYDllUDV9ctsG6nvlwEMEAvyoiLZHEt2LNBT0SVMhgU6Wu0KNqtd0OGHQuc1h+6s2baXvxME6ZA==",
       "path": "boldreports.cri.html/14.1.12",
       "hashPath": "boldreports.cri.html.14.1.12.nupkg.sha512"
     },
     "BoldReports.CRI.Pdf/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7eaaTN088Vb4D4ZcZasXCb3UGJiK24/Vrgum2ChVUPJ+odhv4RJSUZWIoxIkp/22LLL9VAPMcsACLNrClkCLig==",
+      "sha512": "sha512-RdBRwDVrgdQqCCs9SE8Xrq5PjqaaqODuxbvE/r5yTmC0VTUqe362wovsdVIzXt2AjipIxuR2/Lkf2e6TIefG6A==",
       "path": "boldreports.cri.pdf/14.1.12",
       "hashPath": "boldreports.cri.pdf.14.1.12.nupkg.sha512"
     },
     "BoldReports.CRI.PredictiveAnalytics/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wvu8F+m4xa203vtZsWDVc5uD/sQmjxqOLDcLpg7A7SP/6kkDBmsfJfy0GTMHHowSk6swBZfv5bGOrFSgl/8VPg==",
+      "sha512": "sha512-xqLSxq/5EHblovqsOdBiMW/UXtlTtnxDDIw6ak3NA7umBUjGCDcRdy8AKy8/bkIIyGw0mGyvHySJOTMkFD6Q8w==",
       "path": "boldreports.cri.predictiveanalytics/14.1.12",
       "hashPath": "boldreports.cri.predictiveanalytics.14.1.12.nupkg.sha512"
     },
     "BoldReports.CRI.Shape/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CW2ULym8gzehuU2GlNaIIAhoD6WtCS7Lmve1SxG2GC68jra8oqNoF8p60yGmjFCuEf8AkwG666O3LHbktwekmQ==",
+      "sha512": "sha512-vpsFVhYkAqwnbYVP2VWPDkqpyIe7uJVop1HG6nG8W6fm/O4wDFLocxahGXy75kfdT7xgH5R/lQuMy3KxvuppRA==",
       "path": "boldreports.cri.shape/14.1.12",
       "hashPath": "boldreports.cri.shape.14.1.12.nupkg.sha512"
     },
     "BoldReports.CRI.Signature/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ttfvhE2+NGGulZGAUYXnrmGtDssbe94vz1GcJE4SqhyTwT9aN4bHIiEzzR0MIqfKNp2Pg0cPa1BS1oHy2p5SYQ==",
+      "sha512": "sha512-XVNj7UBL8LHNLlOV6JJk1sRzB5vtsdkvR6hzvkkiT9qTYYoy0sahuPpY3tZbonLRA/XKpkDRwjsNvFPkTuqCCA==",
       "path": "boldreports.cri.signature/14.1.12",
       "hashPath": "boldreports.cri.signature.14.1.12.nupkg.sha512"
     },
     "BoldReports.Data.AWSSecretsManager/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MangGnODP/ci0enrYcXpdp1ShFgc7K508j1EDGAD3ho32tnav4vXp/HDEZs2u+yYBaEGghUXZX0fF4oZ64wiWg==",
+      "sha512": "sha512-HTAvfU0wBh5qV0mhTQ/ZDMix4gDUdHyLicM7cluAOKI0hOR24Y2NxZdhVGR+RbL1rhnwLVkD3vlE4IZz0rp/LA==",
       "path": "boldreports.data.awssecretsmanager/14.1.12",
       "hashPath": "boldreports.data.awssecretsmanager.14.1.12.nupkg.sha512"
     },
     "BoldReports.Data.Csv/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BTOOqpW4ZBTfBpW+nPYsKsIy0okOSM2/2XUDbHSly5g+TlgeXOpfnjoSwOxSSxYpYspszsDcs0FiXqKAYWi1og==",
+      "sha512": "sha512-WXJuAGSV8dnwjNecpotcDj9/jV4m0R2lB0JdePEbsjgjAQ5YgA+zWJYkIO7Z/Zv0Y23lGpUaF9soyEJivC5Lvw==",
       "path": "boldreports.data.csv/14.1.12",
       "hashPath": "boldreports.data.csv.14.1.12.nupkg.sha512"
     },
     "BoldReports.Data.ElasticSearch/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kSQOjnSWj5ciUOS/4UJ90C+Pgs3jiYoMJh8RzEiMT67dUILX/P65Z7LWOnzXRW3FT5Z/Z7sOK4iP4OzsGev+Pw==",
+      "sha512": "sha512-BjCB0sLuOnF6zkPa4zsawrST0aTM6L0aLZX2AVfqbtsd2PH+/uORr49xh/E8Utoh1E4/2ESeabigCop+AOzkwQ==",
       "path": "boldreports.data.elasticsearch/14.1.12",
       "hashPath": "boldreports.data.elasticsearch.14.1.12.nupkg.sha512"
     },
     "BoldReports.Data.Excel/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2AnWGAHS9mShksHVIghO6hW0i72r3QSikeVyJkcL67G/09Mzt8lJtk53vjMxj29TLKNTpiMqdWGzizoDmlkBDw==",
+      "sha512": "sha512-flslcKoBzdT/vcpy3VSqhJhPn5ZBRDaWEcnPGM5srm9VEJKwi9uRo1a7rbqnXLiMxOlZFb6f1JI+L80TyB6GjQ==",
       "path": "boldreports.data.excel/14.1.12",
       "hashPath": "boldreports.data.excel.14.1.12.nupkg.sha512"
     },
     "BoldReports.Data.SSAS/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Gx/d/o3xq9o57aUa2UUq0QLeAtxbHBu4IlNbHOm5YOnbDYayd8ifgn1/Yi3Dkh5WFd6HuAKxxPbZ/l6Exy5pHA==",
+      "sha512": "sha512-zp91pjk0RWX5hlD1hcKGjoGH0cOJ7v5ocvaCY7u3Z9gj5cSOtfhCJw9PyFWyevAiDEr5Oxr24HOEguF0Kda1Dw==",
       "path": "boldreports.data.ssas/14.1.12",
       "hashPath": "boldreports.data.ssas.14.1.12.nupkg.sha512"
     },
     "BoldReports.Data.WebData/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XWUX9y12A4cTlwfgmt/KchYhX1K0Zqj7NIhk1ce0MbIRPEPv0gpzsiZrD7pbeOp9a//vflZAnITQyNygGTRa8w==",
+      "sha512": "sha512-PiU8SJSq5Xl3VjDHlIZxGzy1oonGfR8guaxgMr+UUSba0PgVTrfb5nxf9kGv0zh9xVQc8WtCvKxScuACI/NsBQ==",
       "path": "boldreports.data.webdata/14.1.12",
       "hashPath": "boldreports.data.webdata.14.1.12.nupkg.sha512"
     },
     "BoldReports.Net.Core/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-blNAC908hDYi0NtMnKF/JzUchzHLinv6yMIvtBa8C4E98pfEWcklbDsRKGwjAYPogDr5J5jkiAsHScHWR51Bdw==",
+      "sha512": "sha512-/y3mtkCNsXTGqHCovPFdUOh9zRh+2Fucy+RuGPrUHbBTqGvx31tiSDBtMmHFjuYmfq9mACHnr2hk8Hk+Hej0rA==",
       "path": "boldreports.net.core/14.1.12",
       "hashPath": "boldreports.net.core.14.1.12.nupkg.sha512"
     },
