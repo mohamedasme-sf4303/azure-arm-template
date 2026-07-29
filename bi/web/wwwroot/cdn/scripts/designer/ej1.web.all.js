@@ -1,6 +1,6 @@
 /*!
 *  filename: ej1.web.all.js
-*  version : 16.1.81
+*  version : 16.1.90
 *  Copyright Syncfusion Inc. 2001 - 2026. All rights reserved.
 *  Use of this code is subject to the terms of our license.
 *  A copy of the current license can be obtained at any time by e-mailing
@@ -24009,6 +24009,8 @@ BoldBIDashboard.Dialog.Locale["default"] = BoldBIDashboard.Dialog.Locale["en-US"
 
             maxValue: 100,
 
+            dateFormat: "M/d/yyyy",
+
             sliderType: "default",
 
             value: null,
@@ -24056,6 +24058,7 @@ BoldBIDashboard.Dialog.Locale["default"] = BoldBIDashboard.Dialog.Locale["en-US"
             enableRTL: "boolean",
             minValue: "number",
             maxValue: "number",
+            dateFormat: "string",
             sliderType: "enum",
             incrementStep: "number",
             enabled: "boolean",
@@ -25029,14 +25032,15 @@ BoldBIDashboard.Dialog.Locale["default"] = BoldBIDashboard.Dialog.Locale["en-US"
  var divideBy24 = 24;
         var divideBy60 = 60;
         var divideBy1000 = 1000;
-        var dateFormat = 'M/d/yyyy';
+        var defaultDateFormat = 'M/d/yyyy';
         var init = BoldBIDashboard.Slider.prototype._init;
         var setModel = BoldBIDashboard.Slider.prototype._setModel;
         bbdesigner$.extend(true, BoldBIDashboard.Slider.prototype, {
             defaults: {
                 minDate: null,
                 maxDate: null,
-                dateValue: null
+                dateValue: null,
+                dateFormat: defaultDateFormat
             },
             _init: function (options) {
                 this._isDate = this.model.minDate && this.model.maxDate;
@@ -25058,6 +25062,9 @@ BoldBIDashboard.Dialog.Locale["default"] = BoldBIDashboard.Dialog.Locale["en-US"
             },
             _setModel: function (options) {
                 setModel.call(this, options);
+                if (!BoldBIDashboard.isNullOrUndefined(options.dateFormat)) {
+                    this.model.dateFormat = options.dateFormat;
+                }
                 for (var option in options) {
                     // if ({}.hasOwnProperty.call(option, options)) {  because of this if condition following switch case not working
                     // so commenting this condition temporarily
@@ -25116,9 +25123,10 @@ BoldBIDashboard.Dialog.Locale["default"] = BoldBIDashboard.Dialog.Locale["en-US"
                     return num;
                 }
                 dateObj = new Date(num);
-                return BoldBIDashboard.globalize.format(dateObj, dateFormat);
+                return BoldBIDashboard.globalize.format(dateObj, this.model.dateFormat);
             }
-        });;
+        });
+;
 /*!
 *  filename: BoldBIDashboard.treeview.js
 *  version : 16.2.0.41

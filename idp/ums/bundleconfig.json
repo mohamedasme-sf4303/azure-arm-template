@@ -36,7 +36,7 @@
       "wwwroot/scripts/administration/emailactivitylog.js",
       "wwwroot/scripts/administration/managelanguage.js"
     ],
-    "integrity": "sha384-ptsucummUeorcPhyq8Z6guEwev6VdQg99La7EBxqNrfQLInWt+Zz9nK7WMo2f6wH"
+    "integrity": "sha384-jNaVDzYg7pB0sxrviVV/6d0LuqXNI29/OwxZhyJtcPLwmG2wT/YSwJxRp9xXjlpB"
   },
   {
     "bundles/js/user-activity-log.js": [
@@ -71,7 +71,7 @@
       "wwwroot/scripts/home/home.js",
       "wwwroot/scripts/core/profilepicture.js"
     ],
-    "integrity": "sha384-S1x3zZ20sgbdHXqI3ufl9GUGzWekuHGJElLJMvCtqM5xUkhCqPk7RuTJ/tryR+WP"
+    "integrity": "sha384-+5rdPdsS2b125eUAWaYBsKsnimVqad/8iurS2CY8DzfiEEyGXi9+ntcinC+scXQR"
   },
   {
     "bundles/js/sites.js": [

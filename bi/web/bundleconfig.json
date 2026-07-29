@@ -596,6 +596,7 @@
   },
   {
     "cdn/css/tile-dashboards-page.css": [
+      "wwwroot/Styles/EssentialJS2/ej2.theme.css",
       "wwwroot/Styles/Bootstrap/bootstrap-select.css",
       "wwwroot/Styles/scss/pages/Components/Switch.css",
       "wwwroot/Styles/scss/pages/Items.css",

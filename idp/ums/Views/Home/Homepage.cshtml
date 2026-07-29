@@ -60,6 +60,7 @@
             var TenantFavoriteListurl = "@Url.Action("TenantFavoriteList", "TenantsManagement")";
             var UpdateFavoriteUrl = "@Url.Action("UpdateTenantFavorite", "TenantsManagement")";
             var ValidateSiteUrl = "@Url.Action("ValidateSiteUrl", "TenantsManagement")";
+            var RedirectSiteUrl = "@Url.Action("RedirectSiteUrl", "TenantsManagement")";
             var TenantSites = "@Url.Action("GetSites", "TenantsManagement")";
             var isMobile = @isMobile.ToString().ToLower();
             var theme = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(themeAppearance.ToLower()));
@@ -108,7 +109,7 @@
             ${/if}
 </script>
         <script type="text/x-jsrender" nonce="@Context.Items["ScriptNonce"]" id="application-url-template">
-            <a class="grid-content text-decoration-none" title="${SiteUrl}"  href="${SiteUrl}" target="_blank">${SiteUrl}</a>
+            <a class="grid-content text-decoration-none site-link" title="${SiteUrl}" href="${SiteUrl}" target="_blank" rel="noopener noreferrer" data-url="${SiteUrl}">${SiteUrl}</a>
         </script>
        
     <h1 style="display: none">@T["Home"] - @GlobalAppSettings.SystemSettings.OrganizationName</h1>

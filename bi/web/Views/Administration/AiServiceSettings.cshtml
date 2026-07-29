@@ -22,10 +22,16 @@
             Value = $"{GlobalAppSettings.GetDescription(AIModel.AzureAI)}",
             Text = T[$"{GlobalAppSettings.GetDescription(AIModel.AzureAI)}"].Value,
             Selected = selectedAIModel == (int)AIModel.AzureAI
+        },
+        new SelectListItem {
+            Value = $"{GlobalAppSettings.GetDescription(AIModel.Anthropic)}",
+            Text = T[$"{GlobalAppSettings.GetDescription(AIModel.Anthropic)}"].Value,
+            Selected = selectedAIModel == (int)AIModel.Anthropic
         }
     };
-    var openAi = ViewBag.aiCredentials != null && ViewBag.aiCredentials.AIModel == (int)AIModel.OpenAI ? ViewBag.aiCredentials.OpenAI : new OpenAI();
-    var azureAI = ViewBag.aiCredentials != null && ViewBag.aiCredentials.AIModel == (int)AIModel.AzureAI ? ViewBag.aiCredentials.AzureAI : new AzureAI();
+    var openAi = ViewBag.aiCredentials != null && ViewBag.aiCredentials.AIModel == (int)AIModel.OpenAI ? (ViewBag.aiCredentials.OpenAI ?? new OpenAI()) : new OpenAI();
+    var azureAI = ViewBag.aiCredentials != null && ViewBag.aiCredentials.AIModel == (int)AIModel.AzureAI ? (ViewBag.aiCredentials.AzureAI ?? new AzureAI()) : new AzureAI();
+    var anthropicAI = ViewBag.aiCredentials != null && ViewBag.aiCredentials.AIModel == (int)AIModel.Anthropic ? (ViewBag.aiCredentials.AnthropicAI ?? new AnthropicAI()) : new AnthropicAI();
     var enableAiFeature = ViewBag.aiCredentials?.EnableAIFeature ?? true;
     var isAiSummariesEnabledGlobally = ViewBag.aiCredentials != null ? ViewBag.aiCredentials.IsAISummariesEnabledGlobally : false;
     var isUnifiedAIAgentEnabled = globalAppSettings.SystemSettings?.IsUnifiedAIAgentEnabled ?? true;
@@ -40,6 +46,7 @@
     var boldaiservice = GlobalAppSettings.GetDescription(AIModel.BoldAIService);
     var openai = GlobalAppSettings.GetDescription(AIModel.OpenAI);
     var azureai = GlobalAppSettings.GetDescription(AIModel.AzureAI);
+    var anthropic = GlobalAppSettings.GetDescription(AIModel.Anthropic);
 }
 
 @section styles{
@@ -61,6 +68,7 @@
     var boldaiservice = "@boldaiservice";
     var openai = "@openai";
     var azureai = "@azureai";
+    var anthropic = "@anthropic";
     var enableAiSupport = @Json.Serialize(enableAiSupport);
     var updateAISettingsUrl = "@Url.Action("AddOrUpdateAiCredentialsSettings", "Administration")";
    
@@ -210,6 +218,23 @@
                                     <span class="validation-errors"></span>
                                 </div>
                             </div>
+
+                            <div class="col-12 float-start app-font-div form-group input-field-margin anthropic-field">
+                                <div class="col-12 float-start no-padding">
+                                    @Html.Label("anthropic-api-key", T["Anthropic API Key"].Value, new
+                                    {
+                                        @class = "app-textbox-label"
+                                    })
+                                </div>
+                                <div>
+                                    <input type="text" id="anthropic-api-key" class="form-control txt-holder validation-padding mail-settings-fields" name="anthropic_apikey" placeholder="@T["Anthropic API Key"]" value="@anthropicAI.AnthropicApiKey" />
+                                    <span class="validation-errors"></span>
+                                </div>
+                            </div>
+                            @{
+                                // Suppressing SCS0029 because no direct user input handled
+                        #pragma warning disable SCS0029
+                            }
                             @if (!ServerAppConfig.IsHideHelpLink)
                             {
                                 <div class="bold-ai-service-note col-12 float-start">

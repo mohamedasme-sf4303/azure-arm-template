@@ -1,4 +1,4 @@
-Version: 1
+﻿Version: 1
 Id: Summarization Prompts
 Description: Prompts for generating insights and summaries for widgets and dashboards.
 SummarizationPrompts:
@@ -19,6 +19,9 @@ SummarizationPrompts:
           Example: **Rising Trend:** Values increased 15% QoQ, led by Category A.
         - Use simplified numeric formats (K/M/B) and emphasize what the numbers imply (comparisons, trends, significance).
         - Validate each final insight with intermediate calculations; if any insight is not validated, recalculate and regenerate.
+      NUMBER FORMATTING:
+        - If ColumnFormatting is absent: display numbers as-is, no symbol.
+        - Otherwise, use the currency symbol provided in ColumnFormatting exactly as-is; append % for Percentage; plain numbers for Number type.
 
   - Type: UnifiedAIWidgetInsights
     Message: |
@@ -80,6 +83,9 @@ SummarizationPrompts:
         - Avoid nested <ul> or extra <li> elements after the header or between insights.
         - Do not wrap output in code fences (no ```html or ```).
         - Do not use numbering, bullets, or any symbols at the start of each insight line beyond the dynamic icon.
+      NUMBER FORMATTING:
+        - Each widget block's ColumnFormatting applies only to that block's own values.
+        - Use the currency symbol provided in ColumnFormatting exactly as-is; append % for Percentage; plain numbers for Number type; if ColumnFormatting is absent for a block, show that block's numbers as-is.
 
   - Type: DashboardSummaryOutputStructure
     Message: |
@@ -117,6 +123,9 @@ SummarizationPrompts:
         - Do not use asterisks (*) or Markdown anywhere; do not wrap numbers or text with *.
         - Do not wrap output in code fences (no ```html or ```).
         - Use emojis to enhance readability and engagement.
+      NUMBER FORMATTING:
+        - Each widget block's ColumnFormatting applies only to that block's own values.
+        - Use the currency symbol provided in ColumnFormatting exactly as-is; append % for Percentage; plain numbers for Number type; if ColumnFormatting is absent for a block, show that block's numbers as-is.
 
   - Type: RephraseElaborate
     Message: |

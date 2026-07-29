@@ -10,11 +10,14 @@
         "dependencies": {
           "AWSSDK.Core": "3.7.106.33",
           "AWSSDK.S3": "3.7.104.12",
+          "Anthropic": "12.20.0",
           "Azure.Storage.Blobs": "12.26.0",
           "BoldBi.Ai.Base": "1.0.0",
           "BoldBi.Ai.Core": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
           "Microsoft.Data.SqlClient": "7.0.0",
+          "Microsoft.Extensions.AI": "10.7.0",
+          "Microsoft.Extensions.AI.Abstractions": "10.7.0",
           "Microsoft.SemanticKernel": "1.74.0",
           "Microsoft.SemanticKernel.Core": "1.74.0",
           "NetEscapades.Configuration.Yaml": "3.1.0",
@@ -26,7 +29,7 @@
           "Swashbuckle.AspNetCore": "6.4.0",
           "System.Runtime.Caching": "8.0.1",
           "log4net": "3.3.0",
-          "Syncfusion.Dashboard.Core": "16.1.81.0"
+          "Syncfusion.Dashboard.Core": "16.1.90.0"
         },
         "runtime": {
           "BoldBi.Ai.Service.dll": {}
@@ -48,6 +51,17 @@
           "lib/net7.0/AngleSharp.Css.dll": {
             "assemblyVersion": "0.17.0.0",
             "fileVersion": "0.17.0.0"
+          }
+        }
+      },
+      "Anthropic/12.20.0": {
+        "dependencies": {
+          "Microsoft.Extensions.AI.Abstractions": "10.7.0"
+        },
+        "runtime": {
+          "lib/net9.0/Anthropic.dll": {
+            "assemblyVersion": "12.20.0.0",
+            "fileVersion": "12.20.0.0"
           }
         }
       },
@@ -297,7 +311,7 @@
       },
       "log4net/3.3.0": {
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "10.0.9"
+          "System.Configuration.ConfigurationManager": "10.0.10"
         },
         "runtime": {
           "lib/netstandard2.0/log4net.dll": {
@@ -308,7 +322,7 @@
       },
       "Microsoft.Agents.AI.Abstractions/1.0.0-preview.251009.1": {
         "dependencies": {
-          "Microsoft.Extensions.AI.Abstractions": "10.4.0"
+          "Microsoft.Extensions.AI.Abstractions": "10.7.0"
         },
         "runtime": {
           "lib/net9.0/Microsoft.Agents.AI.Abstractions.dll": {
@@ -389,7 +403,7 @@
           "Microsoft.IdentityModel.JsonWebTokens": "8.16.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.16.0",
           "Microsoft.SqlServer.Server": "1.0.0",
-          "System.Configuration.ConfigurationManager": "10.0.9"
+          "System.Configuration.ConfigurationManager": "10.0.10"
         },
         "runtime": {
           "lib/net9.0/Microsoft.Data.SqlClient.dll": {
@@ -521,29 +535,29 @@
           }
         }
       },
-      "Microsoft.Extensions.AI/10.4.0": {
+      "Microsoft.Extensions.AI/10.7.0": {
         "dependencies": {
-          "Microsoft.Extensions.AI.Abstractions": "10.4.0",
-          "System.Numerics.Tensors": "10.0.4"
+          "Microsoft.Extensions.AI.Abstractions": "10.7.0",
+          "System.Numerics.Tensors": "10.0.9"
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.AI.dll": {
-            "assemblyVersion": "10.4.0.0",
-            "fileVersion": "10.400.26.16002"
+            "assemblyVersion": "10.7.0.0",
+            "fileVersion": "10.700.26.30905"
           }
         }
       },
-      "Microsoft.Extensions.AI.Abstractions/10.4.0": {
+      "Microsoft.Extensions.AI.Abstractions/10.7.0": {
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.AI.Abstractions.dll": {
-            "assemblyVersion": "10.4.0.0",
-            "fileVersion": "10.400.26.16002"
+            "assemblyVersion": "10.7.0.0",
+            "fileVersion": "10.700.26.30905"
           }
         }
       },
       "Microsoft.Extensions.AI.OpenAI/10.4.0": {
         "dependencies": {
-          "Microsoft.Extensions.AI.Abstractions": "10.4.0",
+          "Microsoft.Extensions.AI.Abstractions": "10.7.0",
           "OpenAI": "2.9.1"
         },
         "runtime": {
@@ -555,7 +569,7 @@
       },
       "Microsoft.Extensions.VectorData.Abstractions/10.1.0": {
         "dependencies": {
-          "Microsoft.Extensions.AI.Abstractions": "10.4.0"
+          "Microsoft.Extensions.AI.Abstractions": "10.7.0"
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.VectorData.Abstractions.dll": {
@@ -578,7 +592,7 @@
       "Microsoft.Identity.Client.Extensions.Msal/4.83.1": {
         "dependencies": {
           "Microsoft.Identity.Client": "4.83.1",
-          "System.Security.Cryptography.ProtectedData": "10.0.9"
+          "System.Security.Cryptography.ProtectedData": "10.0.10"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
@@ -674,7 +688,7 @@
       "Microsoft.SemanticKernel.Abstractions/1.74.0": {
         "dependencies": {
           "Microsoft.Bcl.HashCode": "1.1.1",
-          "Microsoft.Extensions.AI": "10.4.0",
+          "Microsoft.Extensions.AI": "10.7.0",
           "Microsoft.Extensions.VectorData.Abstractions": "10.1.0"
         },
         "runtime": {
@@ -767,7 +781,7 @@
       "Microsoft.SemanticKernel.Core/1.74.0": {
         "dependencies": {
           "Microsoft.SemanticKernel.Abstractions": "1.74.0",
-          "System.Numerics.Tensors": "10.0.4"
+          "System.Numerics.Tensors": "10.0.9"
         },
         "runtime": {
           "lib/net10.0/Microsoft.SemanticKernel.Core.dll": {
@@ -1126,14 +1140,14 @@
           }
         }
       },
-      "System.Configuration.ConfigurationManager/10.0.9": {
+      "System.Configuration.ConfigurationManager/10.0.10": {
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "10.0.9"
+          "System.Security.Cryptography.ProtectedData": "10.0.10"
         },
         "runtime": {
           "lib/net10.0/System.Configuration.ConfigurationManager.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.926.27113"
+            "fileVersion": "10.0.1026.32716"
           }
         }
       },
@@ -1184,17 +1198,17 @@
           }
         }
       },
-      "System.Numerics.Tensors/10.0.4": {
+      "System.Numerics.Tensors/10.0.9": {
         "runtime": {
           "lib/net10.0/System.Numerics.Tensors.dll": {
-            "assemblyVersion": "10.0.0.4",
-            "fileVersion": "10.0.426.12010"
+            "assemblyVersion": "10.0.0.9",
+            "fileVersion": "10.0.926.27113"
           }
         }
       },
       "System.Runtime.Caching/8.0.1": {
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "10.0.9"
+          "System.Configuration.ConfigurationManager": "10.0.10"
         },
         "runtime": {
           "lib/net8.0/System.Runtime.Caching.dll": {
@@ -1211,11 +1225,11 @@
           }
         }
       },
-      "System.Security.Cryptography.ProtectedData/10.0.9": {
+      "System.Security.Cryptography.ProtectedData/10.0.10": {
         "runtime": {
           "lib/net10.0/System.Security.Cryptography.ProtectedData.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.926.27113"
+            "fileVersion": "10.0.1026.32716"
           }
         }
       },
@@ -1230,6 +1244,7 @@
       "BoldBi.Ai.Base/1.0.0": {
         "dependencies": {
           "AWSSDK.S3": "3.7.104.12",
+          "Anthropic": "12.20.0",
           "BoldBi.Ai.Configuration": "1.0.0",
           "BoldBi.Ai.ConnectionManager": "1.0.0",
           "BoldBi.Ai.Core": "1.0.0",
@@ -1237,6 +1252,8 @@
           "HtmlSanitizer": "9.0.892",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.11",
           "Microsoft.EntityFrameworkCore": "9.0.4",
+          "Microsoft.Extensions.AI": "10.7.0",
+          "Microsoft.Extensions.AI.Abstractions": "10.7.0",
           "Microsoft.SemanticKernel": "1.74.0",
           "Microsoft.SemanticKernel.Agents.Core": "1.74.0",
           "Microsoft.SemanticKernel.Agents.OpenAI": "1.74.0-preview",
@@ -1246,32 +1263,38 @@
           "Microsoft.SemanticKernel.Process.Core": "1.74.0-alpha",
           "Microsoft.SemanticKernel.Process.LocalRuntime": "1.74.0-alpha",
           "Newtonsoft.Json": "13.0.4",
-          "System.Configuration.ConfigurationManager": "10.0.9",
+          "System.Configuration.ConfigurationManager": "10.0.10",
           "log4net": "3.3.0"
         },
         "runtime": {
           "BoldBi.Ai.Base.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         }
       },
       "BoldBi.Ai.Configuration/1.0.0": {
         "dependencies": {
+          "Anthropic": "12.20.0",
+          "Microsoft.Extensions.AI": "10.7.0",
+          "Microsoft.Extensions.AI.Abstractions": "10.7.0",
           "Microsoft.SemanticKernel.Core": "1.74.0",
-          "System.Configuration.ConfigurationManager": "10.0.9",
+          "System.Configuration.ConfigurationManager": "10.0.10",
           "System.Drawing.Common": "10.0.5"
         },
         "runtime": {
           "BoldBi.Ai.Configuration.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         }
       },
       "BoldBi.Ai.ConnectionManager/1.0.0": {
         "dependencies": {
+          "Anthropic": "12.20.0",
           "BoldBi.Ai.Core": "1.0.0",
+          "Microsoft.Extensions.AI": "10.7.0",
+          "Microsoft.Extensions.AI.Abstractions": "10.7.0",
           "Microsoft.SemanticKernel": "1.74.0",
           "Microsoft.SemanticKernel.Core": "1.74.0",
           "Microsoft.SemanticKernel.Process.Abstractions": "1.74.0-alpha",
@@ -1279,41 +1302,44 @@
         },
         "runtime": {
           "BoldBi.Ai.ConnectionManager.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         }
       },
       "BoldBi.Ai.Core/1.0.0": {
         "dependencies": {
+          "Anthropic": "12.20.0",
           "Azure.Core": "1.51.1",
           "Azure.Identity": "1.19.0",
           "Microsoft.AspNet.Identity.EntityFramework": "2.2.4",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.11",
+          "Microsoft.Extensions.AI": "10.7.0",
+          "Microsoft.Extensions.AI.Abstractions": "10.7.0",
           "Microsoft.SemanticKernel.Core": "1.74.0",
           "Microsoft.SemanticKernel.Process.Abstractions": "1.74.0-alpha",
           "Newtonsoft.Json": "13.0.4"
         },
         "runtime": {
           "BoldBi.Ai.Core.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         }
       },
-      "Syncfusion.Dashboard.Core/16.1.81.0": {
+      "Syncfusion.Dashboard.Core/16.1.90.0": {
         "runtime": {
           "Syncfusion.Dashboard.Core.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         }
       },
-      "Syncfusion.Dashboard.Web.Serialization.DOM/16.1.81.0": {
+      "Syncfusion.Dashboard.Web.Serialization.DOM/16.1.90.0": {
         "runtime": {
           "Syncfusion.Dashboard.Web.Serialization.DOM.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         }
       },
@@ -1325,19 +1351,19 @@
           }
         }
       },
-      "Syncfusion.Dashboard.Json.Base/16.1.81.0": {
+      "Syncfusion.Dashboard.Json.Base/16.1.90.0": {
         "runtime": {
           "Syncfusion.Dashboard.Json.Base.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         }
       },
-      "Syncfusion.Dashboard.Xml.Base/16.1.81.0": {
+      "Syncfusion.Dashboard.Xml.Base/16.1.90.0": {
         "runtime": {
           "Syncfusion.Dashboard.Xml.Base.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         }
       },
@@ -1357,11 +1383,11 @@
           }
         }
       },
-      "Syncfusion.Dashboard.Core.XmlRepository/16.1.81.0": {
+      "Syncfusion.Dashboard.Core.XmlRepository/16.1.90.0": {
         "runtime": {
           "Syncfusion.Dashboard.Core.XmlRepository.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         }
       },
@@ -1394,6 +1420,13 @@
       "sha512": "sha512-bg0AcugmX6BFEi/DHG61QrwRU8iuiX4H8LZehdIzYdqOM/dgb3BsCTzNIcc1XADn4+xfQEdVwJYTSwUxroL4vg==",
       "path": "anglesharp.css/0.17.0",
       "hashPath": "anglesharp.css.0.17.0.nupkg.sha512"
+    },
+    "Anthropic/12.20.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+lXJaJfMoDVTS/mWbuNE1NuR1T+led5bNl2HLLR4f9vpn4/eg2ewBceJtZjVb1FNs9oak65gstnBPIkrZpy9Gw==",
+      "path": "anthropic/12.20.0",
+      "hashPath": "anthropic.12.20.0.nupkg.sha512"
     },
     "AWSSDK.Core/3.7.106.33": {
       "type": "package",
@@ -1654,19 +1687,19 @@
       "path": "microsoft.entityframeworkcore.relational/8.0.11",
       "hashPath": "microsoft.entityframeworkcore.relational.8.0.11.nupkg.sha512"
     },
-    "Microsoft.Extensions.AI/10.4.0": {
+    "Microsoft.Extensions.AI/10.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7kKIuaUMFWikveZUjSrs53XfMVV7IDGSDaGp6/y/hV0HXsA7N2oIODZWxtEkEj8Q4cd/Oc/VlsVlg8efof7gFA==",
-      "path": "microsoft.extensions.ai/10.4.0",
-      "hashPath": "microsoft.extensions.ai.10.4.0.nupkg.sha512"
+      "sha512": "sha512-r8z4uyPq0kTk4+jH92/hPshf3HNUXKOQ9axJwp57QFz43G45BG4DNYpVE0vuSan1dI69LtWx9ttF0Z2ibnghNg==",
+      "path": "microsoft.extensions.ai/10.7.0",
+      "hashPath": "microsoft.extensions.ai.10.7.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.AI.Abstractions/10.4.0": {
+    "Microsoft.Extensions.AI.Abstractions/10.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-t3S2H4do4YeNheIfE3GEl3MnKIrnxpbLu7a88spfApYR3in9ddhIq/GMtxgMaFjn/PUMTCFv5YH7Y6Q91dsDXQ==",
-      "path": "microsoft.extensions.ai.abstractions/10.4.0",
-      "hashPath": "microsoft.extensions.ai.abstractions.10.4.0.nupkg.sha512"
+      "sha512": "sha512-Lf822igMm8NkTYHZhTp7kjoNYkLLEvJnX3SkG/LVBvsZHC0Y9choogHz8YtITBoy0TOylM3kVUZ6iaHf0my0ug==",
+      "path": "microsoft.extensions.ai.abstractions/10.7.0",
+      "hashPath": "microsoft.extensions.ai.abstractions.10.7.0.nupkg.sha512"
     },
     "Microsoft.Extensions.AI.OpenAI/10.4.0": {
       "type": "package",
@@ -1983,12 +2016,12 @@
       "path": "system.clientmodel/1.9.0",
       "hashPath": "system.clientmodel.1.9.0.nupkg.sha512"
     },
-    "System.Configuration.ConfigurationManager/10.0.9": {
+    "System.Configuration.ConfigurationManager/10.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-k7kYSTmNjwFYKdUju+rjYyigbcUBj1sElR3ayqszcatPXL9YJoBANJN48xctdXTopYf3ceFX2T4m1xvJRM+CGA==",
-      "path": "system.configuration.configurationmanager/10.0.9",
-      "hashPath": "system.configuration.configurationmanager.10.0.9.nupkg.sha512"
+      "sha512": "sha512-64jtHt9yLYi6VHMF5AwDj6BGM/MZrygv55SXl0MOIkFsFjGwRuxV3/QgEm7NTp3TQIx+YNX4S6dNpY08fJ3+3g==",
+      "path": "system.configuration.configurationmanager/10.0.10",
+      "hashPath": "system.configuration.configurationmanager.10.0.10.nupkg.sha512"
     },
     "System.Drawing.Common/10.0.5": {
       "type": "package",
@@ -2018,12 +2051,12 @@
       "path": "system.memory.data/10.0.1",
       "hashPath": "system.memory.data.10.0.1.nupkg.sha512"
     },
-    "System.Numerics.Tensors/10.0.4": {
+    "System.Numerics.Tensors/10.0.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EK8wJVxnVfeCzchnEqVjIfZDpVIcmjfjUs9x1nzI41X2naPGT57QjoHlQJma2vDQUxEtPQiGv/v90mwcflx6mQ==",
-      "path": "system.numerics.tensors/10.0.4",
-      "hashPath": "system.numerics.tensors.10.0.4.nupkg.sha512"
+      "sha512": "sha512-Rb71S3gggYVwEce9ugNw91vbr4vC4gThtx/imSJtLBW3AupEKujJPPQL6xF9q0DcNm6+z7hnYk7XqXaUpA4wDg==",
+      "path": "system.numerics.tensors/10.0.9",
+      "hashPath": "system.numerics.tensors.10.0.9.nupkg.sha512"
     },
     "System.Runtime.Caching/8.0.1": {
       "type": "package",
@@ -2032,12 +2065,12 @@
       "path": "system.runtime.caching/8.0.1",
       "hashPath": "system.runtime.caching.8.0.1.nupkg.sha512"
     },
-    "System.Security.Cryptography.ProtectedData/10.0.9": {
+    "System.Security.Cryptography.ProtectedData/10.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vXp+vBQbTkMrDzUiPCxo1KvzfaAvZWuSRS2P7e5orhtV7ZuePKAB3Cqc9dH2YHUavRJyA2uWd2yrL6hl2VoJ5g==",
-      "path": "system.security.cryptography.protecteddata/10.0.9",
-      "hashPath": "system.security.cryptography.protecteddata.10.0.9.nupkg.sha512"
+      "sha512": "sha512-BKt0SQgq2lq3ESE68jkeLwv95ypANrPDtkTOIFGcnhg2aRUeUUBDrQlkVDZctrg1WenVcvn5P5XZnuYI7q6rFQ==",
+      "path": "system.security.cryptography.protecteddata/10.0.10",
+      "hashPath": "system.security.cryptography.protecteddata.10.0.10.nupkg.sha512"
     },
     "YamlDotNet/16.3.0": {
       "type": "package",
@@ -2066,12 +2099,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Core/16.1.81.0": {
+    "Syncfusion.Dashboard.Core/16.1.90.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Web.Serialization.DOM/16.1.81.0": {
+    "Syncfusion.Dashboard.Web.Serialization.DOM/16.1.90.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -2081,12 +2114,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Json.Base/16.1.81.0": {
+    "Syncfusion.Dashboard.Json.Base/16.1.90.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Xml.Base/16.1.81.0": {
+    "Syncfusion.Dashboard.Xml.Base/16.1.90.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -2101,7 +2134,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Dashboard.Core.XmlRepository/16.1.81.0": {
+    "Syncfusion.Dashboard.Core.XmlRepository/16.1.90.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

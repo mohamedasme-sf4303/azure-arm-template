@@ -160,6 +160,27 @@
      <script nonce="@Context.Items["ScriptNonce"]" asp-append-version="true" src="@dashboardDesignerResourceUrl/cdn/scripts/designer/ej1.web.all.min.js"></script>
      <script nonce="@Context.Items["ScriptNonce"]" asp-append-version="true" src="@dashboardDesignerResourceUrl/cdn/scripts/designer/ej2.web.all.min.js"></script>
 
+    <script nonce="@Context.Items["ScriptNonce"]" type="text/javascript">
+        (function ($) {
+            if (!$ || $.fn.ejWaitingPopup || !$.fn.BoldBIDashboardWaitingPopup) {
+                return;
+            }
+
+            $.fn.ejWaitingPopup = function () {
+                var result = $.fn.BoldBIDashboardWaitingPopup.apply(this, arguments);
+                this.each(function () {
+                    var element = $(this);
+                    var waitingPopup = element.data("BoldBIDashboardWaitingPopup");
+                    if (waitingPopup && !element.data("ejWaitingPopup")) {
+                        element.data("ejWaitingPopup", waitingPopup);
+                    }
+                });
+
+                return result;
+            };
+        })(window.jQuery);
+    </script>
+
     <environment include="Development,CloudDevelopment">
          <script nonce="@Context.Items["ScriptNonce"]" asp-append-version="true" src="@dashboardDesignerResourceUrl/cdn/scripts/designer/bbi-unifiedaiagent.js"></script>
     </environment>

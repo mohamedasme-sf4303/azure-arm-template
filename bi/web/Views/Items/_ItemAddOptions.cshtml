@@ -69,6 +69,10 @@
 @if (model[ItemType.Category])
 {
     @await Html.PartialAsync("../Items/_AddCategory")
+}
+
+@if (model[ItemType.Dashboard])
+{
     @await Html.PartialAsync("../Items/_BulkMoveDashboards")
 }
 

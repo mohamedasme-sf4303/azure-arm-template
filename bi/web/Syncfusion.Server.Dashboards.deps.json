@@ -38,7 +38,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v10.0": {
-      "Syncfusion.Server.Dashboards/16.1.81": {
+      "Syncfusion.Server.Dashboards/16.1.90": {
         "dependencies": {
           "AWSSDK.SimpleSystemsManagement": "3.7.104.37",
           "Amazon.AspNetCore.DataProtection.SSM": "3.1.0",
@@ -71,22 +71,22 @@
           "SkiaSharp.NativeAssets.macOS": "3.116.1",
           "StackExchange.Redis": "2.12.8",
           "StyleCop.Analyzers": "1.2.0-beta.435",
-          "Syncfusion.Server.Base": "16.1.81",
-          "Syncfusion.Server.Base.ActiveDirectory": "16.1.81",
-          "Syncfusion.Server.Base.Collaboration": "16.1.81",
-          "Syncfusion.Server.Base.Data": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.DesignerService": "16.1.81",
-          "Syncfusion.Server.Base.Encryption": "16.1.81",
-          "Syncfusion.Server.Base.IdPDirectory": "16.1.81",
-          "Syncfusion.Server.Base.Integrations": "16.1.81",
-          "Syncfusion.Server.Base.Item": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81",
-          "Syncfusion.Server.Base.MarkdownSharp": "16.1.81",
-          "Syncfusion.Server.Base.Notification": "16.1.81",
-          "Syncfusion.Server.Base.Resources.Storage": "16.1.81",
-          "Syncfusion.Server.Base.Scheduler": "16.1.81",
-          "Syncfusion.Server.Base.TemplateGenerator": "16.1.81",
+          "Syncfusion.Server.Base": "16.1.90",
+          "Syncfusion.Server.Base.ActiveDirectory": "16.1.90",
+          "Syncfusion.Server.Base.Collaboration": "16.1.90",
+          "Syncfusion.Server.Base.Data": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.DesignerService": "16.1.90",
+          "Syncfusion.Server.Base.Encryption": "16.1.90",
+          "Syncfusion.Server.Base.IdPDirectory": "16.1.90",
+          "Syncfusion.Server.Base.Integrations": "16.1.90",
+          "Syncfusion.Server.Base.Item": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90",
+          "Syncfusion.Server.Base.MarkdownSharp": "16.1.90",
+          "Syncfusion.Server.Base.Notification": "16.1.90",
+          "Syncfusion.Server.Base.Resources.Storage": "16.1.90",
+          "Syncfusion.Server.Base.Scheduler": "16.1.90",
+          "Syncfusion.Server.Base.TemplateGenerator": "16.1.90",
           "System.Text.Encodings.Web": "8.0.0",
           "System.Text.RegularExpressions": "4.3.1",
           "System.Windows.Extensions": "10.0.1",
@@ -2182,7 +2182,7 @@
           "lib/netstandard2.0/TimeZoneConverter.dll": {}
         }
       },
-      "Syncfusion.Server.Base/16.1.81": {
+      "Syncfusion.Server.Base/16.1.90": {
         "dependencies": {
           "AWSSDK.CognitoIdentityProvider": "3.7.101.126",
           "AWSSDK.Core": "3.7.106.41",
@@ -2202,17 +2202,17 @@
           "SkiaSharp.NativeAssets.Linux": "3.116.1",
           "SkiaSharp.NativeAssets.Win32": "3.116.1",
           "SkiaSharp.NativeAssets.macOS": "3.116.1",
-          "Syncfusion.Server.Base.ActiveDirectory": "16.1.81",
-          "Syncfusion.Server.Base.Data": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.DesignerService": "16.1.81",
-          "Syncfusion.Server.Base.Encryption": "16.1.81",
-          "Syncfusion.Server.Base.IdPDirectory": "16.1.81",
-          "Syncfusion.Server.Base.IntranetService": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81",
-          "Syncfusion.Server.Base.MarkdownSharp": "16.1.81",
-          "Syncfusion.Server.Base.Resources.Storage": "16.1.81",
-          "Syncfusion.Server.Base.TemplateGenerator": "16.1.81",
+          "Syncfusion.Server.Base.ActiveDirectory": "16.1.90",
+          "Syncfusion.Server.Base.Data": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.DesignerService": "16.1.90",
+          "Syncfusion.Server.Base.Encryption": "16.1.90",
+          "Syncfusion.Server.Base.IdPDirectory": "16.1.90",
+          "Syncfusion.Server.Base.IntranetService": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90",
+          "Syncfusion.Server.Base.MarkdownSharp": "16.1.90",
+          "Syncfusion.Server.Base.Resources.Storage": "16.1.90",
+          "Syncfusion.Server.Base.TemplateGenerator": "16.1.90",
           "System.CodeDom": "8.0.0",
           "System.Configuration.ConfigurationManager": "8.0.1",
           "System.IdentityModel.Tokens.Jwt": "8.18.0",
@@ -2221,206 +2221,206 @@
         },
         "runtime": {
           "Syncfusion.Server.Base.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.dll": {}
         }
       },
-      "Syncfusion.Server.Base.ActiveDirectory/16.1.81": {
+      "Syncfusion.Server.Base.ActiveDirectory/16.1.90": {
         "dependencies": {
           "Microsoft.Graph": "6.1.0",
           "Microsoft.Identity.Client": "4.66.1",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90",
           "System.DirectoryServices": "8.0.0",
           "System.DirectoryServices.Protocols": "8.0.0",
           "log4net": "3.3.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.ActiveDirectory.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.ActiveDirectory.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Collaboration/16.1.81": {
+      "Syncfusion.Server.Base.Collaboration/16.1.90": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
-          "Syncfusion.Server.Base": "16.1.81",
-          "Syncfusion.Server.Base.Data": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Item": "16.1.81",
-          "Syncfusion.Server.Base.Resources.Storage": "16.1.81",
+          "Syncfusion.Server.Base": "16.1.90",
+          "Syncfusion.Server.Base.Data": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Item": "16.1.90",
+          "Syncfusion.Server.Base.Resources.Storage": "16.1.90",
           "System.Windows.Extensions": "10.0.1",
           "TimeZoneConverter": "3.3.0"
         },
         "runtime": {
           "Syncfusion.Server.Base.Collaboration.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Collaboration.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Data/16.1.81": {
+      "Syncfusion.Server.Base.Data/16.1.90": {
         "dependencies": {
           "Microsoft.Graph": "6.1.0",
           "MySqlConnector": "2.2.7",
           "Npgsql": "7.0.7",
           "Oracle.ManagedDataAccess.Core": "3.21.130",
-          "Syncfusion.Server.Base.ActiveDirectory": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Encryption": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81",
-          "Syncfusion.Server.Base.MarkdownSharp": "16.1.81",
+          "Syncfusion.Server.Base.ActiveDirectory": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Encryption": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90",
+          "Syncfusion.Server.Base.MarkdownSharp": "16.1.90",
           "System.Data.Odbc": "8.0.1",
           "System.Data.SqlClient": "4.9.0"
         },
         "runtime": {
           "Syncfusion.Server.Base.Data.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Data.dll": {}
         }
       },
-      "Syncfusion.Server.Base.DataClasses/16.1.81": {
+      "Syncfusion.Server.Base.DataClasses/16.1.90": {
         "dependencies": {
           "AWSSDK.Core": "3.7.106.41",
           "Microsoft.Graph": "6.1.0",
           "Newtonsoft.Json": "13.0.3",
-          "Syncfusion.Server.Base.Encryption": "16.1.81",
-          "Syncfusion.Server.Base.MarkdownSharp": "16.1.81",
+          "Syncfusion.Server.Base.Encryption": "16.1.90",
+          "Syncfusion.Server.Base.MarkdownSharp": "16.1.90",
           "System.Configuration.ConfigurationManager": "8.0.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.DataClasses.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.DataClasses.dll": {}
         }
       },
-      "Syncfusion.Server.Base.DesignerService/16.1.81": {
+      "Syncfusion.Server.Base.DesignerService/16.1.90": {
         "dependencies": {
           "Microsoft.Graph": "6.1.0",
           "Newtonsoft.Json": "13.0.3",
-          "Syncfusion.Server.Base.ActiveDirectory": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Encryption": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81",
-          "Syncfusion.Server.Base.MarkdownSharp": "16.1.81"
+          "Syncfusion.Server.Base.ActiveDirectory": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Encryption": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90",
+          "Syncfusion.Server.Base.MarkdownSharp": "16.1.90"
         },
         "runtime": {
           "Syncfusion.Server.Base.DesignerService.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.DesignerService.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Encryption/16.1.81": {
+      "Syncfusion.Server.Base.Encryption/16.1.90": {
         "dependencies": {
           "Microsoft.Graph": "6.1.0"
         },
         "runtime": {
           "Syncfusion.Server.Base.Encryption.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Encryption.dll": {}
         }
       },
-      "Syncfusion.Server.Base.IdPDirectory/16.1.81": {
+      "Syncfusion.Server.Base.IdPDirectory/16.1.90": {
         "dependencies": {
           "Microsoft.Graph": "6.1.0",
           "Newtonsoft.Json": "13.0.3",
-          "Syncfusion.Server.Base.ActiveDirectory": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Encryption": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81",
-          "Syncfusion.Server.Base.MarkdownSharp": "16.1.81"
+          "Syncfusion.Server.Base.ActiveDirectory": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Encryption": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90",
+          "Syncfusion.Server.Base.MarkdownSharp": "16.1.90"
         },
         "runtime": {
           "Syncfusion.Server.Base.IdPDirectory.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.IdPDirectory.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Integrations/16.1.81": {
+      "Syncfusion.Server.Base.Integrations/16.1.90": {
         "dependencies": {
-          "Syncfusion.Server.Base": "16.1.81",
-          "Syncfusion.Server.Base.Data": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81",
+          "Syncfusion.Server.Base": "16.1.90",
+          "Syncfusion.Server.Base.Data": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90",
           "System.Windows.Extensions": "10.0.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.Integrations.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Integrations.dll": {}
         }
       },
-      "Syncfusion.Server.Base.IntranetService/16.1.81": {
+      "Syncfusion.Server.Base.IntranetService/16.1.90": {
         "dependencies": {
           "Microsoft.Graph": "6.1.0",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81"
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90"
         },
         "runtime": {
           "Syncfusion.Server.Base.IntranetService.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.IntranetService.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Item/16.1.81": {
+      "Syncfusion.Server.Base.Item/16.1.90": {
         "dependencies": {
-          "Syncfusion.Server.Base": "16.1.81",
-          "Syncfusion.Server.Base.Data": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Resources.Storage": "16.1.81",
+          "Syncfusion.Server.Base": "16.1.90",
+          "Syncfusion.Server.Base.Data": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Resources.Storage": "16.1.90",
           "System.Windows.Extensions": "10.0.1",
           "TimeZoneConverter": "3.3.0"
         },
         "runtime": {
           "Syncfusion.Server.Base.Item.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Item.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Logger/16.1.81": {
+      "Syncfusion.Server.Base.Logger/16.1.90": {
         "dependencies": {
           "Exceptionless.Log4net": "4.5.0",
           "Microsoft.ApplicationInsights.Log4NetAppender": "2.22.0",
@@ -2432,129 +2432,129 @@
         },
         "runtime": {
           "Syncfusion.Server.Base.Logger.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Logger.dll": {}
         }
       },
-      "Syncfusion.Server.Base.MarkdownSharp/16.1.81": {
+      "Syncfusion.Server.Base.MarkdownSharp/16.1.90": {
         "dependencies": {
           "Microsoft.Graph": "6.1.0",
           "System.Configuration.ConfigurationManager": "8.0.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.MarkdownSharp.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.MarkdownSharp.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Notification/16.1.81": {
+      "Syncfusion.Server.Base.Notification/16.1.90": {
         "dependencies": {
-          "Syncfusion.Server.Base": "16.1.81",
-          "Syncfusion.Server.Base.Collaboration": "16.1.81",
-          "Syncfusion.Server.Base.Data": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Item": "16.1.81",
+          "Syncfusion.Server.Base": "16.1.90",
+          "Syncfusion.Server.Base.Collaboration": "16.1.90",
+          "Syncfusion.Server.Base.Data": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Item": "16.1.90",
           "System.Windows.Extensions": "10.0.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.Notification.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Notification.dll": {}
         }
       },
-      "Syncfusion.Server.Base.NotificationSender/16.1.81": {
+      "Syncfusion.Server.Base.NotificationSender/16.1.90": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
-          "Syncfusion.Server.Base": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Encryption": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81",
+          "Syncfusion.Server.Base": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Encryption": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90",
           "System.Windows.Extensions": "10.0.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.NotificationSender.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.NotificationSender.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Resources.Storage/16.1.81": {
+      "Syncfusion.Server.Base.Resources.Storage/16.1.90": {
         "dependencies": {
           "AWSSDK.S3": "3.7.104.12",
           "Azure.Storage.Blobs": "12.13.0",
           "Microsoft.Graph": "6.1.0",
-          "Syncfusion.Server.Base.ActiveDirectory": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.Encryption": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81",
-          "Syncfusion.Server.Base.MarkdownSharp": "16.1.81",
+          "Syncfusion.Server.Base.ActiveDirectory": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.Encryption": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90",
+          "Syncfusion.Server.Base.MarkdownSharp": "16.1.90",
           "log4net": "3.3.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.Resources.Storage.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Resources.Storage.dll": {}
         }
       },
-      "Syncfusion.Server.Base.Scheduler/16.1.81": {
+      "Syncfusion.Server.Base.Scheduler/16.1.90": {
         "dependencies": {
           "FluentFTP": "36.0.0",
           "SSH.NET": "2020.0.2",
-          "Syncfusion.Server.Base": "16.1.81",
-          "Syncfusion.Server.Base.ActiveDirectory": "16.1.81",
-          "Syncfusion.Server.Base.Data": "16.1.81",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81",
-          "Syncfusion.Server.Base.DesignerService": "16.1.81",
-          "Syncfusion.Server.Base.Encryption": "16.1.81",
-          "Syncfusion.Server.Base.IdPDirectory": "16.1.81",
-          "Syncfusion.Server.Base.Integrations": "16.1.81",
-          "Syncfusion.Server.Base.Item": "16.1.81",
-          "Syncfusion.Server.Base.Logger": "16.1.81",
-          "Syncfusion.Server.Base.MarkdownSharp": "16.1.81",
-          "Syncfusion.Server.Base.NotificationSender": "16.1.81",
-          "Syncfusion.Server.Base.Resources.Storage": "16.1.81",
-          "Syncfusion.Server.Base.TemplateGenerator": "16.1.81",
+          "Syncfusion.Server.Base": "16.1.90",
+          "Syncfusion.Server.Base.ActiveDirectory": "16.1.90",
+          "Syncfusion.Server.Base.Data": "16.1.90",
+          "Syncfusion.Server.Base.DataClasses": "16.1.90",
+          "Syncfusion.Server.Base.DesignerService": "16.1.90",
+          "Syncfusion.Server.Base.Encryption": "16.1.90",
+          "Syncfusion.Server.Base.IdPDirectory": "16.1.90",
+          "Syncfusion.Server.Base.Integrations": "16.1.90",
+          "Syncfusion.Server.Base.Item": "16.1.90",
+          "Syncfusion.Server.Base.Logger": "16.1.90",
+          "Syncfusion.Server.Base.MarkdownSharp": "16.1.90",
+          "Syncfusion.Server.Base.NotificationSender": "16.1.90",
+          "Syncfusion.Server.Base.Resources.Storage": "16.1.90",
+          "Syncfusion.Server.Base.TemplateGenerator": "16.1.90",
           "System.ServiceModel.Primitives": "4.7.0",
           "System.Windows.Extensions": "10.0.1"
         },
         "runtime": {
           "Syncfusion.Server.Base.Scheduler.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
           "Syncfusion.Server.Base.Scheduler.dll": {}
         }
       },
-      "Syncfusion.Server.Base.TemplateGenerator/16.1.81": {
+      "Syncfusion.Server.Base.TemplateGenerator/16.1.90": {
         "dependencies": {
           "Microsoft.Graph": "6.1.0",
-          "Syncfusion.Server.Base.DataClasses": "16.1.81"
+          "Syncfusion.Server.Base.DataClasses": "16.1.90"
         },
         "runtime": {
           "Syncfusion.Server.Base.TemplateGenerator.dll": {
-            "assemblyVersion": "16.1.81.0",
-            "fileVersion": "16.1.81.0"
+            "assemblyVersion": "16.1.90.0",
+            "fileVersion": "16.1.90.0"
           }
         },
         "compile": {
@@ -4485,7 +4485,7 @@
     }
   },
   "libraries": {
-    "Syncfusion.Server.Dashboards/16.1.81": {
+    "Syncfusion.Server.Dashboards/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -5330,92 +5330,92 @@
       "path": "timezoneconverter/3.3.0",
       "hashPath": "timezoneconverter.3.3.0.nupkg.sha512"
     },
-    "Syncfusion.Server.Base/16.1.81": {
+    "Syncfusion.Server.Base/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.ActiveDirectory/16.1.81": {
+    "Syncfusion.Server.Base.ActiveDirectory/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Collaboration/16.1.81": {
+    "Syncfusion.Server.Base.Collaboration/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Data/16.1.81": {
+    "Syncfusion.Server.Base.Data/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.DataClasses/16.1.81": {
+    "Syncfusion.Server.Base.DataClasses/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.DesignerService/16.1.81": {
+    "Syncfusion.Server.Base.DesignerService/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Encryption/16.1.81": {
+    "Syncfusion.Server.Base.Encryption/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.IdPDirectory/16.1.81": {
+    "Syncfusion.Server.Base.IdPDirectory/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Integrations/16.1.81": {
+    "Syncfusion.Server.Base.Integrations/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.IntranetService/16.1.81": {
+    "Syncfusion.Server.Base.IntranetService/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Item/16.1.81": {
+    "Syncfusion.Server.Base.Item/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Logger/16.1.81": {
+    "Syncfusion.Server.Base.Logger/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.MarkdownSharp/16.1.81": {
+    "Syncfusion.Server.Base.MarkdownSharp/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Notification/16.1.81": {
+    "Syncfusion.Server.Base.Notification/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.NotificationSender/16.1.81": {
+    "Syncfusion.Server.Base.NotificationSender/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Resources.Storage/16.1.81": {
+    "Syncfusion.Server.Base.Resources.Storage/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.Scheduler/16.1.81": {
+    "Syncfusion.Server.Base.Scheduler/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Server.Base.TemplateGenerator/16.1.81": {
+    "Syncfusion.Server.Base.TemplateGenerator/16.1.90": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

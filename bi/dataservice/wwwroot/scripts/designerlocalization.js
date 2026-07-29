@@ -7228,6 +7228,12 @@ var Designer = {
 				measureFormatDurationMinutes: "Minutes",
 				measureFormatDurationHours: "Hours",
 				measureFormatDisplayFormat: "Display Format",
+                measureFormatDurationFixedFormat: "Fixed Format",
+                measureFormatDurationPreviewText: "Rule: ",
+                durationAutoPreview: "Duration values are automatically converted and displayed using the most appropriate time units.\n\n\u2022 Base Unit: Seconds\n  e.g. 2400 Seconds \u2192 40m\n\n\u2022 Base Unit: Minutes\n  e.g. 2400 Minutes \u2192 1d 16h\n\n\u2022 Base Unit: Hours\n  e.g. 2400 Hours \u2192 3mo 10d",
+                measureFormatUnitLimit: "Maximum Units",
+                includeZero: "Include Zeros",
+                custom: "Custom"
             },
 			widgetConfiguration: {
                 enableAll: "Enable All",

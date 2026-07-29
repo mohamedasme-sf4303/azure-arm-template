@@ -48,6 +48,12 @@
     var pageDescription = T["Configure authentication/authorization providers’ information."];
     var isSelfHosted = ServerAppConfig.IsSelfHosted;
     var enableSigningKeyOptions = !string.IsNullOrEmpty(ViewBag.JwtSettings.JWTSettings.SigningKey);
+    var openIdAuthSettings = ViewBag.OpenIDSettings?.OIDCAuthSettings;
+    var isOpenIdConfigured = openIdAuthSettings != null &&
+        (!string.IsNullOrWhiteSpace(openIdAuthSettings.ProviderName as string) ||
+        !string.IsNullOrWhiteSpace(openIdAuthSettings.Authority as string) ||
+        !string.IsNullOrWhiteSpace(openIdAuthSettings.ClientId as string));
+    bool enableOpenIdTokenStorageByDefault = openIdAuthSettings == null || !isOpenIdConfigured || openIdAuthSettings.EnableTokenStorage;
 }
 
 @section styles{
@@ -70,7 +76,7 @@
 
                     var azureAdB2cEnabled = @Json.Serialize(ViewBag.AzureAdB2CSettings.IsEnabled);
 
-                    var openIdEnableTokenStorage = @Html.Raw(Json.Serialize(ViewBag.OpenIDSettings?.OIDCAuthSettings != null ? ViewBag.OpenIDSettings.OIDCAuthSettings.EnableTokenStorage : false));
+                    var openIdEnableTokenStorage = @Html.Raw(Json.Serialize(enableOpenIdTokenStorageByDefault));
                     var openIdUsePkce = @Html.Raw(Json.Serialize(ViewBag.OpenIDSettings?.OIDCAuthSettings != null ? ViewBag.OpenIDSettings.OIDCAuthSettings.UsePkce : false));
 
                     var oauthEnableGroupClaim = @Html.Raw(Json.Serialize(ViewBag.OAuthSettings?.OAuthAuthSettings?.GroupClaimsSettings != null ? ViewBag.OAuthSettings.OAuthAuthSettings.GroupClaimsSettings.EnableGroupClaims : false));
@@ -827,7 +833,7 @@
 
                                                 <div class="col-12 form-fields-top-margin no-padding">
                                                     <div class="col-12 no-padding">
-                                                        @Html.CheckBox("openIdEnableTokenStorage", (ViewBag.OpenIDSettings?.OIDCAuthSettings != null && ViewBag.OpenIDSettings.OIDCAuthSettings.EnableTokenStorage), new { @class = "material-checkbox" })
+                                                        @Html.CheckBox("openIdEnableTokenStorage", enableOpenIdTokenStorageByDefault, new { @class = "material-checkbox", ng_model = "openIdEnableTokenStorage", ng_disabled = "!openidIsEnabled" })
                                                         @Html.Hidden("openIdEnableTokenStorage")
                                                         <label for="openIdEnableTokenStorage">
                                                             <span>

@@ -3036,6 +3036,13 @@
             <param name="credentialManager">The Azure AI credential manager.</param>
             <returns>A populated <see cref="T:BoldBi.Ai.Core.Models.CredentialsConfiguration.CustomAIConfiguration"/> object.</returns>
         </member>
+        <member name="M:BoldBi.Ai.Base.CredentialManager.VerifyAnthropicConfiguration(BoldBi.Ai.Base.AnthropicCredentialManager)">
+            <summary>
+            Verifies and sets Anthropic configuration values.
+            </summary>
+            <param name="credentialManager">The Anthropic credential manager.</param>
+            <returns>A populated <see cref="T:BoldBi.Ai.Core.Models.CredentialsConfiguration.CustomAIConfiguration"/> object.</returns>
+        </member>
         <member name="M:BoldBi.Ai.Base.CredentialManager.CreateSuccessResponse(System.String)">
             <summary>
             Creates a success response in JSON format.
@@ -3142,6 +3149,26 @@
         <member name="P:BoldBi.Ai.Base.AzureAICredentialManager.ResourceName">
             <summary>
             Gets or sets the endpoint URL for the Azure AI service.
+            </summary>
+        </member>
+        <member name="T:BoldBi.Ai.Base.AnthropicCredentialManager">
+            <summary>
+            Represents the configuration details required for Anthropic services.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.AnthropicCredentialManager.Provider">
+            <summary>
+            Gets or sets the name of the AI provider.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.AnthropicCredentialManager.Model">
+            <summary>
+            Gets or sets the model name to be used with the provider.
+            </summary>
+        </member>
+        <member name="P:BoldBi.Ai.Base.AnthropicCredentialManager.ApiKey">
+            <summary>
+            Gets or sets the API key for authentication with Anthropic.
             </summary>
         </member>
         <member name="T:BoldBi.Ai.Base.CustomNullableAttribute">
@@ -6144,6 +6171,17 @@
             Processes the filter's condition (e.g., <c>Between</c>, <c>GreaterThan</c>, <c>LessThan</c>) and formats the date values accordingly.
             </remarks>
         </member>
+        <member name="M:BoldBi.Ai.Base.Helpers.OutputPreparation.Classes.FilterInfoProcessor.AddNonRelativeDateRangeConditionsForDateParts(BoldBi.Ai.Core.Models.VisualCreation.Filters,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Adds date-part range condition metadata (e.g., Year, Month, Quarter) to the filter dictionary.
+            Used when the filter timeunit is not Date/DateTime but a date-part (Year, Month, etc.)
+            and the condition is a range operator such as Between, GreaterThan, or LessThan.
+            For example, "Year Between 2002 and 2026" should expand to show all years in that range,
+            not just treat 2002 and 2026 as two discrete dimension values.
+            </summary>
+            <param name="filter">The filter containing the condition, time unit, and values.</param>
+            <param name="dateFilterInfo">The dictionary to populate with range condition metadata.</param>
+        </member>
         <member name="M:BoldBi.Ai.Base.Helpers.OutputPreparation.Classes.FilterInfoProcessor.ExtractFilterInfo(System.Collections.Generic.Dictionary{System.String,System.Object})">
             <summary>
             Extracts filter information from an AI field.
@@ -8801,6 +8839,11 @@
             </summary>
             <param name="json">The JSON response string.</param>
             <returns>A feedback message listing validation errors, or null if validation passes.</returns>
+        </member>
+        <member name="M:BoldBi.Ai.Base.UpdateVisualProcess.Steps.UpdateVisualValidateStep.ValidateColorCustomization(System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.String})">
+            <summary>
+            Validates that at least one property has a non-null, non-empty value.
+            </summary>
         </member>
         <member name="M:BoldBi.Ai.Base.UpdateVisualProcess.Steps.UpdateVisualValidateStep.ValidateAtLeastOnePropertyHasValue(System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.String})">
             <summary>
