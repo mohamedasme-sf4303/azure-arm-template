@@ -4749,7 +4749,7 @@
     "Bold.Licensing/14.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pOt4LZE+8gdxgqN5XLdQw2JQf0UAp1qy9iCJ1MnwtDIlOyuss40Vk1bsMOp1HhA/BFh9UePIMR5N8IIsRW2JfQ==",
+      "sha512": "sha512-6qMKtAYlGUH2hfwrMgXkQz/GGcgKQx5kTuxF38PKTY2355Lz8/RgqhbJm42Q7eTJmEaftSeWqUVHuweNPpdJtQ==",
       "path": "bold.licensing/14.1.12",
       "hashPath": "bold.licensing.14.1.12.nupkg.sha512"
     },

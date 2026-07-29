@@ -99,7 +99,7 @@ echo "mongodb libraries are installed"
 }
 
 $clientLibraries="$mysqlassemblies$oracleassemblies$postgresqlassemblies$snowflakeassemblies$googlebigqueryassemblies$mongodbassemblies"
-dotnet clientlibraryutility/ClientLibraryUtil.dll $clientLibraries $jsonfiles
+clientlibraryutility/ClientLibraryUtil.exe $clientLibraries $jsonfiles
 echo "client libraries are updated"
 }
 catch {
